@@ -1,0 +1,57 @@
+
+=== HLS Testbench: solve_top (fixed-point HLS wrapper) ===
+========================
+Test case 1:
+
+A (columns):
+  Column 0: [0.100000, 0.200000, 0.900000, 0.300000]
+  Column 1: [0.100000, 0.800000, 0.100000, 0.100000]
+  Column 2: [0.400000, 0.600000, 0.300000, 0.400000]
+  Column 3: [0.300000, 0.500000, 0.200000, 0.600000]
+
+b (column vector): [0.200000, 0.100000, 0.800000, 0.400000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.802734, -0.378418, 0.296387, 0.126953]
+Reference (double) solution x_ref:
+  [0.803354, -0.379573, 0.295732, 0.131098]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 2:
+
+A (columns):
+  Column 0: [2.000000, 0.100000, 0.000000, 0.000000]
+  Column 1: [0.100000, 3.000000, 0.200000, 0.000000]
+  Column 2: [0.000000, 0.200000, 4.000000, 0.100000]
+  Column 3: [0.000000, 0.000000, 0.100000, 5.000000]
+
+b (column vector): [1.000000, 0.500000, 2.000000, 1.500000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.493652, 0.117676, 0.487305, 0.289551]
+Reference (double) solution x_ref:
+  [0.494113, 0.117739, 0.486856, 0.290263]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 3:
+
+A (columns):
+  Column 0: [0.500000, -0.100000, 0.000000, 0.100000]
+  Column 1: [-0.200000, 0.600000, 0.100000, 0.000000]
+  Column 2: [0.100000, 0.200000, 0.700000, -0.100000]
+  Column 3: [0.000000, 0.100000, -0.200000, 0.800000]
+
+b (column vector): [0.300000, -0.200000, 0.500000, 0.100000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.178711, -0.623535, 0.865234, 0.212891]
+Reference (double) solution x_ref:
+  [0.176301, -0.627168, 0.864162, 0.210983]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+Testbench finished.

@@ -1,0 +1,9 @@
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling backsub.cpp_pre.cpp.tb.cpp
+   Compiling qrd.cpp_pre.cpp.tb.cpp
+   Compiling linearsolver.cpp_pre.cpp.tb.cpp
+   Compiling tb_linersolver.cpp_pre.cpp.tb.cpp
+   Compiling matrixmult.cpp_pre.cpp.tb.cpp
+   Compiling apatb_solve_top.cpp
+   Compiling apatb_solve_top_ir.ll
+   Generating cosim.tv.exe

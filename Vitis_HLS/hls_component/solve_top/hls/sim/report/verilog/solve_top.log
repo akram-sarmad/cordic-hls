@@ -1,0 +1,544 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling backsub.cpp_pre.cpp.tb.cpp
+   Compiling qrd.cpp_pre.cpp.tb.cpp
+   Compiling linearsolver.cpp_pre.cpp.tb.cpp
+   Compiling tb_linersolver.cpp_pre.cpp.tb.cpp
+   Compiling matrixmult.cpp_pre.cpp.tb.cpp
+   Compiling apatb_solve_top.cpp
+   Compiling apatb_solve_top_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+
+=== HLS Testbench: solve_top (fixed-point HLS wrapper) ===
+========================
+Test case 1:
+
+A (columns):
+  Column 0: [0.100000, 0.200000, 0.900000, 0.300000]
+  Column 1: [0.100000, 0.800000, 0.100000, 0.100000]
+  Column 2: [0.400000, 0.600000, 0.300000, 0.400000]
+  Column 3: [0.300000, 0.500000, 0.200000, 0.600000]
+
+b (column vector): [0.200000, 0.100000, 0.800000, 0.400000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.802734, -0.378418, 0.296387, 0.126953]
+Reference (double) solution x_ref:
+  [0.803354, -0.379573, 0.295732, 0.131098]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 2:
+
+A (columns):
+  Column 0: [2.000000, 0.100000, 0.000000, 0.000000]
+  Column 1: [0.100000, 3.000000, 0.200000, 0.000000]
+  Column 2: [0.000000, 0.200000, 4.000000, 0.100000]
+  Column 3: [0.000000, 0.000000, 0.100000, 5.000000]
+
+b (column vector): [1.000000, 0.500000, 2.000000, 1.500000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.493652, 0.117676, 0.487305, 0.289551]
+Reference (double) solution x_ref:
+  [0.494113, 0.117739, 0.486856, 0.290263]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 3:
+
+A (columns):
+  Column 0: [0.500000, -0.100000, 0.000000, 0.100000]
+  Column 1: [-0.200000, 0.600000, 0.100000, 0.000000]
+  Column 2: [0.100000, 0.200000, 0.700000, -0.100000]
+  Column 3: [0.000000, 0.100000, -0.200000, 0.800000]
+
+b (column vector): [0.300000, -0.200000, 0.500000, 0.100000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.178711, -0.623535, 0.865234, 0.212891]
+Reference (double) solution x_ref:
+  [0.176301, -0.627168, 0.864162, 0.210983]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+Testbench finished.
+
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\sim\verilog>set PATH= 
+
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\sim\verilog>call C:/Xilinx/2025.1/Vivado/bin/xelab xil_defaultlib.apatb_solve_top_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj solve_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib "ieee_proposed=./ieee_proposed" -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./solve_top_subsystem  -s solve_top  
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_solve_top_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj solve_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./solve_top_subsystem -s solve_top 
+Multi-threading is on. Using 14 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_solve_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_bitselect_1ns_54ns_6ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_bitselect_1ns_54ns_6ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_cordic_atan.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_cordic_atan
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_cordic_atan_atan_table_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_cordic_atan_atan_table_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_ctlz_16_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_ctlz_16_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_CTRL_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_CTRL_s_axi
+INFO: [VRFC 10-311] analyzing module solve_top_CTRL_s_axi_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module solve_top_mac_mulsub_16s_16s_27s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mul_16s_16s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mul_16s_16s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sdiv_28s_16s_28_32_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module solve_top_sdiv_28s_16s_28_32_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_11_4_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_11_4_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_11_4_16_1_1_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_11_4_16_1_1_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_13_3_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_13_3_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_17_3_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_17_3_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_16_1_1_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_16_1_1_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_16_1_1_x0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_16_1_1_x0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_9_2_12_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_9_2_12_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_9_2_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_9_2_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_9_3_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_9_3_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_upper_backsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_upper_backsub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/axivip/axi_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/axivip/axi_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_subsystem/solve_top_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/ip/xil_defaultlib/solve_top_fpext_32ns_64_2_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'solve_top_fpext_32ns_64_2_no_dsp_1_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_viv_comp
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_exp_table...
+Compiling package mult_gen_v12_0_23.mult_gen_v12_0_23_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_pkg
+Compiling package floating_point_v7_1_20.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.axi_pkg
+Compiling package xil_defaultlib.solve_top_subsystem_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.solve_top_sparsemux_9_2_16_1_1(d...
+Compiling module xil_defaultlib.solve_top_sparsemux_9_2_12_1_1(d...
+Compiling module xil_defaultlib.solve_top_flow_control_loop_pipe...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_sparsemux_17_3_16_1_1(...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_cordic_atan_atan_table...
+Compiling module xil_defaultlib.solve_top_cordic_atan
+Compiling module xil_defaultlib.solve_top_sparsemux_13_3_16_1_1(...
+Compiling module xil_defaultlib.solve_top_sparsemux_11_4_16_1_1(...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_sparsemux_9_3_16_1_1(d...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_16_1_1(d...
+Compiling module xil_defaultlib.solve_top_sparsemux_11_4_16_1_1_...
+Compiling module xil_defaultlib.solve_top_decompose_qr
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mul_16s_16s_32_1_1(NUM...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul
+Compiling module xil_defaultlib.solve_top_upper_backsub_Pipeline...
+Compiling module xil_defaultlib.solve_top_upper_backsub_Pipeline...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_16_1_1_x...
+Compiling module xil_defaultlib.solve_top_sdiv_28s_16s_28_32_seq...
+Compiling module xil_defaultlib.solve_top_sdiv_28s_16s_28_32_seq...
+Compiling module xil_defaultlib.solve_top_mac_mulsub_16s_16s_27s...
+Compiling module xil_defaultlib.solve_top_mac_mulsub_16s_16s_27s...
+Compiling module xil_defaultlib.solve_top_upper_backsub
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi_ram(MEM_TYP...
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi_ram(DEPTH=4...
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi_ram(MEM_TYP...
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
+Compiling architecture solve_top_fpext_32ns_64_2_no_dsp_1_ip_arch of entity xil_defaultlib.solve_top_fpext_32ns_64_2_no_dsp_1_ip [solve_top_fpext_32ns_64_2_no_dsp...]
+Compiling module xil_defaultlib.solve_top_fpext_32ns_64_2_no_dsp...
+Compiling module xil_defaultlib.solve_top_bitselect_1ns_54ns_6ns...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_16_1_1_x...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_1_1_1(se...
+Compiling module xil_defaultlib.solve_top_ctlz_16_16_1_1(din_WID...
+Compiling module xil_defaultlib.solve_top
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.axi_if(ADDR_WIDTH=7,STRB_WIDTH=4...
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=15)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=42)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_solve_top_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot solve_top
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Dec 16 22:54:14 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/solve_top/xsim_script.tcl
+# xsim {solve_top} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=solve_top_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {solve_top.tcl}
+Time resolution is 1 ps
+source solve_top.tcl
+## run all
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+---------------------------------------------------------------------------------
+Name                         Type                           Size  Value          
+---------------------------------------------------------------------------------
+uvm_test_top                 solve_top_test_lib             -     @364           
+  top_env                    solve_top_env                  -     @375           
+    axi_lite_CTRL            uvm_env                        -     @396           
+      item_rtr_port          uvm_analysis_port              -     @415           
+      item_wtr_port          uvm_analysis_port              -     @405           
+      master                 uvm_agent                      -     @788           
+        ardrv                uvm_driver #(REQ,RSP)          -     @1463          
+          item_read_imp      uvm_analysis_port              -     @1492          
+          rsp_port           uvm_analysis_port              -     @1482          
+          seq_item_port      uvm_seq_item_pull_port         -     @1472          
+          m_num_sent         integral                       32    'h0            
+        arsqr                axi_sequencer                  -     @1502          
+          rsp_export         uvm_analysis_export            -     @1511          
+          seq_item_export    uvm_seq_item_pull_imp          -     @1629          
+          arbitration_queue  array                          0     -              
+          lock_queue         array                          0     -              
+          num_last_reqs      integral                       32    'd1            
+          num_last_rsps      integral                       32    'd1            
+        awdrv                uvm_driver #(REQ,RSP)          -     @935           
+          item_read_imp      uvm_analysis_port              -     @964           
+          rsp_port           uvm_analysis_port              -     @954           
+          seq_item_port      uvm_seq_item_pull_port         -     @944           
+          m_num_sent         integral                       32    'h0            
+        awsqr                axi_sequencer                  -     @974           
+          rsp_export         uvm_analysis_export            -     @983           
+          seq_item_export    uvm_seq_item_pull_imp          -     @1101          
+          arbitration_queue  array                          0     -              
+          lock_queue         array                          0     -              
+          num_last_reqs      integral                       32    'd1            
+          num_last_rsps      integral                       32    'd1            
+        bdrv                 uvm_driver #(REQ,RSP)          -     @1287          
+          item_read_imp      uvm_analysis_port              -     @1316          
+          rsp_port           uvm_analysis_port              -     @1306          
+          seq_item_port      uvm_seq_item_pull_port         -     @1296          
+          m_num_sent         integral                       32    'h0            
+        bsqr                 axi_sequencer                  -     @1326          
+          rsp_export         uvm_analysis_export            -     @1335          
+          seq_item_export    uvm_seq_item_pull_imp          -     @1453          
+          arbitration_queue  array                          0     -              
+          lock_queue         array                          0     -              
+          num_last_reqs      integral                       32    'd1            
+          num_last_rsps      integral                       32    'd1            
+        rdrv                 uvm_driver #(REQ,RSP)          -     @1639          
+          item_read_imp      uvm_analysis_port              -     @1668          
+          rsp_port           uvm_analysis_port              -     @1658          
+          seq_item_port      uvm_seq_item_pull_port         -     @1648          
+          m_num_sent         integral                       32    'h0            
+        rsqr                 axi_sequencer                  -     @1678          
+          rsp_export         uvm_analysis_export            -     @1687          
+          seq_item_export    uvm_seq_item_pull_imp          -     @1805          
+          arbitration_queue  array                          0     -              
+          lock_queue         array                          0     -              
+          num_last_reqs      integral                       32    'd1            
+          num_last_rsps      integral                       32    'd1            
+        wdrv                 uvm_driver #(REQ,RSP)          -     @1111          
+          item_read_imp      uvm_analysis_port              -     @1140          
+          rsp_port           uvm_analysis_port              -     @1130          
+          seq_item_port      uvm_seq_item_pull_port         -     @1120          
+          m_num_sent         integral                       32    'h0            
+        wsqr                 axi_sequencer                  -     @1150          
+          rsp_export         uvm_analysis_export            -     @1159          
+          seq_item_export    uvm_seq_item_pull_imp          -     @1277          
+          arbitration_queue  array                          0     -              
+          lock_queue         array                          0     -              
+          num_last_reqs      integral                       32    'd1            
+          num_last_rsps      integral                       32    'd1            
+      monitor                uvm_monitor                    -     @610           
+        item_ar2r_port       uvm_analysis_port              -     @679           
+        item_ar_port         uvm_analysis_port              -     @649           
+        item_aw2b_port       uvm_analysis_port              -     @669           
+        item_aw_port         uvm_analysis_port              -     @619           
+        item_b_port          uvm_analysis_port              -     @639           
+        item_r_port          uvm_analysis_port              -     @659           
+        item_w_port          uvm_analysis_port              -     @629           
+        checks_enable        integral                       1     'h1            
+        coverage_enable      integral                       1     'h1            
+      state                  axi_state                      -     @689           
+        ar2r_imp             uvm_analysis_imp_ar2r          -     @758           
+        ar_imp               uvm_analysis_imp_ar            -     @728           
+        aw2b_imp             uvm_analysis_imp_aw2b          -     @748           
+        aw_imp               uvm_analysis_imp_aw            -     @698           
+        b_imp                uvm_analysis_imp_b             -     @718           
+        item_rtr_port        uvm_analysis_port              -     @778           
+        item_wtr_port        uvm_analysis_port              -     @768           
+        r_imp                uvm_analysis_imp_r             -     @738           
+        w_imp                uvm_analysis_imp_w             -     @708           
+        avg_rate             integral                       32    'h0            
+        exp_rate             integral                       32    'h0            
+        win_size             integral                       32    'h0            
+        bqnum_for_slaseq     integral                       32    'h0            
+        rq_from_model_num    integral                       32    'h0            
+      vsqr                   axi_virtual_sequencer          -     @797           
+        rsp_export           uvm_analysis_export            -     @806           
+        seq_item_export      uvm_seq_item_pull_imp          -     @924           
+        arbitration_queue    array                          0     -              
+        lock_queue           array                          0     -              
+        num_last_reqs        integral                       32    'd1            
+        num_last_rsps        integral                       32    'd1            
+      cfg                    axi_cfg                        -     @390           
+        has_checker          integral                       1     'h1            
+        has_coverage         integral                       1     'h1            
+        id_num               integral                       32    'h1            
+        reset_level          reset_level_enum               32    RESET_LEVEL_LOW
+        drv_type             drv_type_enum                  32    MASTER         
+        write_latency_mode   latency_mode_enum              32    CHANNEL_FIRST  
+        read_latency_mode    latency_mode_enum              32    CHANNEL_FIRST  
+        clatency             axi_latency                    -     @391           
+          wr_latency         integral                       32    'h0            
+          rd_latency         integral                       32    'h0            
+    refm                     solve_top_reference_model      -     @425           
+      trans_num_idx          integral                       32    'h0            
+    solve_top_virtual_sqr    solve_top_virtual_sequencer    -     @467           
+      rsp_export             uvm_analysis_export            -     @476           
+      seq_item_export        uvm_seq_item_pull_imp          -     @594           
+      arbitration_queue      array                          0     -              
+      lock_queue             array                          0     -              
+      num_last_reqs          integral                       32    'd1            
+      num_last_rsps          integral                       32    'd1            
+    subsys_mon               solve_top_subsystem_monitor    -     @438           
+      CTRL_rtr_imp           uvm_analysis_imp_axi_rtr_CTRL  -     @457           
+      CTRL_wtr_imp           uvm_analysis_imp_axi_wtr_CTRL  -     @447           
+      scbd                   solve_top_scoreboard           -     @1892          
+        refm                 solve_top_reference_model      -     @425           
+          trans_num_idx      integral                       32    'h0            
+    refm                     solve_top_reference_model      -     @425           
+    solve_top_virtual_sqr    solve_top_virtual_sequencer    -     @467           
+    solve_top_cfg            solve_top_config               -     @389           
+      CTRL_cfg               axi_cfg                        -     @390           
+        has_checker          integral                       1     'h1            
+        has_coverage         integral                       1     'h1            
+        id_num               integral                       32    'h1            
+        reset_level          reset_level_enum               32    RESET_LEVEL_LOW
+        drv_type             drv_type_enum                  32    MASTER         
+        write_latency_mode   latency_mode_enum              32    CHANNEL_FIRST  
+        read_latency_mode    latency_mode_enum              32    CHANNEL_FIRST  
+        clatency             axi_latency                    -     @391           
+          wr_latency         integral                       32    'h0            
+          rd_latency         integral                       32    'h0            
+      check_ena              integral                       32    'h0            
+      cover_ena              integral                       32    'h0            
+---------------------------------------------------------------------------------
+
+UVM_INFO C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 3 [0.00%] @ "125000"
+// RTL Simulation : 1 / 3 [100.00%] @ "9295000"
+// RTL Simulation : 2 / 3 [100.00%] @ "15735000"
+// RTL Simulation : 3 / 3 [100.00%] @ "23935000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 24185 ns : File "C:/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Dec 16 22:54:19 2025...
+
+=== HLS Testbench: solve_top (fixed-point HLS wrapper) ===
+========================
+Test case 1:
+
+A (columns):
+  Column 0: [0.100000, 0.200000, 0.900000, 0.300000]
+  Column 1: [0.100000, 0.800000, 0.100000, 0.100000]
+  Column 2: [0.400000, 0.600000, 0.300000, 0.400000]
+  Column 3: [0.300000, 0.500000, 0.200000, 0.600000]
+
+b (column vector): [0.200000, 0.100000, 0.800000, 0.400000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.802734, -0.378418, 0.296387, 0.126953]
+Reference (double) solution x_ref:
+  [0.803354, -0.379573, 0.295732, 0.131098]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 2:
+
+A (columns):
+  Column 0: [2.000000, 0.100000, 0.000000, 0.000000]
+  Column 1: [0.100000, 3.000000, 0.200000, 0.000000]
+  Column 2: [0.000000, 0.200000, 4.000000, 0.100000]
+  Column 3: [0.000000, 0.000000, 0.100000, 5.000000]
+
+b (column vector): [1.000000, 0.500000, 2.000000, 1.500000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.493652, 0.117676, 0.487305, 0.289551]
+Reference (double) solution x_ref:
+  [0.494113, 0.117739, 0.486856, 0.290263]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 3:
+
+A (columns):
+  Column 0: [0.500000, -0.100000, 0.000000, 0.100000]
+  Column 1: [-0.200000, 0.600000, 0.100000, 0.000000]
+  Column 2: [0.100000, 0.200000, 0.700000, -0.100000]
+  Column 3: [0.000000, 0.100000, -0.200000, 0.800000]
+
+b (column vector): [0.300000, -0.200000, 0.500000, 0.100000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.178711, -0.623535, 0.865234, 0.212891]
+Reference (double) solution x_ref:
+  [0.176301, -0.627168, 0.864162, 0.210983]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+Testbench finished.
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,0 +1,1985 @@
+[
+    {
+        "name": "solve_top",
+        "df_function": "%F1238",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 12,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 75,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 12,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 75,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 solve_top) BB 'codeRepl' [Loop] 'Outline_T3_F1238_R2_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 39,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 49,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 12,
+                                    "column": 0
+                                },
+                                "id": "VId_4047_[?(?,128)]dc[?(?,32)]",
+                                "name": "A_in[*][*]",
+                                "display_name": "float A_in[4][4]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 80,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 44,
+                                        "column": 46
+                                    },
+                                    "access_type": "float",
+                                    "access_bit_width": 32,
+                                    "exec_count": 32
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 24,
+                                    "column": 16
+                                },
+                                "id": "VId_4051_[?(?,128)][?(?,16)]",
+                                "name": "aug_mat[*][*]",
+                                "display_name": "FIXED_TYPE aug_mat[4][8]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 64,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 32
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 64,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 32
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1246_R2",
+                        "description": "<loop 'for.cond'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 39,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 49,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%L72",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 39,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 49,
+                                "column": 5
+                            }
+                        }
+                    },
+                    {
+                        "id": "%L73",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 41,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 48,
+                                "column": 9
+                            }
+                        }
+                    }
+                ]
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 solve_top) BB 'codeRepl1' [Loop] 'Outline_T4_F1238_R82_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 52,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 55,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 2",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 13,
+                                    "column": 0
+                                },
+                                "id": "VId_4048_[?(?,32)]dc",
+                                "name": "b_in[*]",
+                                "display_name": "float b_in[4]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 16,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 54,
+                                        "column": 33
+                                    },
+                                    "access_type": "float",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 27,
+                                    "column": 16
+                                },
+                                "id": "VId_4054_[?(?,16)]",
+                                "name": "b_fix[*]",
+                                "display_name": "FIXED_TYPE b_fix[4]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1247_R2",
+                        "description": "<loop 'for.cond20'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 52,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 55,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%L71",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 52,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 55,
+                                "column": 5
+                            }
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<OutlineCall(R4 solve_top) BB 'codeRepl2' [Atomic] 'Outline_T5_F1238_R133_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 58,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 58,
+                        "column": 23
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 58,
+                                    "column": 11
+                                },
+                                "id": "VId_4060_!c?(?,?)",
+                                "name": "qrd_done",
+                                "display_name": "short qrd_done"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 58,
+                                        "column": 11
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1248_R2",
+                        "description": "<atomic 'for.end30_iso8'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 58,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 58,
+                                "column": 23
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "6": {
+                "id": "6",
+                "name": "Region<OutlineCall(R5 solve_top) BB 'codeRepl3' [Call] 'Outline_T6_F1238_R134_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 59,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 59,
+                        "column": 51
+                    }
+                },
+                "display_name": "decompose_qr()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 24,
+                                    "column": 16
+                                },
+                                "id": "VId_4051_[?(?,128)][?(?,16)]",
+                                "name": "aug_mat[*][*]",
+                                "display_name": "FIXED_TYPE aug_mat[4][8]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 64,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 32
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 25,
+                                    "column": 16
+                                },
+                                "id": "VId_4052_[?(?,64)][?(?,16)]",
+                                "name": "Qt_mat[*][*]",
+                                "display_name": "FIXED_TYPE Qt_mat[4][4]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 32,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 16
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 26,
+                                    "column": 16
+                                },
+                                "id": "VId_4053_[?(?,64)][?(?,16)]",
+                                "name": "R_mat[*][*]",
+                                "display_name": "FIXED_TYPE R_mat[4][4]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 32,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 16
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 58,
+                                    "column": 11
+                                },
+                                "id": "VId_4060_!c?(?,?)",
+                                "name": "qrd_done",
+                                "display_name": "short qrd_done"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 83,
+                                        "column": 11
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_40_!c?(?,?)",
+                                "name": "PI",
+                                "display_name": "const FIXED_TYPE PI"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 33,
+                                        "column": 46
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 34,
+                                        "column": 46
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 104,
+                                        "column": 34
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 28
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 105,
+                                        "column": 34
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 28
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_40_.A0(0,16).A0(0,16).A0(0,16)",
+                                "name": "PI.V.VAL",
+                                "display_name": "ValType ssdm_int_sim<16, true>::ap_private<16, true, true>::VAL"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 78,
+                                        "column": 48
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                    "line": 38,
+                                    "column": 0
+                                },
+                                "id": "VId_42_[?(?,16)].A0(0,16).A0(0,16).A0(0,16)",
+                                "name": "atan_table[*].V.VAL",
+                                "display_name": "ValType ssdm_int_sim<16, true>::ap_private<16, true, true>::VAL"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 26,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 88,
+                                        "column": 23
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 52
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 26,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 113,
+                                        "column": 23
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 364
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                    "line": 32,
+                                    "column": 0
+                                },
+                                "id": "VId_41_.A0(0,16).A0(0,16).A0(0,16)",
+                                "name": "HALF_PI.V.VAL",
+                                "display_name": "ValType ssdm_int_sim<16, true>::ap_private<16, true, true>::VAL"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 33,
+                                        "column": 23
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp",
+                                        "line": 34,
+                                        "column": 30
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 104,
+                                        "column": 15
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 28
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                                        "line": 105,
+                                        "column": 22
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 28
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1249_R2",
+                        "description": "<call 'decompose_qr'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 59,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 59,
+                                "column": 51
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F1239",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 59,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 59,
+                                "column": 51
+                            }
+                        }
+                    }
+                ]
+            },
+            "7": {
+                "id": "7",
+                "name": "Region<OutlineCall(R6 solve_top) BB 'codeRepl4' [Call] 'Outline_T7_F1238_R135_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 62,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 62,
+                        "column": 37
+                    }
+                },
+                "display_name": "mat_vec_mul()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 25,
+                                    "column": 16
+                                },
+                                "id": "VId_4052_[?(?,64)][?(?,16)]",
+                                "name": "Qt_mat[*][*]",
+                                "display_name": "FIXED_TYPE Qt_mat[4][4]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 32,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\matrixmult.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 16
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 27,
+                                    "column": 16
+                                },
+                                "id": "VId_4054_[?(?,16)]",
+                                "name": "b_fix[*]",
+                                "display_name": "FIXED_TYPE b_fix[4]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\matrixmult.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 28,
+                                    "column": 16
+                                },
+                                "id": "VId_4055_[?(?,16)]",
+                                "name": "y_fix[*]",
+                                "display_name": "FIXED_TYPE y_fix[4]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\matrixmult.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1250_R2",
+                        "description": "<call 'mat_vec_mul'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 62,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 62,
+                                "column": 37
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F1240",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 62,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 62,
+                                "column": 37
+                            }
+                        }
+                    }
+                ]
+            },
+            "8": {
+                "id": "8",
+                "name": "Region<OutlineCall(R7 solve_top) BB 'codeRepl5' [Atomic] 'Outline_T8_F1238_R136_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 65,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 65,
+                        "column": 24
+                    }
+                },
+                "display_name": "Process 6",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 65,
+                                    "column": 11
+                                },
+                                "id": "VId_4061_!c?(?,?)",
+                                "name": "back_done",
+                                "display_name": "short back_done"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 65,
+                                        "column": 11
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1251_R2",
+                        "description": "<atomic 'for.end30_iso11'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 65,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 65,
+                                "column": 24
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "9": {
+                "id": "9",
+                "name": "Region<OutlineCall(R8 solve_top) BB 'codeRepl6' [Call] 'Outline_T9_F1238_R137_Call'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 66,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 66,
+                        "column": 50
+                    }
+                },
+                "display_name": "upper_backsub()",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 26,
+                                    "column": 16
+                                },
+                                "id": "VId_4053_[?(?,64)][?(?,16)]",
+                                "name": "R_mat[*][*]",
+                                "display_name": "FIXED_TYPE R_mat[4][4]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 32,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\backsub.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 16
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 28,
+                                    "column": 16
+                                },
+                                "id": "VId_4055_[?(?,16)]",
+                                "name": "y_fix[*]",
+                                "display_name": "FIXED_TYPE y_fix[4]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\backsub.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 29,
+                                    "column": 16
+                                },
+                                "id": "VId_4056_[?(?,16)]",
+                                "name": "x_fix[*]",
+                                "display_name": "FIXED_TYPE x_fix[4]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\backsub.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 65,
+                                    "column": 11
+                                },
+                                "id": "VId_4061_!c?(?,?)",
+                                "name": "back_done",
+                                "display_name": "short back_done"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\backsub.cpp",
+                                        "line": 52,
+                                        "column": 11
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1252_R2",
+                        "description": "<call 'upper_backsub'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 66,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 66,
+                                "column": 50
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F1241",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 66,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 66,
+                                "column": 50
+                            }
+                        }
+                    }
+                ]
+            },
+            "10": {
+                "id": "10",
+                "name": "Region<OutlineCall(R9 solve_top) BB 'codeRepl7' [Loop] 'Outline_T10_F1238_R138_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 69,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 72,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 8",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 29,
+                                    "column": 16
+                                },
+                                "id": "VId_4056_[?(?,16)]",
+                                "name": "x_fix[*]",
+                                "display_name": "FIXED_TYPE x_fix[4]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 71,
+                                        "column": 29
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 71,
+                                        "column": 29
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 71,
+                                        "column": 29
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 8,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 71,
+                                        "column": 29
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 14,
+                                    "column": 0
+                                },
+                                "id": "VId_4049_[?(?,32)]dc",
+                                "name": "x_out[*]",
+                                "display_name": "float x_out[4]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 16,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 71,
+                                        "column": 18
+                                    },
+                                    "access_type": "float",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1253_R2",
+                        "description": "<loop 'for.cond40'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 69,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 72,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%L70",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 69,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 72,
+                                "column": 5
+                            }
+                        }
+                    }
+                ]
+            },
+            "11": {
+                "id": "11",
+                "name": "Region<OutlineCall(R10 solve_top) BB 'codeRepl8' [Atomic] 'Outline_T11_F1238_R156_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 74,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                        "line": 74,
+                        "column": 13
+                    }
+                },
+                "display_name": "Process 9",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                    "line": 15,
+                                    "column": 0
+                                },
+                                "id": "VId_4050_*0(0,16)arg",
+                                "name": "(*done)",
+                                "display_name": "short *done"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                        "line": 74,
+                                        "column": 11
+                                    },
+                                    "access_type": "i16",
+                                    "access_bit_width": 16,
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F1254_R2",
+                        "description": "<atomic 'for.end49_iso16'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 74,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                                "line": 74,
+                                "column": 13
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            }
+        },
+        "channels": {
+            "A_in[*][*]_RAW_1_3_#0": {
+                "name": "A_in[*][*]_RAW_1_3_#0",
+                "variable_id": "VId_4047_[?(?,128)]dc[?(?,32)]",
+                "variable_name": "A_in[*][*]",
+                "declaration": "float A_in[4][4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 12,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "b_in[*]_RAW_1_4_#1": {
+                "name": "b_in[*]_RAW_1_4_#1",
+                "variable_id": "VId_4048_[?(?,32)]dc",
+                "variable_name": "b_in[*]",
+                "declaration": "float b_in[4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 13,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "aug_mat[*][*]_RAW_3_6_#2": {
+                "name": "aug_mat[*][*]_RAW_3_6_#2",
+                "variable_id": "VId_4051_[?(?,128)][?(?,16)]",
+                "variable_name": "aug_mat[*][*]",
+                "declaration": "FIXED_TYPE aug_mat[4][8]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 24,
+                    "column": 16
+                },
+                "source": "3",
+                "sink": "6"
+            },
+            "PI_RAW_1_6_#3": {
+                "name": "PI_RAW_1_6_#3",
+                "variable_id": "VId_40_!c?(?,?)",
+                "variable_name": "PI",
+                "declaration": "const FIXED_TYPE PI",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                    "line": 31,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "6"
+            },
+            "HALF_PI.V.VAL_RAW_1_6_#4": {
+                "name": "HALF_PI.V.VAL_RAW_1_6_#4",
+                "variable_id": "VId_41_.A0(0,16).A0(0,16).A0(0,16)",
+                "variable_name": "HALF_PI.V.VAL",
+                "declaration": "ValType ssdm_int_sim<16, true>::ap_private<16, true, true>::VAL",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                    "line": 32,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "6"
+            },
+            "atan_table[*].V.VAL_RAW_1_6_#5": {
+                "name": "atan_table[*].V.VAL_RAW_1_6_#5",
+                "variable_id": "VId_42_[?(?,16)].A0(0,16).A0(0,16).A0(0,16)",
+                "variable_name": "atan_table[*].V.VAL",
+                "declaration": "ValType ssdm_int_sim<16, true>::ap_private<16, true, true>::VAL",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+                    "line": 38,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "6"
+            },
+            "qrd_done_WAW_5_6_#6": {
+                "name": "qrd_done_WAW_5_6_#6",
+                "variable_id": "VId_4060_!c?(?,?)",
+                "variable_name": "qrd_done",
+                "declaration": "short qrd_done",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 58,
+                    "column": 11
+                },
+                "source": "5",
+                "sink": "6"
+            },
+            "Qt_mat[*][*]_RAW_6_7_#7": {
+                "name": "Qt_mat[*][*]_RAW_6_7_#7",
+                "variable_id": "VId_4052_[?(?,64)][?(?,16)]",
+                "variable_name": "Qt_mat[*][*]",
+                "declaration": "FIXED_TYPE Qt_mat[4][4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 25,
+                    "column": 16
+                },
+                "source": "6",
+                "sink": "7"
+            },
+            "b_fix[*]_RAW_4_7_#8": {
+                "name": "b_fix[*]_RAW_4_7_#8",
+                "variable_id": "VId_4054_[?(?,16)]",
+                "variable_name": "b_fix[*]",
+                "declaration": "FIXED_TYPE b_fix[4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 27,
+                    "column": 16
+                },
+                "source": "4",
+                "sink": "7"
+            },
+            "R_mat[*][*]_RAW_6_9_#9": {
+                "name": "R_mat[*][*]_RAW_6_9_#9",
+                "variable_id": "VId_4053_[?(?,64)][?(?,16)]",
+                "variable_name": "R_mat[*][*]",
+                "declaration": "FIXED_TYPE R_mat[4][4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 26,
+                    "column": 16
+                },
+                "source": "6",
+                "sink": "9"
+            },
+            "y_fix[*]_RAW_7_9_#10": {
+                "name": "y_fix[*]_RAW_7_9_#10",
+                "variable_id": "VId_4055_[?(?,16)]",
+                "variable_name": "y_fix[*]",
+                "declaration": "FIXED_TYPE y_fix[4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 28,
+                    "column": 16
+                },
+                "source": "7",
+                "sink": "9"
+            },
+            "back_done_WAW_8_9_#11": {
+                "name": "back_done_WAW_8_9_#11",
+                "variable_id": "VId_4061_!c?(?,?)",
+                "variable_name": "back_done",
+                "declaration": "short back_done",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 65,
+                    "column": 11
+                },
+                "source": "8",
+                "sink": "9"
+            },
+            "x_fix[*]_RAW_9_10_#12": {
+                "name": "x_fix[*]_RAW_9_10_#12",
+                "variable_id": "VId_4056_[?(?,16)]",
+                "variable_name": "x_fix[*]",
+                "declaration": "FIXED_TYPE x_fix[4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 29,
+                    "column": 16
+                },
+                "source": "9",
+                "sink": "10"
+            },
+            "x_out[*]_RAW_10_2_#13": {
+                "name": "x_out[*]_RAW_10_2_#13",
+                "variable_id": "VId_4049_[?(?,32)]dc",
+                "variable_name": "x_out[*]",
+                "declaration": "float x_out[4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 14,
+                    "column": 0
+                },
+                "source": "10",
+                "sink": "2"
+            },
+            "(*done)_RAW_11_2_#14": {
+                "name": "(*done)_RAW_11_2_#14",
+                "variable_id": "VId_4050_*0(0,16)arg",
+                "variable_name": "(*done)",
+                "declaration": "short *done",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+                    "line": 15,
+                    "column": 0
+                },
+                "source": "11",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "5",
+                "sink": "6"
+            },
+            {
+                "source": "6",
+                "sink": "7"
+            },
+            {
+                "source": "7",
+                "sink": "8"
+            },
+            {
+                "source": "8",
+                "sink": "9"
+            },
+            {
+                "source": "9",
+                "sink": "10"
+            },
+            {
+                "source": "10",
+                "sink": "11"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "11",
+                "sink": "2"
+            }
+        ]
+    }
+]

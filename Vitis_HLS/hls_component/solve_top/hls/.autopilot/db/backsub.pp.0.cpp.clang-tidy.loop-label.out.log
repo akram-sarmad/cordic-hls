@@ -1,0 +1,60 @@
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:2269:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:2269:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:2283:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:2283:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:2297:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:2297:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:4253:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:4253:7: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6267:9: warning: Added loop label VITIS_LOOP_81_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < 13; i++) {
+        ^~~
+        VITIS_LOOP_81_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6267:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6293:9: warning: Added loop label VITIS_LOOP_107_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < 13; i++) {
+        ^~~
+        VITIS_LOOP_107_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6293:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6358:2: warning: Added loop label VITIS_LOOP_20_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4; ++i) {
+ ^~~
+ VITIS_LOOP_20_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6358:2: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6360:9: warning: Added loop label VITIS_LOOP_22_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 4; ++j) {
+        ^~~
+        VITIS_LOOP_22_2: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6360:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6366:5: warning: Added loop label VITIS_LOOP_28_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_28_3: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6366:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6371:5: warning: Added loop label VITIS_LOOP_33_4:   [xilinx-label-all-loops]
+    for (int i = 3; i >= 0; --i) {
+    ^~~
+    VITIS_LOOP_33_4: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6371:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6373:9: warning: Added loop label VITIS_LOOP_35_5:   [xilinx-label-all-loops]
+        for (int j = i + 1; j < 4; ++j) {
+        ^~~
+        VITIS_LOOP_35_5: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6373:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6386:5: warning: Added loop label VITIS_LOOP_48_6:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_48_6: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\backsub.pp.0.cpp:6386:5: note: FIX-IT applied suggested code changes

@@ -1,0 +1,68 @@
+[
+  {
+    "directory": "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=solve_top",
+      "-c",
+      "C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp"
+    ],
+    "file": "C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp"
+  },
+  {
+    "directory": "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=solve_top",
+      "-c",
+      "C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp"
+    ],
+    "file": "C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp"
+  },
+  {
+    "directory": "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=solve_top",
+      "-c",
+      "C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp"
+    ],
+    "file": "C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp"
+  },
+  {
+    "directory": "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=solve_top",
+      "-c",
+      "C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp"
+    ],
+    "file": "C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp"
+  },
+  {
+    "directory": "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-D",
+      "HW_COSIM",
+      "-c",
+      "C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp"
+    ],
+    "file": "C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp"
+  }
+]

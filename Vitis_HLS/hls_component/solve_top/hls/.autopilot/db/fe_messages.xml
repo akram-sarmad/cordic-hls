@@ -1,0 +1,549 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordic_atan" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=matrix_in bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=QT_out bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R_out bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=done bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=local_aug complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decompose_qr" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordic_atan" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=mat bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=vec bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=res bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mat_local complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=vec_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=res_local complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mat_vec_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordic_atan" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=solve_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=A_in bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=b_in bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=x_out bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=done bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=aug_mat complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Qt_mat complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=R_mat complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_fix complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=y_fix complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x_fix complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="solve_top" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="cordic_atan" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=R_in bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=y_in bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=x_out bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=done bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=Rloc complete dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=yloc complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=xloc complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="upper_backsub" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:43:26" msg_body="Loop 'VITIS_LOOP_43_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_43_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:107:27" msg_body="Loop 'VITIS_LOOP_107_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_107_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_69_4' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:69:22) in function 'solve_top' completely with a factor of 4">
+        <args Factor="4" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:69:22" LoopName="VITIS_LOOP_69_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_52_3' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:52:22) in function 'solve_top' completely with a factor of 4">
+        <args Factor="4" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:52:22" LoopName="VITIS_LOOP_52_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_39_1' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:39:19) in function 'solve_top' completely with a factor of 4">
+        <args Factor="4" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:39:19" LoopName="VITIS_LOOP_39_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0" msg_body="Unrolling loop 'VITIS_LOOP_41_2' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:41:19) in function 'solve_top' completely with a factor of 8">
+        <args Factor="8" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:41:19" LoopName="VITIS_LOOP_41_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:9:0" msg_body="Unrolling loop 'VITIS_LOOP_43_6' (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:43:26) in function 'mat_vec_mul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:43:26" LoopName="VITIS_LOOP_43_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:99:0" msg_body="Unrolling loop 'VITIS_LOOP_107_1' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:107:27) in function 'cordic_rotate' completely with a factor of 13">
+        <args Factor="13" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:107:27" LoopName="VITIS_LOOP_107_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:56:0" msg_body="Inlining function 'fabs_fixed(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)' into 'near_zero(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, int)'">
+        <args Callee="fabs_fixed(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;)" Callee-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h Line 51 Column 0" Caller="near_zero(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, int)" Caller-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:7:0" msg_body="Inlining function 'near_zero(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, int)' into 'decompose_qr'">
+        <args Callee="near_zero(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, int)" Callee-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h Line 56 Column 0" Caller="decompose_qr" Caller-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="local_aug"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Applying array_partition to 'mat_local': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="mat_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:16:16" msg_body="Applying array_partition to 'vec_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="vec_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17:16" msg_body="Applying array_partition to 'res_local': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="res_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Applying array_partition to 'Rloc': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="Rloc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12:16" msg_body="Applying array_partition to 'yloc': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="yloc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:13:16" msg_body="Applying array_partition to 'xloc': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="xloc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="aug_mat"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Applying array_partition to 'Qt_mat': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="Qt_mat"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Applying array_partition to 'R_mat': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R_mat"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:27:16" msg_body="Applying array_partition to 'b_fix': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b_fix"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:28:16" msg_body="Applying array_partition to 'y_fix': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="y_fix"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:29:16" msg_body="Applying array_partition to 'x_fix': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="x_fix"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:22:26" msg_body="Loop 'VITIS_LOOP_22_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_22_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:25:26" msg_body="Loop 'VITIS_LOOP_25_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_25_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:78:27" msg_body="Loop 'VITIS_LOOP_78_11' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_78_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:19:26" msg_body="Loop 'VITIS_LOOP_19_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_19_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:4:0" msg_body="Unrolling loop 'VITIS_LOOP_22_2' (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:22:26) in function 'upper_backsub' completely with a factor of 4">
+        <args Factor="4" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:22:26" LoopName="VITIS_LOOP_22_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:9:0" msg_body="Unrolling loop 'VITIS_LOOP_25_2' (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:25:26) in function 'mat_vec_mul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:25:26" LoopName="VITIS_LOOP_25_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_78_11' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:78:27) in function 'decompose_qr' completely with a factor of 4">
+        <args Factor="4" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:78:27" LoopName="VITIS_LOOP_78_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:7:0" msg_body="Unrolling loop 'VITIS_LOOP_19_2' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:19:26) in function 'decompose_qr' completely with a factor of 8">
+        <args Factor="8" LoopLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:19:26" LoopName="VITIS_LOOP_19_2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:44:17" msg_body="Automatically inlining function 'cordic_rotate(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;)' to improve effectiveness of pipeline pragma in function 'decompose_qr'">
+        <args Callee="cordic_rotate(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;)" Callee-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h Line 99 Column 0" Caller="decompose_qr" Caller-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:55:17" msg_body="Automatically inlining function 'cordic_rotate(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;)' to improve effectiveness of pipeline pragma in function 'decompose_qr'">
+        <args Callee="cordic_rotate(ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;, ap_fixed&lt;16, 5, (ap_q_mode)0, (ap_o_mode)0, 0&gt;&amp;)" Callee-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h Line 99 Column 0" Caller="decompose_qr" Caller-DebugLoc="File C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp Line 7 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Automatically partitioning small array 'aug_mat' completely based on array size.">
+        <args Value="aug_mat"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Automatically partitioning small array 'Qt_mat' completely based on array size.">
+        <args Value="Qt_mat"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Automatically partitioning small array 'R_mat' completely based on array size.">
+        <args Value="R_mat"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Automatically partitioning small array 'local_aug' completely based on array size.">
+        <args Value="local_aug"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Automatically partitioning small array 'mat_local' completely based on array size.">
+        <args Value="mat_local"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Automatically partitioning small array 'Rloc' completely based on array size.">
+        <args Value="Rloc"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="array_partition dim=1 type=complete  variable=Rloc_0 1 upper_backsub C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13 Rloc_0">
+        <args PragmaFunction="upper_backsub" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Rloc_0" PragmaType="array_partition" VarName="Rloc_0" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Rloc_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="array_partition dim=1 type=complete  variable=Rloc_1 1 upper_backsub C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13 Rloc_1">
+        <args PragmaFunction="upper_backsub" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Rloc_1" PragmaType="array_partition" VarName="Rloc_1" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Rloc_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="array_partition dim=1 type=complete  variable=Rloc_2 1 upper_backsub C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13 Rloc_2">
+        <args PragmaFunction="upper_backsub" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Rloc_2" PragmaType="array_partition" VarName="Rloc_2" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Rloc_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="array_partition dim=1 type=complete  variable=Rloc_3 1 upper_backsub C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13 Rloc_3">
+        <args PragmaFunction="upper_backsub" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Rloc_3" PragmaType="array_partition" VarName="Rloc_3" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Rloc_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_0 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_0">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_0" PragmaType="array_partition" VarName="local_aug_0" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_1 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_1">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_1" PragmaType="array_partition" VarName="local_aug_1" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_2 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_2">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_2" PragmaType="array_partition" VarName="local_aug_2" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_3 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_3">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_3" PragmaType="array_partition" VarName="local_aug_3" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_4 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_4">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_4" PragmaType="array_partition" VarName="local_aug_4" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_4' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_4" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_5 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_5">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_5" PragmaType="array_partition" VarName="local_aug_5" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_5' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_5" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_6 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_6">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_6" PragmaType="array_partition" VarName="local_aug_6" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_6' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_6" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="array_partition dim=1 type=complete  variable=local_aug_7 1 decompose_qr C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13 local_aug_7">
+        <args PragmaFunction="decompose_qr" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=local_aug_7" PragmaType="array_partition" VarName="local_aug_7" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_7' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="local_aug_7" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="array_partition dim=1 type=complete  variable=mat_local_0 1 mat_vec_mul C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13 mat_local_0">
+        <args PragmaFunction="mat_vec_mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=mat_local_0" PragmaType="array_partition" VarName="mat_local_0" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="mat_local_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="array_partition dim=1 type=complete  variable=mat_local_1 1 mat_vec_mul C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13 mat_local_1">
+        <args PragmaFunction="mat_vec_mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=mat_local_1" PragmaType="array_partition" VarName="mat_local_1" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="mat_local_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="array_partition dim=1 type=complete  variable=mat_local_2 1 mat_vec_mul C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13 mat_local_2">
+        <args PragmaFunction="mat_vec_mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=mat_local_2" PragmaType="array_partition" VarName="mat_local_2" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="mat_local_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="array_partition dim=1 type=complete  variable=mat_local_3 1 mat_vec_mul C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13 mat_local_3">
+        <args PragmaFunction="mat_vec_mul" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=mat_local_3" PragmaType="array_partition" VarName="mat_local_3" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="mat_local_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_0 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_0">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_0" PragmaType="array_partition" VarName="aug_mat_0" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_1 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_1">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_1" PragmaType="array_partition" VarName="aug_mat_1" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_2 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_2">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_2" PragmaType="array_partition" VarName="aug_mat_2" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_3 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_3">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_3" PragmaType="array_partition" VarName="aug_mat_3" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_4 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_4">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_4" PragmaType="array_partition" VarName="aug_mat_4" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_4' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_4" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_5 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_5">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_5" PragmaType="array_partition" VarName="aug_mat_5" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_5' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_5" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_6 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_6">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_6" PragmaType="array_partition" VarName="aug_mat_6" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_6' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_6" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="array_partition dim=1 type=complete  variable=aug_mat_7 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13 aug_mat_7">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=aug_mat_7" PragmaType="array_partition" VarName="aug_mat_7" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_7' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="aug_mat_7" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="array_partition dim=1 type=complete  variable=Qt_mat_0 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16 Qt_mat_0">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Qt_mat_0" PragmaType="array_partition" VarName="Qt_mat_0" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Qt_mat_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="array_partition dim=1 type=complete  variable=Qt_mat_1 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16 Qt_mat_1">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Qt_mat_1" PragmaType="array_partition" VarName="Qt_mat_1" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Qt_mat_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="array_partition dim=1 type=complete  variable=Qt_mat_2 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16 Qt_mat_2">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Qt_mat_2" PragmaType="array_partition" VarName="Qt_mat_2" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Qt_mat_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="array_partition dim=1 type=complete  variable=Qt_mat_3 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16 Qt_mat_3">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Qt_mat_3" PragmaType="array_partition" VarName="Qt_mat_3" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Qt_mat_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="array_partition dim=1 type=complete  variable=R_mat_0 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16 R_mat_0">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_mat_0" PragmaType="array_partition" VarName="R_mat_0" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_0' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_mat_0" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="array_partition dim=1 type=complete  variable=R_mat_1 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16 R_mat_1">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_mat_1" PragmaType="array_partition" VarName="R_mat_1" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_mat_1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="array_partition dim=1 type=complete  variable=R_mat_2 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16 R_mat_2">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_mat_2" PragmaType="array_partition" VarName="R_mat_2" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_mat_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="array_partition dim=1 type=complete  variable=R_mat_3 1 solve_top C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16 R_mat_3">
+        <args PragmaFunction="solve_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_mat_3" PragmaType="array_partition" VarName="R_mat_3" varLoc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_mat_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_5': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_6': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13" msg_body="Applying array_partition to 'local_aug_7': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="local_aug_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Applying array_partition to 'mat_local_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="mat_local_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Applying array_partition to 'mat_local_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="mat_local_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Applying array_partition to 'mat_local_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="mat_local_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13" msg_body="Applying array_partition to 'mat_local_3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="mat_local_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Applying array_partition to 'Rloc_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Rloc_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Applying array_partition to 'Rloc_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Rloc_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Applying array_partition to 'Rloc_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Rloc_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13" msg_body="Applying array_partition to 'Rloc_3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Rloc_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_5': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_6': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13" msg_body="Applying array_partition to 'aug_mat_7': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="aug_mat_7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Applying array_partition to 'Qt_mat_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Qt_mat_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Applying array_partition to 'Qt_mat_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Qt_mat_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Applying array_partition to 'Qt_mat_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Qt_mat_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16" msg_body="Applying array_partition to 'Qt_mat_3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Qt_mat_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Applying array_partition to 'R_mat_0': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="R_mat_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Applying array_partition to 'R_mat_1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="R_mat_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Applying array_partition to 'R_mat_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="R_mat_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16" msg_body="Applying array_partition to 'R_mat_3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="R_mat_3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

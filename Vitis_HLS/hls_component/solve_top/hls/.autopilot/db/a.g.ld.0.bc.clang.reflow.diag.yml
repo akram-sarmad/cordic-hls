@@ -1,0 +1,3311 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_qrd.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 31, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_qrd.pp.0.cpp
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_qrd.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 32, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_qrd.pp.0.cpp
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_qrd.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.2
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_qrd.pp.0.cpp
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_qrd.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.3
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 38, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_qrd.pp.0.cpp
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/.autopilot/db\qrd.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                   Line: 58, Column: 16 }
+Function:        _ZL9near_zero8ap_fixedILi16ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EEi
+Args:            
+  - Callee:          'fabs_fixed(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 51, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 56, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 27, 
+                   Column: 17 }
+Function:        decompose_qr
+Args:            
+  - Callee:          'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 56, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 30, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - Callee:          'cordic_atan(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 65, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 55, 
+                   Column: 17 }
+Function:        decompose_qr
+Args:            
+  - Callee:          'cordic_rotate(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 99, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 66, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          upper_backsub
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                       Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 62, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          mat_vec_mul
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                       Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 59, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 43, Column: 26 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_43_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                   Line: 107, Column: 27 }
+Function:        _ZL13cordic_rotate8ap_fixedILi16ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES2_S2_RS2_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_107_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 16, Column: 0 }
+Function:        solve_top
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_69_4
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:69:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          solve_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 16, Column: 0 }
+Function:        solve_top
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_3
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:52:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          solve_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 16, Column: 0 }
+Function:        solve_top
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_39_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:39:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          solve_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 16, Column: 0 }
+Function:        solve_top
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:41:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          solve_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 16, Column: 0 }
+Function:        solve_top
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:41:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          solve_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 16, Column: 0 }
+Function:        solve_top
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:41:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          solve_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 16, Column: 0 }
+Function:        solve_top
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:41:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          solve_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 9, Column: 0 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_43_6
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:43:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          mat_vec_mul
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                   Line: 99, Column: 0 }
+Function:        _ZL13cordic_rotate8ap_fixedILi16ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EES2_S2_RS2_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_107_1
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:107:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          cordic_rotate
+  - String:          ''' completely with a factor of '
+  - Factor:          '13'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                   Line: 58, Column: 16 }
+Function:        _ZL9near_zero8ap_fixedILi16ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EEi
+Args:            
+  - Callee:          'fabs_fixed(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 51, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 56, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 27, 
+                   Column: 17 }
+Function:        decompose_qr
+Args:            
+  - Callee:          'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 56, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 30, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - Callee:          'cordic_atan(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 65, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 44, 
+                   Column: 17 }
+Function:        decompose_qr
+Args:            
+  - Callee:          'cordic_rotate(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 99, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 59, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 62, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          mat_vec_mul
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                       Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 66, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          upper_backsub
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                       Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_solve_top_ir
+Args:            
+  - Callee:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_solve_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                   Line: 56, Column: 0 }
+Function:        _ZL9near_zero8ap_fixedILi16ELi5EL9ap_q_mode0EL9ap_o_mode0ELi0EEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fabs_fixed(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 51, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 56, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 7, 
+                   Column: 0 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          mat_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 16, Column: 16 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          vec_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 17, Column: 16 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          res_local
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Rloc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 12, Column: 16 }
+Function:        upper_backsub
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          yloc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 13, Column: 16 }
+Function:        upper_backsub
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          xloc
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Qt_mat
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          R_mat
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 27, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b_fix
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 28, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          y_fix
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 29, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          x_fix
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 29, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          if.end
+  - String:          ''' living in '''
+  - LoopName:        VITIS_LOOP_26_4
+  - String:          '''('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:26:26'
+  - String:          ') .'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_20_1
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_28_3
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:28:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_48_6
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:48:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_24_1
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:24:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_29_3
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:29:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:18:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_63_7
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:63:30'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_71_9
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_77_10
+  - String:          '> at '
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:77:23'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 22, Column: 26 }
+Function:        upper_backsub
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_22_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 25, Column: 26 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 78, 
+                   Column: 27 }
+Function:        decompose_qr
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_78_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 19, 
+                   Column: 26 }
+Function:        decompose_qr
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_19_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 4, Column: 0 }
+Function:        upper_backsub
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_22_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:22:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          upper_backsub
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 9, Column: 0 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:25:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          mat_vec_mul
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 7, 
+                   Column: 0 }
+Function:        decompose_qr
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_78_11
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:78:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          decompose_qr
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 7, 
+                   Column: 0 }
+Function:        decompose_qr
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_19_2
+  - String:          ''' ('
+  - LoopLoc:         'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:19:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          decompose_qr
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 44, 
+                   Column: 17 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'cordic_rotate(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 99, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 55, 
+                   Column: 17 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'cordic_rotate(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h', 
+                       Line: 99, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           aug_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Qt_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Qt_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Qt_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Qt_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           R_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           R_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           R_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           R_mat
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           local_aug
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           mat_local
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           mat_local
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           mat_local
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           mat_local
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Rloc
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Rloc
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Rloc
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Rloc
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Rloc_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  upper_backsub
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13'
+  - String:          ' '
+  - VarName:         Rloc_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Rloc_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Rloc_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  upper_backsub
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13'
+  - String:          ' '
+  - VarName:         Rloc_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Rloc_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Rloc_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  upper_backsub
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13'
+  - String:          ' '
+  - VarName:         Rloc_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Rloc_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Rloc_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  upper_backsub
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13'
+  - String:          ' '
+  - VarName:         Rloc_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Rloc_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_4'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_4
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_4
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_5'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_5
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_5
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_6'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_6
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_6
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=local_aug_7'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decompose_qr
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13'
+  - String:          ' '
+  - VarName:         local_aug_7
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            local_aug_7
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=mat_local_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  mat_vec_mul
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13'
+  - String:          ' '
+  - VarName:         mat_local_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            mat_local_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=mat_local_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  mat_vec_mul
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13'
+  - String:          ' '
+  - VarName:         mat_local_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            mat_local_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=mat_local_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  mat_vec_mul
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13'
+  - String:          ' '
+  - VarName:         mat_local_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            mat_local_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=mat_local_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  mat_vec_mul
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13'
+  - String:          ' '
+  - VarName:         mat_local_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            mat_local_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_4'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_4
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_4
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_5'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_5
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_5
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_6'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_6
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_6
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=aug_mat_7'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13'
+  - String:          ' '
+  - VarName:         aug_mat_7
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            aug_mat_7
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Qt_mat_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16'
+  - String:          ' '
+  - VarName:         Qt_mat_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Qt_mat_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Qt_mat_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16'
+  - String:          ' '
+  - VarName:         Qt_mat_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Qt_mat_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Qt_mat_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16'
+  - String:          ' '
+  - VarName:         Qt_mat_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Qt_mat_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=Qt_mat_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16'
+  - String:          ' '
+  - VarName:         Qt_mat_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            Qt_mat_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=R_mat_0'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16'
+  - String:          ' '
+  - VarName:         R_mat_0
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            R_mat_0
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=R_mat_1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16'
+  - String:          ' '
+  - VarName:         R_mat_1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            R_mat_1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=R_mat_2'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16'
+  - String:          ' '
+  - VarName:         R_mat_2
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            R_mat_2
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=R_mat_3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  solve_top
+  - String:          ' '
+  - varLoc:          'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16'
+  - String:          ' '
+  - VarName:         R_mat_3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            R_mat_3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_6
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 14, 
+                   Column: 13 }
+Function:        decompose_qr
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_aug_7
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          mat_local_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          mat_local_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          mat_local_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                   Line: 15, Column: 13 }
+Function:        mat_vec_mul
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          mat_local_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Rloc_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Rloc_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Rloc_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                   Line: 11, Column: 13 }
+Function:        upper_backsub
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Rloc_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_4
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_5
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_6
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 24, Column: 13 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          aug_mat_7
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Qt_mat_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Qt_mat_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Qt_mat_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 25, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          Qt_mat_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          R_mat_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          R_mat_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          R_mat_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 26, Column: 16 }
+Function:        solve_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          R_mat_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', Line: 29, 
+                   Column: 24 }
+Function:        decompose_qr
+Args:            
+  - Callee:          'cordic_atan(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)'
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 59, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          decompose_qr
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp', 
+                       Line: 7, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 62, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          mat_vec_mul
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp', 
+                       Line: 9, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                   Line: 66, Column: 5 }
+Function:        solve_top
+Args:            
+  - Callee:          upper_backsub
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp', 
+                       Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          solve_top
+    DebugLoc:        { File: 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp', 
+                       Line: 16, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

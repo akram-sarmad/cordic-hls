@@ -1,0 +1,400 @@
+
+
+================================================================
+== Vitis HLS Report for 'mat_vec_mul_Pipeline_VITIS_LOOP_40_5'
+================================================================
+* Date:           Tue Dec 16 20:06:17 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        solve_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.657 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       10|       10|  0.100 us|  0.100 us|    5|    5|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_40_5  |        8|        8|         6|          1|          1|     4|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.82>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%i_3 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 9 'alloca' 'i_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%res_local = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 10 'alloca' 'res_local' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%res_local_1 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 11 'alloca' 'res_local_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%res_local_2 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 12 'alloca' 'res_local_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%res_local_3 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 13 'alloca' 'res_local_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%conv7_i_3_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %conv7_i_3"   --->   Operation 14 'read' 'conv7_i_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%mat_local_15_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_15_load_reload"   --->   Operation 15 'read' 'mat_local_15_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mat_local_14_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_14_load_reload"   --->   Operation 16 'read' 'mat_local_14_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mat_local_13_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_13_load_reload"   --->   Operation 17 'read' 'mat_local_13_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mat_local_12_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_12_load_reload"   --->   Operation 18 'read' 'mat_local_12_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%conv7_i_2_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %conv7_i_2"   --->   Operation 19 'read' 'conv7_i_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mat_local_11_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_11_load_reload"   --->   Operation 20 'read' 'mat_local_11_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%mat_local_10_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_10_load_reload"   --->   Operation 21 'read' 'mat_local_10_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%mat_local_9_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_9_load_reload"   --->   Operation 22 'read' 'mat_local_9_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mat_local_8_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_8_load_reload"   --->   Operation 23 'read' 'mat_local_8_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%conv7_i_1_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %conv7_i_1"   --->   Operation 24 'read' 'conv7_i_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%mat_local_7_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_7_load_reload"   --->   Operation 25 'read' 'mat_local_7_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%mat_local_6_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_6_load_reload"   --->   Operation 26 'read' 'mat_local_6_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%mat_local_5_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_5_load_reload"   --->   Operation 27 'read' 'mat_local_5_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%mat_local_4_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_4_load_reload"   --->   Operation 28 'read' 'mat_local_4_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%conv7_i_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %conv7_i"   --->   Operation 29 'read' 'conv7_i_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%mat_local_3_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_3_load_reload"   --->   Operation 30 'read' 'mat_local_3_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%mat_local_2_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_2_load_reload"   --->   Operation 31 'read' 'mat_local_2_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%mat_local_1_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_1_load_reload"   --->   Operation 32 'read' 'mat_local_1_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%mat_local_load_reload_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %mat_local_load_reload"   --->   Operation 33 'read' 'mat_local_load_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%conv7_i_3_cast = sext i16 %conv7_i_3_read"   --->   Operation 34 'sext' 'conv7_i_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%conv7_i_2_cast = sext i16 %conv7_i_2_read"   --->   Operation 35 'sext' 'conv7_i_2_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%conv7_i_1_cast = sext i16 %conv7_i_1_read"   --->   Operation 36 'sext' 'conv7_i_1_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%conv7_i_cast = sext i16 %conv7_i_read"   --->   Operation 37 'sext' 'conv7_i_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 0, i16 %res_local_3" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 38 'store' 'store_ln17' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 39 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 0, i16 %res_local_2" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 39 'store' 'store_ln17' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 40 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 0, i16 %res_local_1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 40 'store' 'store_ln17' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 41 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 0, i16 %res_local" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 41 'store' 'store_ln17' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 42 [1/1] (1.58ns)   --->   "%store_ln40 = store i3 0, i3 %i_3" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 42 'store' 'store_ln40' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body39"   --->   Operation 43 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%i = load i3 %i_3" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 44 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (1.65ns)   --->   "%icmp_ln40 = icmp_eq  i3 %i, i3 4" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 45 'icmp' 'icmp_ln40' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (1.65ns)   --->   "%add_ln40 = add i3 %i, i3 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 46 'add' 'add_ln40' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln40 = br i1 %icmp_ln40, void %for.body39.split, void %for.inc69.preheader.exitStub" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 47 'br' 'br_ln40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%trunc_ln40 = trunc i3 %i" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 48 'trunc' 'trunc_ln40' <Predicate = (!icmp_ln40)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (1.82ns)   --->   "%tmp = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %mat_local_load_reload_read, i2 1, i16 %mat_local_1_load_reload_read, i2 2, i16 %mat_local_2_load_reload_read, i2 3, i16 %mat_local_3_load_reload_read, i16 0, i2 %trunc_ln40" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 49 'sparsemux' 'tmp' <Predicate = (!icmp_ln40)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (1.56ns)   --->   "%switch_ln46 = switch i2 %trunc_ln40, void %arrayidx56.case.3, i2 0, void %arrayidx56.case.0, i2 1, void %arrayidx56.case.1, i2 2, void %for.body39.split.arrayidx56.exit_crit_edge" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:46]   --->   Operation 50 'switch' 'switch_ln46' <Predicate = (!icmp_ln40)> <Delay = 1.56>
+ST_1 : Operation 51 [1/1] (1.58ns)   --->   "%store_ln40 = store i3 %add_ln40, i3 %i_3" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 51 'store' 'store_ln40' <Predicate = (!icmp_ln40)> <Delay = 1.58>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln40 = br void %for.body39" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 52 'br' 'br_ln40' <Predicate = (!icmp_ln40)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.65>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%sext_ln44 = sext i16 %tmp" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 53 'sext' 'sext_ln44' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (5.58ns)   --->   "%mul_ln44 = mul i32 %sext_ln44, i32 %conv7_i_cast" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 54 'mul' 'mul_ln44' <Predicate = true> <Delay = 5.58> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.58> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_209 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %mul_ln44, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 55 'bitselect' 'tmp_209' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%sum = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %mul_ln44, i32 11, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 56 'partselect' 'sum' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_210 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %mul_ln44, i32 10" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 57 'bitselect' 'tmp_210' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%zext_ln44 = zext i1 %tmp_210" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 58 'zext' 'zext_ln44' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (2.07ns)   --->   "%sum_1 = add i16 %sum, i16 %zext_ln44" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 59 'add' 'sum_1' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_212 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %sum_1, i32 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 60 'bitselect' 'tmp_212' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_s = partselect i4 @_ssdm_op_PartSelect.i4.i32.i32.i32, i32 %mul_ln44, i32 28, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 61 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (1.73ns)   --->   "%icmp_ln44 = icmp_eq  i4 %tmp_s, i4 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 62 'icmp' 'icmp_ln44' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_170 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %mul_ln44, i32 27, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 63 'partselect' 'tmp_170' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (1.78ns)   --->   "%icmp_ln44_240 = icmp_eq  i5 %tmp_170, i5 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 64 'icmp' 'icmp_ln44_240' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 65 [1/1] (1.78ns)   --->   "%icmp_ln44_241 = icmp_eq  i5 %tmp_170, i5 0" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 65 'icmp' 'icmp_ln44_241' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 66 [1/1] (1.82ns)   --->   "%tmp_171 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %mat_local_4_load_reload_read, i2 1, i16 %mat_local_5_load_reload_read, i2 2, i16 %mat_local_6_load_reload_read, i2 3, i16 %mat_local_7_load_reload_read, i16 0, i2 %trunc_ln40" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 66 'sparsemux' 'tmp_171' <Predicate = true> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%sext_ln44_32 = sext i16 %tmp_171" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 67 'sext' 'sext_ln44_32' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (5.58ns)   --->   "%mul_ln44_1 = mul i32 %sext_ln44_32, i32 %conv7_i_1_cast" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 68 'mul' 'mul_ln44_1' <Predicate = true> <Delay = 5.58> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.58> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_215 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %mul_ln44_1, i32 10" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 69 'bitselect' 'tmp_215' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 7.57>
+ST_3 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node and_ln44)   --->   "%tmp_211 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %mul_ln44, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 70 'bitselect' 'tmp_211' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node and_ln44)   --->   "%xor_ln44 = xor i1 %tmp_212, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 71 'xor' 'xor_ln44' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 72 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln44 = and i1 %tmp_211, i1 %xor_ln44" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 72 'and' 'and_ln44' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_164)   --->   "%tmp_213 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %mul_ln44, i32 27" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 73 'bitselect' 'tmp_213' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_163)   --->   "%select_ln44 = select i1 %and_ln44, i1 %icmp_ln44_240, i1 %icmp_ln44_241" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 74 'select' 'select_ln44' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 75 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_164)   --->   "%xor_ln44_128 = xor i1 %tmp_213, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 75 'xor' 'xor_ln44_128' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 76 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_164)   --->   "%and_ln44_160 = and i1 %icmp_ln44, i1 %xor_ln44_128" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 76 'and' 'and_ln44_160' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_164)   --->   "%select_ln44_96 = select i1 %and_ln44, i1 %and_ln44_160, i1 %icmp_ln44_240" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 77 'select' 'select_ln44_96' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_64)   --->   "%and_ln44_161 = and i1 %and_ln44, i1 %icmp_ln44_240" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 78 'and' 'and_ln44_161' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_163)   --->   "%xor_ln44_130 = xor i1 %select_ln44, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 79 'xor' 'xor_ln44_130' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 80 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_163)   --->   "%or_ln44 = or i1 %tmp_212, i1 %xor_ln44_130" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 80 'or' 'or_ln44' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_163)   --->   "%xor_ln44_131 = xor i1 %tmp_209, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 81 'xor' 'xor_ln44_131' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 82 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_163 = and i1 %or_ln44, i1 %xor_ln44_131" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 82 'and' 'and_ln44_163' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 83 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_164 = and i1 %tmp_212, i1 %select_ln44_96" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 83 'and' 'and_ln44_164' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_64)   --->   "%or_ln44_71 = or i1 %and_ln44_161, i1 %and_ln44_164" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 84 'or' 'or_ln44_71' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_64)   --->   "%xor_ln44_144 = xor i1 %or_ln44_71, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 85 'xor' 'xor_ln44_144' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 86 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_64)   --->   "%and_ln44_165 = and i1 %tmp_209, i1 %xor_ln44_144" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 86 'and' 'and_ln44_165' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 87 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln44_64 = or i1 %and_ln44_163, i1 %and_ln44_165" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 87 'or' 'or_ln44_64' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 88 [1/1] (0.00ns) (grouped into LUT with out node add_ln44)   --->   "%select_ln44_112 = select i1 %and_ln44_163, i16 32767, i16 32768" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 88 'select' 'select_ln44_112' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node add_ln44)   --->   "%select_ln44_113 = select i1 %or_ln44_64, i16 %select_ln44_112, i16 %sum_1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 89 'select' 'select_ln44_113' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 90 [1/1] (0.00ns) (grouped into LUT with out node add_ln44)   --->   "%shl_ln = bitconcatenate i27 @_ssdm_op_BitConcatenate.i27.i16.i11, i16 %select_ln44_113, i11 0" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 90 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node add_ln44)   --->   "%sext_ln44_33 = sext i27 %shl_ln" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 91 'sext' 'sext_ln44_33' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (2.55ns) (out node of the LUT)   --->   "%add_ln44 = add i32 %sext_ln44_33, i32 %mul_ln44_1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 92 'add' 'add_ln44' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_214 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 93 'bitselect' 'tmp_214' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%sum_2 = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %add_ln44, i32 11, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 94 'partselect' 'sum_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln44_96 = zext i1 %tmp_215" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 95 'zext' 'zext_ln44_96' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (2.07ns)   --->   "%sum_3 = add i16 %sum_2, i16 %zext_ln44_96" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 96 'add' 'sum_3' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 97 [1/1] (0.00ns)   --->   "%tmp_217 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %sum_3, i32 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 97 'bitselect' 'tmp_217' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%tmp_12 = partselect i4 @_ssdm_op_PartSelect.i4.i32.i32.i32, i32 %add_ln44, i32 28, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 98 'partselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (1.73ns)   --->   "%icmp_ln44_242 = icmp_eq  i4 %tmp_12, i4 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 99 'icmp' 'icmp_ln44_242' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%tmp_13 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %add_ln44, i32 27, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 100 'partselect' 'tmp_13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (1.78ns)   --->   "%icmp_ln44_243 = icmp_eq  i5 %tmp_13, i5 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 101 'icmp' 'icmp_ln44_243' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 102 [1/1] (1.78ns)   --->   "%icmp_ln44_244 = icmp_eq  i5 %tmp_13, i5 0" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 102 'icmp' 'icmp_ln44_244' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 103 [1/1] (1.82ns)   --->   "%tmp_172 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %mat_local_8_load_reload_read, i2 1, i16 %mat_local_9_load_reload_read, i2 2, i16 %mat_local_10_load_reload_read, i2 3, i16 %mat_local_11_load_reload_read, i16 0, i2 %trunc_ln40" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 103 'sparsemux' 'tmp_172' <Predicate = true> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%sext_ln44_34 = sext i16 %tmp_172" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 104 'sext' 'sext_ln44_34' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (5.58ns)   --->   "%mul_ln44_2 = mul i32 %sext_ln44_34, i32 %conv7_i_2_cast" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 105 'mul' 'mul_ln44_2' <Predicate = true> <Delay = 5.58> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.58> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_220 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %mul_ln44_2, i32 10" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 106 'bitselect' 'tmp_220' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 7.57>
+ST_4 : Operation 107 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_166)   --->   "%tmp_216 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 107 'bitselect' 'tmp_216' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 108 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_166)   --->   "%xor_ln44_133 = xor i1 %tmp_217, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 108 'xor' 'xor_ln44_133' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 109 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln44_166 = and i1 %tmp_216, i1 %xor_ln44_133" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 109 'and' 'and_ln44_166' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 110 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_171)   --->   "%tmp_218 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44, i32 27" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 110 'bitselect' 'tmp_218' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 111 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_170)   --->   "%select_ln44_99 = select i1 %and_ln44_166, i1 %icmp_ln44_243, i1 %icmp_ln44_244" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 111 'select' 'select_ln44_99' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 112 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_171)   --->   "%xor_ln44_134 = xor i1 %tmp_218, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 112 'xor' 'xor_ln44_134' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 113 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_171)   --->   "%and_ln44_167 = and i1 %icmp_ln44_242, i1 %xor_ln44_134" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 113 'and' 'and_ln44_167' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 114 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_171)   --->   "%select_ln44_100 = select i1 %and_ln44_166, i1 %and_ln44_167, i1 %icmp_ln44_243" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 114 'select' 'select_ln44_100' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 115 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_66)   --->   "%and_ln44_168 = and i1 %and_ln44_166, i1 %icmp_ln44_243" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 115 'and' 'and_ln44_168' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 116 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_170)   --->   "%xor_ln44_136 = xor i1 %select_ln44_99, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 116 'xor' 'xor_ln44_136' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_170)   --->   "%or_ln44_65 = or i1 %tmp_217, i1 %xor_ln44_136" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 117 'or' 'or_ln44_65' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 118 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_170)   --->   "%xor_ln44_137 = xor i1 %tmp_214, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 118 'xor' 'xor_ln44_137' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 119 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_170 = and i1 %or_ln44_65, i1 %xor_ln44_137" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 119 'and' 'and_ln44_170' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 120 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_171 = and i1 %tmp_217, i1 %select_ln44_100" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 120 'and' 'and_ln44_171' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_66)   --->   "%or_ln44_72 = or i1 %and_ln44_168, i1 %and_ln44_171" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 121 'or' 'or_ln44_72' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 122 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_66)   --->   "%xor_ln44_147 = xor i1 %or_ln44_72, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 122 'xor' 'xor_ln44_147' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 123 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_66)   --->   "%and_ln44_172 = and i1 %tmp_214, i1 %xor_ln44_147" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 123 'and' 'and_ln44_172' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 124 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln44_66 = or i1 %and_ln44_170, i1 %and_ln44_172" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 124 'or' 'or_ln44_66' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 125 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_114)   --->   "%select_ln44_114 = select i1 %and_ln44_170, i16 32767, i16 32768" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 125 'select' 'select_ln44_114' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_114)   --->   "%select_ln44_115 = select i1 %or_ln44_66, i16 %select_ln44_114, i16 %sum_3" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 126 'select' 'select_ln44_115' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_114)   --->   "%shl_ln44_s = bitconcatenate i27 @_ssdm_op_BitConcatenate.i27.i16.i11, i16 %select_ln44_115, i11 0" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 127 'bitconcatenate' 'shl_ln44_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_114)   --->   "%sext_ln44_35 = sext i27 %shl_ln44_s" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 128 'sext' 'sext_ln44_35' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 129 [1/1] (2.55ns) (out node of the LUT)   --->   "%add_ln44_114 = add i32 %sext_ln44_35, i32 %mul_ln44_2" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 129 'add' 'add_ln44_114' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "%tmp_219 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44_114, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 130 'bitselect' 'tmp_219' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%sum_4 = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %add_ln44_114, i32 11, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 131 'partselect' 'sum_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%zext_ln44_97 = zext i1 %tmp_220" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 132 'zext' 'zext_ln44_97' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 133 [1/1] (2.07ns)   --->   "%sum_5 = add i16 %sum_4, i16 %zext_ln44_97" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 133 'add' 'sum_5' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%tmp_222 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %sum_5, i32 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 134 'bitselect' 'tmp_222' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "%tmp_14 = partselect i4 @_ssdm_op_PartSelect.i4.i32.i32.i32, i32 %add_ln44_114, i32 28, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 135 'partselect' 'tmp_14' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 136 [1/1] (1.73ns)   --->   "%icmp_ln44_245 = icmp_eq  i4 %tmp_14, i4 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 136 'icmp' 'icmp_ln44_245' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 137 [1/1] (0.00ns)   --->   "%tmp_15 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %add_ln44_114, i32 27, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 137 'partselect' 'tmp_15' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 138 [1/1] (1.78ns)   --->   "%icmp_ln44_246 = icmp_eq  i5 %tmp_15, i5 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 138 'icmp' 'icmp_ln44_246' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 139 [1/1] (1.78ns)   --->   "%icmp_ln44_247 = icmp_eq  i5 %tmp_15, i5 0" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 139 'icmp' 'icmp_ln44_247' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 140 [1/1] (1.82ns)   --->   "%tmp_173 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %mat_local_12_load_reload_read, i2 1, i16 %mat_local_13_load_reload_read, i2 2, i16 %mat_local_14_load_reload_read, i2 3, i16 %mat_local_15_load_reload_read, i16 0, i2 %trunc_ln40" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 140 'sparsemux' 'tmp_173' <Predicate = true> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 141 [1/1] (0.00ns)   --->   "%sext_ln44_36 = sext i16 %tmp_173" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 141 'sext' 'sext_ln44_36' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 142 [1/1] (5.58ns)   --->   "%mul_ln44_3 = mul i32 %sext_ln44_36, i32 %conv7_i_3_cast" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 142 'mul' 'mul_ln44_3' <Predicate = true> <Delay = 5.58> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.58> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_225 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %mul_ln44_3, i32 10" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 143 'bitselect' 'tmp_225' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 7.28>
+ST_5 : Operation 144 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_173)   --->   "%tmp_221 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44_114, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 144 'bitselect' 'tmp_221' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 145 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_173)   --->   "%xor_ln44_139 = xor i1 %tmp_222, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 145 'xor' 'xor_ln44_139' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 146 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln44_173 = and i1 %tmp_221, i1 %xor_ln44_139" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 146 'and' 'and_ln44_173' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 147 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_178)   --->   "%tmp_223 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44_114, i32 27" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 147 'bitselect' 'tmp_223' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 148 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_177)   --->   "%select_ln44_103 = select i1 %and_ln44_173, i1 %icmp_ln44_246, i1 %icmp_ln44_247" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 148 'select' 'select_ln44_103' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 149 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_178)   --->   "%xor_ln44_140 = xor i1 %tmp_223, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 149 'xor' 'xor_ln44_140' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 150 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_178)   --->   "%and_ln44_174 = and i1 %icmp_ln44_245, i1 %xor_ln44_140" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 150 'and' 'and_ln44_174' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 151 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_178)   --->   "%select_ln44_104 = select i1 %and_ln44_173, i1 %and_ln44_174, i1 %icmp_ln44_246" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 151 'select' 'select_ln44_104' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 152 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_68)   --->   "%and_ln44_175 = and i1 %and_ln44_173, i1 %icmp_ln44_246" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 152 'and' 'and_ln44_175' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 153 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_177)   --->   "%xor_ln44_142 = xor i1 %select_ln44_103, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 153 'xor' 'xor_ln44_142' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 154 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_177)   --->   "%or_ln44_67 = or i1 %tmp_222, i1 %xor_ln44_142" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 154 'or' 'or_ln44_67' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_177)   --->   "%xor_ln44_143 = xor i1 %tmp_219, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 155 'xor' 'xor_ln44_143' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 156 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_177 = and i1 %or_ln44_67, i1 %xor_ln44_143" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 156 'and' 'and_ln44_177' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 157 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_178 = and i1 %tmp_222, i1 %select_ln44_104" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 157 'and' 'and_ln44_178' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 158 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_68)   --->   "%or_ln44_73 = or i1 %and_ln44_175, i1 %and_ln44_178" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 158 'or' 'or_ln44_73' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 159 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_68)   --->   "%xor_ln44_150 = xor i1 %or_ln44_73, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 159 'xor' 'xor_ln44_150' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 160 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_68)   --->   "%and_ln44_179 = and i1 %tmp_219, i1 %xor_ln44_150" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 160 'and' 'and_ln44_179' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 161 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln44_68 = or i1 %and_ln44_177, i1 %and_ln44_179" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 161 'or' 'or_ln44_68' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 162 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_116)   --->   "%select_ln44_116 = select i1 %and_ln44_177, i16 32767, i16 32768" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 162 'select' 'select_ln44_116' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 163 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_116)   --->   "%select_ln44_117 = select i1 %or_ln44_68, i16 %select_ln44_116, i16 %sum_5" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 163 'select' 'select_ln44_117' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 164 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_116)   --->   "%shl_ln44_1 = bitconcatenate i27 @_ssdm_op_BitConcatenate.i27.i16.i11, i16 %select_ln44_117, i11 0" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 164 'bitconcatenate' 'shl_ln44_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 165 [1/1] (0.00ns) (grouped into LUT with out node add_ln44_116)   --->   "%sext_ln44_37 = sext i27 %shl_ln44_1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 165 'sext' 'sext_ln44_37' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 166 [1/1] (2.55ns) (out node of the LUT)   --->   "%add_ln44_116 = add i32 %sext_ln44_37, i32 %mul_ln44_3" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 166 'add' 'add_ln44_116' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 167 [1/1] (0.00ns)   --->   "%tmp_224 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44_116, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 167 'bitselect' 'tmp_224' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 168 [1/1] (0.00ns)   --->   "%sum_6 = partselect i16 @_ssdm_op_PartSelect.i16.i32.i32.i32, i32 %add_ln44_116, i32 11, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 168 'partselect' 'sum_6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 169 [1/1] (0.00ns)   --->   "%tmp_16 = partselect i4 @_ssdm_op_PartSelect.i4.i32.i32.i32, i32 %add_ln44_116, i32 28, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 169 'partselect' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 170 [1/1] (1.73ns)   --->   "%icmp_ln44_248 = icmp_eq  i4 %tmp_16, i4 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 170 'icmp' 'icmp_ln44_248' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 171 [1/1] (0.00ns)   --->   "%tmp_17 = partselect i5 @_ssdm_op_PartSelect.i5.i32.i32.i32, i32 %add_ln44_116, i32 27, i32 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 171 'partselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 172 [1/1] (1.78ns)   --->   "%icmp_ln44_249 = icmp_eq  i5 %tmp_17, i5 31" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 172 'icmp' 'icmp_ln44_249' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 173 [1/1] (1.78ns)   --->   "%icmp_ln44_250 = icmp_eq  i5 %tmp_17, i5 0" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 173 'icmp' 'icmp_ln44_250' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 208 [1/1] (0.00ns)   --->   "%res_local_load = load i16 %res_local"   --->   Operation 208 'load' 'res_local_load' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 209 [1/1] (0.00ns)   --->   "%res_local_1_load = load i16 %res_local_1"   --->   Operation 209 'load' 'res_local_1_load' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 210 [1/1] (0.00ns)   --->   "%res_local_2_load = load i16 %res_local_2"   --->   Operation 210 'load' 'res_local_2_load' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 211 [1/1] (0.00ns)   --->   "%res_local_3_load = load i16 %res_local_3"   --->   Operation 211 'load' 'res_local_3_load' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 212 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %res_local_3_out, i16 %res_local_3_load"   --->   Operation 212 'write' 'write_ln0' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 213 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %res_local_2_out, i16 %res_local_2_load"   --->   Operation 213 'write' 'write_ln0' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 214 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %res_local_1_out, i16 %res_local_1_load"   --->   Operation 214 'write' 'write_ln0' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 215 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %res_local_out, i16 %res_local_load"   --->   Operation 215 'write' 'write_ln0' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_5 : Operation 216 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 216 'ret' 'ret_ln0' <Predicate = (icmp_ln40)> <Delay = 1.58>
+
+State 6 <SV = 5> <Delay = 7.41>
+ST_6 : Operation 174 [1/1] (0.00ns)   --->   "%specpipeline_ln41 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_24" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:41]   --->   Operation 174 'specpipeline' 'specpipeline_ln41' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 175 [1/1] (0.00ns)   --->   "%speclooptripcount_ln17 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 175 'speclooptripcount' 'speclooptripcount_ln17' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 176 [1/1] (0.00ns)   --->   "%specloopname_ln40 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40]   --->   Operation 176 'specloopname' 'specloopname_ln40' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 177 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_180)   --->   "%tmp_226 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44_116, i32 26" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 177 'bitselect' 'tmp_226' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 178 [1/1] (0.00ns)   --->   "%zext_ln44_98 = zext i1 %tmp_225" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 178 'zext' 'zext_ln44_98' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 179 [1/1] (2.07ns)   --->   "%sum_7 = add i16 %sum_6, i16 %zext_ln44_98" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 179 'add' 'sum_7' <Predicate = true> <Delay = 2.07> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 180 [1/1] (0.00ns)   --->   "%tmp_227 = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %sum_7, i32 15" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 180 'bitselect' 'tmp_227' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 181 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_180)   --->   "%xor_ln44_145 = xor i1 %tmp_227, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 181 'xor' 'xor_ln44_145' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 182 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln44_180 = and i1 %tmp_226, i1 %xor_ln44_145" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 182 'and' 'and_ln44_180' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 183 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_185)   --->   "%tmp_228 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %add_ln44_116, i32 27" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 183 'bitselect' 'tmp_228' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 184 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_184)   --->   "%select_ln44_107 = select i1 %and_ln44_180, i1 %icmp_ln44_249, i1 %icmp_ln44_250" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 184 'select' 'select_ln44_107' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 185 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_185)   --->   "%xor_ln44_146 = xor i1 %tmp_228, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 185 'xor' 'xor_ln44_146' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 186 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_185)   --->   "%and_ln44_181 = and i1 %icmp_ln44_248, i1 %xor_ln44_146" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 186 'and' 'and_ln44_181' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 187 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_185)   --->   "%select_ln44_108 = select i1 %and_ln44_180, i1 %and_ln44_181, i1 %icmp_ln44_249" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 187 'select' 'select_ln44_108' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 188 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_70)   --->   "%and_ln44_182 = and i1 %and_ln44_180, i1 %icmp_ln44_249" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 188 'and' 'and_ln44_182' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 189 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_184)   --->   "%xor_ln44_148 = xor i1 %select_ln44_107, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 189 'xor' 'xor_ln44_148' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 190 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_184)   --->   "%or_ln44_69 = or i1 %tmp_227, i1 %xor_ln44_148" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 190 'or' 'or_ln44_69' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 191 [1/1] (0.00ns) (grouped into LUT with out node and_ln44_184)   --->   "%xor_ln44_149 = xor i1 %tmp_224, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 191 'xor' 'xor_ln44_149' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 192 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_184 = and i1 %or_ln44_69, i1 %xor_ln44_149" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 192 'and' 'and_ln44_184' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 193 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln44_185 = and i1 %tmp_227, i1 %select_ln44_108" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 193 'and' 'and_ln44_185' <Predicate = true> <Delay = 0.99> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 194 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_70)   --->   "%or_ln44_74 = or i1 %and_ln44_182, i1 %and_ln44_185" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 194 'or' 'or_ln44_74' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 195 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_70)   --->   "%xor_ln44_151 = xor i1 %or_ln44_74, i1 1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 195 'xor' 'xor_ln44_151' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 196 [1/1] (0.00ns) (grouped into LUT with out node or_ln44_70)   --->   "%and_ln44_186 = and i1 %tmp_224, i1 %xor_ln44_151" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 196 'and' 'and_ln44_186' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 197 [1/1] (0.00ns) (grouped into LUT with out node sum_9)   --->   "%select_ln44_109 = select i1 %and_ln44_184, i16 32767, i16 32768" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 197 'select' 'select_ln44_109' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 198 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln44_70 = or i1 %and_ln44_184, i1 %and_ln44_186" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 198 'or' 'or_ln44_70' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 199 [1/1] (0.80ns) (out node of the LUT)   --->   "%sum_9 = select i1 %or_ln44_70, i16 %select_ln44_109, i16 %sum_7" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44]   --->   Operation 199 'select' 'sum_9' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 200 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 %sum_9, i16 %res_local_2" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 200 'store' 'store_ln17' <Predicate = (trunc_ln40 == 2)> <Delay = 1.58>
+ST_6 : Operation 201 [1/1] (0.00ns)   --->   "%br_ln46 = br void %arrayidx56.exit" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:46]   --->   Operation 201 'br' 'br_ln46' <Predicate = (trunc_ln40 == 2)> <Delay = 0.00>
+ST_6 : Operation 202 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 %sum_9, i16 %res_local_1" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 202 'store' 'store_ln17' <Predicate = (trunc_ln40 == 1)> <Delay = 1.58>
+ST_6 : Operation 203 [1/1] (0.00ns)   --->   "%br_ln46 = br void %arrayidx56.exit" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:46]   --->   Operation 203 'br' 'br_ln46' <Predicate = (trunc_ln40 == 1)> <Delay = 0.00>
+ST_6 : Operation 204 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 %sum_9, i16 %res_local" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 204 'store' 'store_ln17' <Predicate = (trunc_ln40 == 0)> <Delay = 1.58>
+ST_6 : Operation 205 [1/1] (0.00ns)   --->   "%br_ln46 = br void %arrayidx56.exit" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:46]   --->   Operation 205 'br' 'br_ln46' <Predicate = (trunc_ln40 == 0)> <Delay = 0.00>
+ST_6 : Operation 206 [1/1] (1.58ns)   --->   "%store_ln17 = store i16 %sum_9, i16 %res_local_3" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17]   --->   Operation 206 'store' 'store_ln17' <Predicate = (trunc_ln40 == 3)> <Delay = 1.58>
+ST_6 : Operation 207 [1/1] (0.00ns)   --->   "%br_ln46 = br void %arrayidx56.exit" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:46]   --->   Operation 207 'br' 'br_ln46' <Predicate = (trunc_ln40 == 3)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 4.826ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln40', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40) of constant 0 on local variable 'i', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40 [58]  (1.588 ns)
+	'load' operation 3 bit ('i', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40) on local variable 'i', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40 [61]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln40', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40) [62]  (1.650 ns)
+	'store' operation 0 bit ('store_ln40', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40) of variable 'add_ln40', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40 on local variable 'i', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:40 [229]  (1.588 ns)
+
+ <State 2>: 7.657ns
+The critical path consists of the following:
+	'mul' operation 32 bit ('mul_ln44', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [72]  (5.580 ns)
+	'add' operation 16 bit ('sum', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [78]  (2.077 ns)
+
+ <State 3>: 7.578ns
+The critical path consists of the following:
+	'and' operation 1 bit ('and_ln44', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [81]  (0.978 ns)
+	'select' operation 1 bit ('select_ln44', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [88]  (0.000 ns)
+	'xor' operation 1 bit ('xor_ln44_130', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [93]  (0.000 ns)
+	'or' operation 1 bit ('or_ln44', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [94]  (0.000 ns)
+	'and' operation 1 bit ('and_ln44_163', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [96]  (0.993 ns)
+	'or' operation 1 bit ('or_ln44_64', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [101]  (0.978 ns)
+	'select' operation 16 bit ('select_ln44_113', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [106]  (0.000 ns)
+	'add' operation 32 bit ('add_ln44', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [109]  (2.552 ns)
+	'add' operation 16 bit ('sum', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [115]  (2.077 ns)
+
+ <State 4>: 7.578ns
+The critical path consists of the following:
+	'and' operation 1 bit ('and_ln44_166', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [118]  (0.978 ns)
+	'select' operation 1 bit ('select_ln44_99', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [125]  (0.000 ns)
+	'xor' operation 1 bit ('xor_ln44_136', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [130]  (0.000 ns)
+	'or' operation 1 bit ('or_ln44_65', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [131]  (0.000 ns)
+	'and' operation 1 bit ('and_ln44_170', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [133]  (0.993 ns)
+	'or' operation 1 bit ('or_ln44_66', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [138]  (0.978 ns)
+	'select' operation 16 bit ('select_ln44_115', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [143]  (0.000 ns)
+	'add' operation 32 bit ('add_ln44_114', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [146]  (2.552 ns)
+	'add' operation 16 bit ('sum', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [152]  (2.077 ns)
+
+ <State 5>: 7.281ns
+The critical path consists of the following:
+	'and' operation 1 bit ('and_ln44_173', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [155]  (0.978 ns)
+	'select' operation 1 bit ('select_ln44_104', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [165]  (0.000 ns)
+	'and' operation 1 bit ('and_ln44_178', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [171]  (0.993 ns)
+	'or' operation 1 bit ('or_ln44_73', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [172]  (0.000 ns)
+	'xor' operation 1 bit ('xor_ln44_150', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [173]  (0.000 ns)
+	'and' operation 1 bit ('and_ln44_179', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [174]  (0.000 ns)
+	'or' operation 1 bit ('or_ln44_68', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [175]  (0.978 ns)
+	'select' operation 16 bit ('select_ln44_117', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [180]  (0.000 ns)
+	'add' operation 32 bit ('add_ln44_116', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [183]  (2.552 ns)
+	'icmp' operation 1 bit ('icmp_ln44_249', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [197]  (1.780 ns)
+
+ <State 6>: 7.419ns
+The critical path consists of the following:
+	'add' operation 16 bit ('sum', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [189]  (2.077 ns)
+	'xor' operation 1 bit ('xor_ln44_145', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [191]  (0.000 ns)
+	'and' operation 1 bit ('and_ln44_180', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [192]  (0.978 ns)
+	'select' operation 1 bit ('select_ln44_108', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [202]  (0.000 ns)
+	'and' operation 1 bit ('and_ln44_185', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [208]  (0.993 ns)
+	'or' operation 1 bit ('or_ln44_74', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [209]  (0.000 ns)
+	'xor' operation 1 bit ('xor_ln44_151', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [210]  (0.000 ns)
+	'and' operation 1 bit ('and_ln44_186', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [211]  (0.000 ns)
+	'or' operation 1 bit ('or_ln44_70', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [213]  (0.978 ns)
+	'select' operation 16 bit ('sum', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44) [214]  (0.805 ns)
+	'store' operation 0 bit ('store_ln17', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17) of variable 'sum', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:44 on local variable 'res_local', C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17 [223]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

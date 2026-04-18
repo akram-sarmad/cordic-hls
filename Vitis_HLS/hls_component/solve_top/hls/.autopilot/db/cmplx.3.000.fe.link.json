@@ -1,0 +1,209 @@
+{
+  "0": {
+    "basicblocks": 31,
+    "calls": "7 11 1",
+    "control_depth": 3,
+    "def_use_depth": 3,
+    "file": "linearsolver.cpp",
+    "fileloc": 12,
+    "instructions": 162,
+    "loads": {
+      "L": 3,
+      "T": 2
+    },
+    "memory_accesses": 14,
+    "name": "solve_top",
+    "stores": {
+      "L": 5,
+      "T": 2
+    },
+    "total_instructions": 48751
+  },
+  "1": {
+    "basicblocks": 40,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "backsub.cpp",
+    "fileloc": 4,
+    "instructions": 199,
+    "loads": {
+      "L": 9
+    },
+    "memory_accesses": 7,
+    "name": "upper_backsub",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 2200
+  },
+  "10": {
+    "basicblocks": 6,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "linearsolver.h",
+    "fileloc": 51,
+    "instructions": 20,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "fabs_fixed",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 238
+  },
+  "11": {
+    "basicblocks": 43,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "matrixmult.cpp",
+    "fileloc": 4,
+    "instructions": 141,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 11,
+    "name": "mat_vec_mul",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 1417
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "linearsolver.h",
+    "fileloc": 38,
+    "instructions": 14,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 9296
+  },
+  "2": {
+    "basicblocks": 15,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 2,
+    "file": "linearsolver.h",
+    "fileloc": 98,
+    "instructions": 296,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 22,
+    "name": "cordic_rotate",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 14840
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "linearsolver.h",
+    "fileloc": 31,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 716
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "linearsolver.h",
+    "fileloc": 33,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 305
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "10",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "linearsolver.h",
+    "fileloc": 56,
+    "instructions": 24,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "near_zero",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1213
+  },
+  "6": {
+    "basicblocks": 23,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "linearsolver.h",
+    "fileloc": 64,
+    "instructions": 290,
+    "loads": {
+      "G": 4,
+      "L": 9
+    },
+    "memory_accesses": 0,
+    "name": "cordic_atan",
+    "stores": {
+      "L": 13
+    },
+    "total_instructions": 10146
+  },
+  "7": {
+    "basicblocks": 79,
+    "calls": "5 6 2 2",
+    "control_depth": 2,
+    "def_use_depth": 3,
+    "file": "qrd.cpp",
+    "fileloc": 4,
+    "instructions": 332,
+    "loads": {
+      "L": 18
+    },
+    "memory_accesses": 13,
+    "name": "decompose_qr",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 42795
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "3 9 4 12",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qrd.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 11038
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "linearsolver.h",
+    "fileloc": 32,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 716
+  }
+}

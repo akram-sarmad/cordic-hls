@@ -1,0 +1,65 @@
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:2269:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:2269:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:2283:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:2283:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:2297:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:2297:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:4253:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:4253:7: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6267:9: warning: Added loop label VITIS_LOOP_81_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < 13; i++) {
+        ^~~
+        VITIS_LOOP_81_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6267:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6293:9: warning: Added loop label VITIS_LOOP_107_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < 13; i++) {
+        ^~~
+        VITIS_LOOP_107_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6293:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6362:2: warning: Added loop label VITIS_LOOP_24_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 4; i++) {
+ ^~~
+ VITIS_LOOP_24_1: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6362:2: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6363:9: warning: Added loop label VITIS_LOOP_25_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < 4; j++) {
+        ^~~
+        VITIS_LOOP_25_2: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6363:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6367:5: warning: Added loop label VITIS_LOOP_29_3:   [xilinx-label-all-loops]
+    for (int k = 0; k < 4; k++) {
+    ^~~
+    VITIS_LOOP_29_3: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6367:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6372:5: warning: Added loop label VITIS_LOOP_34_4:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; i++) {
+    ^~~
+    VITIS_LOOP_34_4: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6372:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6378:5: warning: Added loop label VITIS_LOOP_40_5:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; i++) {
+    ^~~
+    VITIS_LOOP_40_5: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6378:5: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6381:9: warning: Added loop label VITIS_LOOP_43_6:   [xilinx-label-all-loops]
+        for (int k = 0; k < 4; k++) {
+        ^~~
+        VITIS_LOOP_43_6: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6381:9: note: FIX-IT applied suggested code changes
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6388:5: warning: Added loop label VITIS_LOOP_50_7:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; i++) {
+    ^~~
+    VITIS_LOOP_50_7: 
+C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\solve_top\hls\.autopilot\db\matrixmult.pp.0.cpp:6388:5: note: FIX-IT applied suggested code changes

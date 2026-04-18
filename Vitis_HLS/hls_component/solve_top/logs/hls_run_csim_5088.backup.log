@@ -1,0 +1,85 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file_cflags=C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp,-D HW_COSIM' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'syn.top=solve_top' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-1' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(15)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=2ns' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/vitis-comp.json
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Traceback (most recent call last):
+  File "C:\Xilinx\2025.1\Vitis\win64\tools\vcxx\libexec\slxcmd.py", line 38, in <module>
+    sys.exit(slx.main.main())
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\main.py", line 136, in main
+    return args.func(args, logger)
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\code_analyzer.py", line 572, in cmd_code_analyzer
+    common.run(
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\common.py", line 44, in run
+    return asyncio.get_event_loop().run_until_complete(coroutine)
+  File "asyncio\base_events.py", line 649, in run_until_complete
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\code_analyzer.py", line 558, in prep_and_run_code_analyzer
+    await run_code_analyzer(
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\code_analyzer.py", line 448, in run_code_analyzer
+    _exit_code_ignored = await parallelism_selection(
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\parallelism_selection.py", line 83, in parallelism_selection
+    await buildmodel.trace(ex_env)
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\buildmodel.py", line 13, in trace
+    await hlsbuildmodel.run(ex_env, as_host=False)
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\hlsbuildmodel.py", line 1365, in run
+    exitcode = await ex_env.rule_exec.async_exec_rule(
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\rule.py", line 748, in async_exec_rule
+    exit_code, exec_time = await self.async_exec_program(
+  File "C:\Xilinx\2025.1\win64\tools\vcxx\python\slx\rule.py", line 871, in async_exec_program
+    p = await asyncio.create_subprocess_exec(
+  File "asyncio\subprocess.py", line 218, in create_subprocess_exec
+  File "asyncio\base_events.py", line 1681, in subprocess_exec
+  File "asyncio\windows_events.py", line 399, in _make_subprocess_transport
+  File "asyncio\base_subprocess.py", line 36, in __init__
+  File "asyncio\windows_events.py", line 901, in _start
+  File "asyncio\windows_utils.py", line 153, in __init__
+  File "subprocess.py", line 971, in __init__
+  File "subprocess.py", line 1440, in _execute_child
+PermissionError: [WinError 5] Access is denied
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 28.399 seconds; peak allocated memory: 157.570 MB.

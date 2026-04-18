@@ -1,0 +1,559 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file_cflags=C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp,-D HW_COSIM' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'syn.top=solve_top' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-1' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(15)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=2ns' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.566 seconds; current allocated memory: 157.992 MB.
+INFO: [HLS 200-10] Analyzing design file 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 19.734 seconds; current allocated memory: 161.305 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 48,751 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 21,692 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,411 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,106 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,575 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,343 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,032 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,032 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,032 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,081 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,039 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 7,930 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,829 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,591 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,556 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 8,572 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_6' is marked as complete unroll implied by the pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:43:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_107_1' is marked as complete unroll implied by the pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:107:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_69_4' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:69:22) in function 'solve_top' completely with a factor of 4 (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_52_3' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:52:22) in function 'solve_top' completely with a factor of 4 (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_39_1' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:39:19) in function 'solve_top' completely with a factor of 4 (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_41_2' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:41:19) in function 'solve_top' completely with a factor of 8 (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:16:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_6' (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:43:26) in function 'mat_vec_mul' completely with a factor of 4 (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_107_1' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:107:27) in function 'cordic_rotate' completely with a factor of 13 (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:99:0)
+INFO: [HLS 214-178] Inlining function 'fabs_fixed(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>)' into 'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)' (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:56:0)
+INFO: [HLS 214-178] Inlining function 'near_zero(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, int)' into 'decompose_qr' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:7:0)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug': Complete partitioning on dimension 2. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'mat_local': Complete partitioning on dimension 2. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-248] Applying array_partition to 'vec_local': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:16:16)
+INFO: [HLS 214-248] Applying array_partition to 'res_local': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:17:16)
+INFO: [HLS 214-248] Applying array_partition to 'Rloc': Complete partitioning on dimension 2. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-248] Applying array_partition to 'yloc': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12:16)
+INFO: [HLS 214-248] Applying array_partition to 'xloc': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:13:16)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat': Complete partitioning on dimension 2. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'Qt_mat': Complete partitioning on dimension 2. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-248] Applying array_partition to 'R_mat': Complete partitioning on dimension 2. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-248] Applying array_partition to 'b_fix': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:27:16)
+INFO: [HLS 214-248] Applying array_partition to 'y_fix': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:28:16)
+INFO: [HLS 214-248] Applying array_partition to 'x_fix': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:29:16)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_20_1> at C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_28_3> at C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:28:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_48_6> at C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:48:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_24_1> at C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:24:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_29_3> at C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:29:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_18_1> at C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:18:19 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_63_7> at C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:63:30 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_71_9> at C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71:26 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_77_10> at C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:77:23 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_22_2' is marked as complete unroll implied by the pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:22:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_25_2' is marked as complete unroll implied by the pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:25:26)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_78_11' is marked as complete unroll implied by the pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:78:27)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_19_2' is marked as complete unroll implied by the pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:19:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_2' (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:22:26) in function 'upper_backsub' completely with a factor of 4 (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:4:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_25_2' (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:25:26) in function 'mat_vec_mul' completely with a factor of 4 (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_78_11' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:78:27) in function 'decompose_qr' completely with a factor of 4 (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:7:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_19_2' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:19:26) in function 'decompose_qr' completely with a factor of 8 (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:7:0)
+INFO: [HLS 214-364] Automatically inlining function 'cordic_rotate(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)' to improve effectiveness of pipeline pragma in function 'decompose_qr' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:44:17)
+INFO: [HLS 214-364] Automatically inlining function 'cordic_rotate(ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&, ap_fixed<16, 5, (ap_q_mode)0, (ap_o_mode)0, 0>&)' to improve effectiveness of pipeline pragma in function 'decompose_qr' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:55:17)
+INFO: [HLS 214-421] Automatically partitioning small array 'aug_mat' completely based on array size. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-421] Automatically partitioning small array 'Qt_mat' completely based on array size. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-421] Automatically partitioning small array 'R_mat' completely based on array size. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-421] Automatically partitioning small array 'local_aug' completely based on array size. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-421] Automatically partitioning small array 'mat_local' completely based on array size. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-421] Automatically partitioning small array 'Rloc' completely based on array size. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_0' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_1' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_2' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Rloc_3' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_0' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_1' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_2' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_3' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_4' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_5' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_6' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'local_aug_7' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_0' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_1' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_2' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'mat_local_3' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_0' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_1' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_2' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_3' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_4' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_5' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_6' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'aug_mat_7' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_0' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_1' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_2' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'Qt_mat_3' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_0' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_1' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_2' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'R_mat_3' due to pipeline pragma (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_0': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_1': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_2': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_3': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_4': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_5': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_6': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'local_aug_7': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:14:13)
+INFO: [HLS 214-248] Applying array_partition to 'mat_local_0': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-248] Applying array_partition to 'mat_local_1': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-248] Applying array_partition to 'mat_local_2': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-248] Applying array_partition to 'mat_local_3': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:15:13)
+INFO: [HLS 214-248] Applying array_partition to 'Rloc_0': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-248] Applying array_partition to 'Rloc_1': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-248] Applying array_partition to 'Rloc_2': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-248] Applying array_partition to 'Rloc_3': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_0': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_1': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_2': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_3': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_4': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_5': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_6': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'aug_mat_7': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:24:13)
+INFO: [HLS 214-248] Applying array_partition to 'Qt_mat_0': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-248] Applying array_partition to 'Qt_mat_1': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-248] Applying array_partition to 'Qt_mat_2': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-248] Applying array_partition to 'Qt_mat_3': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:25:16)
+INFO: [HLS 214-248] Applying array_partition to 'R_mat_0': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-248] Applying array_partition to 'R_mat_1': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-248] Applying array_partition to 'R_mat_2': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 214-248] Applying array_partition to 'R_mat_3': Complete partitioning on dimension 1. (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:26:16)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 16.539 seconds; current allocated memory: 166.129 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 166.129 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.434 seconds; current allocated memory: 179.371 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:44: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.473 seconds; current allocated memory: 187.102 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:28:31) to (C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:28:22) in function 'upper_backsub'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:12:16) to (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp:75:1) in function 'solve_top'... converting 569 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:35:9) to (C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:34:22) in function 'mat_vec_mul'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:40:9) to (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:45:35) in function 'decompose_qr'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:51:9) to (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:56:35) in function 'decompose_qr'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:26:35) to (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:27:17) in function 'decompose_qr'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:30:25) to (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:39:30) in function 'decompose_qr'... converting 7 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71:35) to (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72:25) in function 'decompose_qr'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:76:15) to (C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h:81:44) in function 'cordic_atan'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.392 seconds; current allocated memory: 215.453 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_70_8'(C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70:22) and 'VITIS_LOOP_71_9'(C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71:26) in function 'decompose_qr' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_70_8' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70:22) in function 'decompose_qr'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.285 seconds; current allocated memory: 371.191 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'solve_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decompose_qr_Pipeline_VITIS_LOOP_18_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_18_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_18_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 376.125 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 377.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cordic_atan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 378.527 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 378.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decompose_qr_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 21, loop 'VITIS_LOOP_39_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.778 seconds; current allocated memory: 414.129 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 414.129 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decompose_qr_Pipeline_VITIS_LOOP_50_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 21, loop 'VITIS_LOOP_50_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.857 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.248 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decompose_qr_Pipeline_VITIS_LOOP_63_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_63_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_63_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.245 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_70_8_VITIS_LOOP_71_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_70_8_VITIS_LOOP_71_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decompose_qr_Pipeline_VITIS_LOOP_77_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_77_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_77_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decompose_qr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.262 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mat_vec_mul_Pipeline_VITIS_LOOP_24_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_24_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_24_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mat_vec_mul_Pipeline_VITIS_LOOP_29_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_29_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mat_vec_mul_Pipeline_VITIS_LOOP_40_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_40_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mat_vec_mul_Pipeline_VITIS_LOOP_50_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_50_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.546 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mat_vec_mul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'upper_backsub_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'upper_backsub_Pipeline_VITIS_LOOP_48_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_48_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_48_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.04 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'upper_backsub' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sub_ln37) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.816 seconds; current allocated memory: 425.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 425.719 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'solve_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.657 seconds; current allocated memory: 444.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.582 seconds; current allocated memory: 460.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decompose_qr_Pipeline_VITIS_LOOP_18_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_12_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decompose_qr_Pipeline_VITIS_LOOP_18_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.57 seconds; current allocated memory: 460.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cordic_atan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cordic_atan'.
+INFO: [RTMG 210-279] Implementing memory 'solve_top_cordic_atan_atan_table_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 460.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decompose_qr_Pipeline_VITIS_LOOP_39_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'decompose_qr_Pipeline_VITIS_LOOP_39_5' pipeline 'VITIS_LOOP_39_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_11_4_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_13_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decompose_qr_Pipeline_VITIS_LOOP_39_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.585 seconds; current allocated memory: 470.953 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decompose_qr_Pipeline_VITIS_LOOP_50_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'decompose_qr_Pipeline_VITIS_LOOP_50_6' pipeline 'VITIS_LOOP_50_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_11_4_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decompose_qr_Pipeline_VITIS_LOOP_50_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.98 seconds; current allocated memory: 507.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decompose_qr_Pipeline_VITIS_LOOP_63_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'decompose_qr_Pipeline_VITIS_LOOP_63_7' pipeline 'VITIS_LOOP_63_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_17_3_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decompose_qr_Pipeline_VITIS_LOOP_63_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.578 seconds; current allocated memory: 533.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9' pipeline 'VITIS_LOOP_70_8_VITIS_LOOP_71_9' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.175 seconds; current allocated memory: 536.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decompose_qr_Pipeline_VITIS_LOOP_77_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decompose_qr_Pipeline_VITIS_LOOP_77_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.191 seconds; current allocated memory: 539.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decompose_qr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_11_4_16_1_1' is changed to 'sparsemux_11_4_16_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_11_4_16_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 19 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decompose_qr'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 541.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mat_vec_mul_Pipeline_VITIS_LOOP_24_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mat_vec_mul_Pipeline_VITIS_LOOP_24_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.474 seconds; current allocated memory: 550.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mat_vec_mul_Pipeline_VITIS_LOOP_29_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mat_vec_mul_Pipeline_VITIS_LOOP_29_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 553.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mat_vec_mul_Pipeline_VITIS_LOOP_40_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'mat_vec_mul_Pipeline_VITIS_LOOP_40_5' pipeline 'VITIS_LOOP_40_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mat_vec_mul_Pipeline_VITIS_LOOP_40_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.202 seconds; current allocated memory: 555.051 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mat_vec_mul_Pipeline_VITIS_LOOP_50_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mat_vec_mul_Pipeline_VITIS_LOOP_50_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 559.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mat_vec_mul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mat_vec_mul'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 561.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'upper_backsub_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 5 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'upper_backsub_Pipeline_VITIS_LOOP_20_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 564.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'upper_backsub_Pipeline_VITIS_LOOP_48_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'upper_backsub_Pipeline_VITIS_LOOP_48_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 566.340 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'upper_backsub' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_16_1_1' is changed to 'sparsemux_7_2_16_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'mac_mulsub_16s_16s_27s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_28s_16s_28_32_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 6 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'upper_backsub'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 567.188 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'solve_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'solve_top/A_in' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'solve_top/b_in' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'solve_top/x_out' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'solve_top/done' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'solve_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'b_in', 'x_out', 'done', 'A_in' and 'return' to AXI-Lite port CTRL.
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_16_1_1' is changed to 'sparsemux_7_2_16_1_1_x0' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_54ns_6ns_1_1_1': 40 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_16_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x0': 40 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 60 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'solve_top'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.409 seconds; current allocated memory: 582.152 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 4.557 seconds; current allocated memory: 643.129 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.213 seconds; current allocated memory: 695.789 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for solve_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for solve_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 125.49 MHz
+INFO: [HLS 200-112] Total CPU user time: 18 seconds. Total CPU system time: 6 seconds. Total elapsed time: 71.363 seconds; peak allocated memory: 695.789 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 15s

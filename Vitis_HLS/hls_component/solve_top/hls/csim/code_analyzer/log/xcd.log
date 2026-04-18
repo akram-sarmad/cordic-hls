@@ -1,0 +1,2 @@
+XILINX_VITIS=C:/Xilinx/2025.1/Vitis
+cmdline: 'C:\Xilinx\2025.1\Vitis\bin\xcd.bat' -p 63320 -t 4876a663-db01-11f0-858d-7486e229e102

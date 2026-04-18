@@ -1,0 +1,3 @@
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable A_in which has the interface type axilite
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable b_in which has the interface type axilite
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable x_out which has the interface type axilite

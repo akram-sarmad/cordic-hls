@@ -1,0 +1,203 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'decompose_qr_Pipeline_VITIS_LOOP_18_1'" level="0">
+<item name = "Date">Tue Dec 16 20:06:23 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">solve_top</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.826 ns, 2.00 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_18_1">4, 4, 1, 1, 1, 4, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 24, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 160, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 27, -</column>
+<column name="Register">-, -, 5, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_9_2_12_1_1_U5">sparsemux_9_2_12_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_12_1_1_U6">sparsemux_9_2_12_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_12_1_1_U7">sparsemux_9_2_12_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_12_1_1_U8">sparsemux_9_2_12_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_16_1_1_U1">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_16_1_1_U2">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_16_1_1_U3">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_16_1_1_U4">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln18_fu_482_p2">+, 0, 0, 11, 3, 1</column>
+<column name="icmp_ln18_fu_476_p2">icmp, 0, 0, 13, 3, 4</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_r_2">9, 2, 3, 6</column>
+<column name="r_fu_144">9, 2, 3, 6</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="r_fu_144">3, 0, 3, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_18_1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_18_1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_18_1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_18_1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_18_1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_18_1, return value</column>
+<column name="local_aug">out, 16, ap_vld, local_aug, pointer</column>
+<column name="local_aug_ap_vld">out, 1, ap_vld, local_aug, pointer</column>
+<column name="local_aug_4">out, 16, ap_vld, local_aug_4, pointer</column>
+<column name="local_aug_4_ap_vld">out, 1, ap_vld, local_aug_4, pointer</column>
+<column name="local_aug_8">out, 16, ap_vld, local_aug_8, pointer</column>
+<column name="local_aug_8_ap_vld">out, 1, ap_vld, local_aug_8, pointer</column>
+<column name="local_aug_12">out, 16, ap_vld, local_aug_12, pointer</column>
+<column name="local_aug_12_ap_vld">out, 1, ap_vld, local_aug_12, pointer</column>
+<column name="local_aug_16">out, 16, ap_vld, local_aug_16, pointer</column>
+<column name="local_aug_16_ap_vld">out, 1, ap_vld, local_aug_16, pointer</column>
+<column name="local_aug_20">out, 16, ap_vld, local_aug_20, pointer</column>
+<column name="local_aug_20_ap_vld">out, 1, ap_vld, local_aug_20, pointer</column>
+<column name="local_aug_24">out, 16, ap_vld, local_aug_24, pointer</column>
+<column name="local_aug_24_ap_vld">out, 1, ap_vld, local_aug_24, pointer</column>
+<column name="local_aug_28">out, 16, ap_vld, local_aug_28, pointer</column>
+<column name="local_aug_28_ap_vld">out, 1, ap_vld, local_aug_28, pointer</column>
+<column name="local_aug_31">out, 16, ap_vld, local_aug_31, pointer</column>
+<column name="local_aug_31_ap_vld">out, 1, ap_vld, local_aug_31, pointer</column>
+<column name="local_aug_30">out, 16, ap_vld, local_aug_30, pointer</column>
+<column name="local_aug_30_ap_vld">out, 1, ap_vld, local_aug_30, pointer</column>
+<column name="local_aug_29">out, 16, ap_vld, local_aug_29, pointer</column>
+<column name="local_aug_29_ap_vld">out, 1, ap_vld, local_aug_29, pointer</column>
+<column name="local_aug_27">out, 16, ap_vld, local_aug_27, pointer</column>
+<column name="local_aug_27_ap_vld">out, 1, ap_vld, local_aug_27, pointer</column>
+<column name="local_aug_26">out, 16, ap_vld, local_aug_26, pointer</column>
+<column name="local_aug_26_ap_vld">out, 1, ap_vld, local_aug_26, pointer</column>
+<column name="local_aug_25">out, 16, ap_vld, local_aug_25, pointer</column>
+<column name="local_aug_25_ap_vld">out, 1, ap_vld, local_aug_25, pointer</column>
+<column name="local_aug_23">out, 16, ap_vld, local_aug_23, pointer</column>
+<column name="local_aug_23_ap_vld">out, 1, ap_vld, local_aug_23, pointer</column>
+<column name="local_aug_22">out, 16, ap_vld, local_aug_22, pointer</column>
+<column name="local_aug_22_ap_vld">out, 1, ap_vld, local_aug_22, pointer</column>
+<column name="local_aug_21">out, 16, ap_vld, local_aug_21, pointer</column>
+<column name="local_aug_21_ap_vld">out, 1, ap_vld, local_aug_21, pointer</column>
+<column name="local_aug_19">out, 16, ap_vld, local_aug_19, pointer</column>
+<column name="local_aug_19_ap_vld">out, 1, ap_vld, local_aug_19, pointer</column>
+<column name="local_aug_18">out, 16, ap_vld, local_aug_18, pointer</column>
+<column name="local_aug_18_ap_vld">out, 1, ap_vld, local_aug_18, pointer</column>
+<column name="local_aug_17">out, 16, ap_vld, local_aug_17, pointer</column>
+<column name="local_aug_17_ap_vld">out, 1, ap_vld, local_aug_17, pointer</column>
+<column name="local_aug_15">out, 16, ap_vld, local_aug_15, pointer</column>
+<column name="local_aug_15_ap_vld">out, 1, ap_vld, local_aug_15, pointer</column>
+<column name="local_aug_14">out, 16, ap_vld, local_aug_14, pointer</column>
+<column name="local_aug_14_ap_vld">out, 1, ap_vld, local_aug_14, pointer</column>
+<column name="local_aug_13">out, 16, ap_vld, local_aug_13, pointer</column>
+<column name="local_aug_13_ap_vld">out, 1, ap_vld, local_aug_13, pointer</column>
+<column name="local_aug_11">out, 16, ap_vld, local_aug_11, pointer</column>
+<column name="local_aug_11_ap_vld">out, 1, ap_vld, local_aug_11, pointer</column>
+<column name="local_aug_10">out, 16, ap_vld, local_aug_10, pointer</column>
+<column name="local_aug_10_ap_vld">out, 1, ap_vld, local_aug_10, pointer</column>
+<column name="local_aug_9">out, 16, ap_vld, local_aug_9, pointer</column>
+<column name="local_aug_9_ap_vld">out, 1, ap_vld, local_aug_9, pointer</column>
+<column name="local_aug_7">out, 16, ap_vld, local_aug_7, pointer</column>
+<column name="local_aug_7_ap_vld">out, 1, ap_vld, local_aug_7, pointer</column>
+<column name="local_aug_6">out, 16, ap_vld, local_aug_6, pointer</column>
+<column name="local_aug_6_ap_vld">out, 1, ap_vld, local_aug_6, pointer</column>
+<column name="local_aug_5">out, 16, ap_vld, local_aug_5, pointer</column>
+<column name="local_aug_5_ap_vld">out, 1, ap_vld, local_aug_5, pointer</column>
+<column name="local_aug_3">out, 16, ap_vld, local_aug_3, pointer</column>
+<column name="local_aug_3_ap_vld">out, 1, ap_vld, local_aug_3, pointer</column>
+<column name="local_aug_2">out, 16, ap_vld, local_aug_2, pointer</column>
+<column name="local_aug_2_ap_vld">out, 1, ap_vld, local_aug_2, pointer</column>
+<column name="local_aug_1">out, 16, ap_vld, local_aug_1, pointer</column>
+<column name="local_aug_1_ap_vld">out, 1, ap_vld, local_aug_1, pointer</column>
+<column name="p_read">in, 16, ap_none, p_read, scalar</column>
+<column name="p_read1">in, 16, ap_none, p_read1, scalar</column>
+<column name="p_read2">in, 16, ap_none, p_read2, scalar</column>
+<column name="p_read3">in, 16, ap_none, p_read3, scalar</column>
+<column name="p_read4">in, 16, ap_none, p_read4, scalar</column>
+<column name="p_read5">in, 16, ap_none, p_read5, scalar</column>
+<column name="p_read6">in, 16, ap_none, p_read6, scalar</column>
+<column name="p_read7">in, 16, ap_none, p_read7, scalar</column>
+<column name="p_read8">in, 16, ap_none, p_read8, scalar</column>
+<column name="p_read9">in, 16, ap_none, p_read9, scalar</column>
+<column name="p_read10">in, 16, ap_none, p_read10, scalar</column>
+<column name="p_read11">in, 16, ap_none, p_read11, scalar</column>
+<column name="p_read12">in, 16, ap_none, p_read12, scalar</column>
+<column name="p_read13">in, 16, ap_none, p_read13, scalar</column>
+<column name="p_read14">in, 16, ap_none, p_read14, scalar</column>
+<column name="p_read15">in, 16, ap_none, p_read15, scalar</column>
+</table>
+</item>
+</section>
+</profile>

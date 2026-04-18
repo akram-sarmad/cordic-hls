@@ -1,0 +1,219 @@
+
+
+================================================================
+== Vitis HLS Report for 'decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9'
+================================================================
+* Date:           Tue Dec 16 20:06:15 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        solve_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.871 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_70_8_VITIS_LOOP_71_9  |       16|       16|         2|          1|          1|    16|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.87>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%c = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 5 'alloca' 'c' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%r_1 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 6 'alloca' 'r_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 7 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%local_aug_15_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_15_load"   --->   Operation 8 'read' 'local_aug_15_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%local_aug_14_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_14_load"   --->   Operation 9 'read' 'local_aug_14_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%local_aug_13_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_13_load"   --->   Operation 10 'read' 'local_aug_13_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%local_aug_12_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_12_load"   --->   Operation 11 'read' 'local_aug_12_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%local_aug_11_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_11_load"   --->   Operation 12 'read' 'local_aug_11_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%local_aug_10_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_10_load"   --->   Operation 13 'read' 'local_aug_10_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%local_aug_9_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_9_load"   --->   Operation 14 'read' 'local_aug_9_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%local_aug_8_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_8_load"   --->   Operation 15 'read' 'local_aug_8_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%local_aug_7_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_7_load"   --->   Operation 16 'read' 'local_aug_7_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%local_aug_6_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_6_load"   --->   Operation 17 'read' 'local_aug_6_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%local_aug_5_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_5_load"   --->   Operation 18 'read' 'local_aug_5_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%local_aug_4_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_4_load"   --->   Operation 19 'read' 'local_aug_4_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%local_aug_3_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_3_load"   --->   Operation 20 'read' 'local_aug_3_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%local_aug_2_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_2_load"   --->   Operation 21 'read' 'local_aug_2_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%local_aug_1_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_1_load"   --->   Operation 22 'read' 'local_aug_1_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%local_aug_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %local_aug_load"   --->   Operation 23 'read' 'local_aug_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.58ns)   --->   "%store_ln0 = store i5 0, i5 %indvar_flatten"   --->   Operation 24 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln70 = store i3 0, i3 %r_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 25 'store' 'store_ln70' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 26 [1/1] (1.58ns)   --->   "%store_ln71 = store i3 0, i3 %c" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 26 'store' 'store_ln71' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body142"   --->   Operation 27 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i5 %indvar_flatten" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 28 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.78ns)   --->   "%icmp_ln70 = icmp_eq  i5 %indvar_flatten_load, i5 16" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 29 'icmp' 'icmp_ln70' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (1.78ns)   --->   "%add_ln70_1 = add i5 %indvar_flatten_load, i5 1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 30 'add' 'add_ln70_1' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln70 = br i1 %icmp_ln70, void %for.inc156, void %VITIS_LOOP_77_10.exitStub" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 31 'br' 'br_ln70' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%c_load = load i3 %c" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 32 'load' 'c_load' <Predicate = (!icmp_ln70)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%r_1_load = load i3 %r_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 33 'load' 'r_1_load' <Predicate = (!icmp_ln70)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (1.65ns)   --->   "%add_ln70 = add i3 %r_1_load, i3 1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 34 'add' 'add_ln70' <Predicate = (!icmp_ln70)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (1.65ns)   --->   "%icmp_ln71 = icmp_eq  i3 %c_load, i3 4" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 35 'icmp' 'icmp_ln71' <Predicate = (!icmp_ln70)> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.98ns)   --->   "%select_ln70 = select i1 %icmp_ln71, i3 0, i3 %c_load" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 36 'select' 'select_ln70' <Predicate = (!icmp_ln70)> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.98ns)   --->   "%select_ln70_1 = select i1 %icmp_ln71, i3 %add_ln70, i3 %r_1_load" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 37 'select' 'select_ln70_1' <Predicate = (!icmp_ln70)> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%trunc_ln70 = trunc i3 %select_ln70_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 38 'trunc' 'trunc_ln70' <Predicate = (!icmp_ln70)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%trunc_ln71 = trunc i3 %select_ln70" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 39 'trunc' 'trunc_ln71' <Predicate = (!icmp_ln70)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (1.65ns)   --->   "%icmp_ln72 = icmp_ult  i3 %select_ln70, i3 %select_ln70_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 40 'icmp' 'icmp_ln72' <Predicate = (!icmp_ln70)> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (1.82ns)   --->   "%tmp_s = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %local_aug_load_read, i2 1, i16 %local_aug_1_load_read, i2 2, i16 %local_aug_2_load_read, i2 3, i16 %local_aug_3_load_read, i16 0, i2 %trunc_ln70" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 41 'sparsemux' 'tmp_s' <Predicate = (!icmp_ln70)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (1.82ns)   --->   "%tmp_177 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %local_aug_4_load_read, i2 1, i16 %local_aug_5_load_read, i2 2, i16 %local_aug_6_load_read, i2 3, i16 %local_aug_7_load_read, i16 0, i2 %trunc_ln70" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 42 'sparsemux' 'tmp_177' <Predicate = (!icmp_ln70)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (1.82ns)   --->   "%tmp_178 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %local_aug_8_load_read, i2 1, i16 %local_aug_9_load_read, i2 2, i16 %local_aug_10_load_read, i2 3, i16 %local_aug_11_load_read, i16 0, i2 %trunc_ln70" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 43 'sparsemux' 'tmp_178' <Predicate = (!icmp_ln70)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (1.82ns)   --->   "%tmp_179 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %local_aug_12_load_read, i2 1, i16 %local_aug_13_load_read, i2 2, i16 %local_aug_14_load_read, i2 3, i16 %local_aug_15_load_read, i16 0, i2 %trunc_ln70" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 44 'sparsemux' 'tmp_179' <Predicate = (!icmp_ln70)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (1.82ns)   --->   "%tmp_180 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %tmp_s, i2 1, i16 %tmp_177, i2 2, i16 %tmp_178, i2 3, i16 %tmp_179, i16 0, i2 %trunc_ln71" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 45 'sparsemux' 'tmp_180' <Predicate = (!icmp_ln70)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (1.56ns)   --->   "%switch_ln72 = switch i2 %trunc_ln71, void %arrayidx15232.case.3, i2 0, void %arrayidx15232.case.0, i2 1, void %arrayidx15232.case.1, i2 2, void %arrayidx15232.case.2" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 46 'switch' 'switch_ln72' <Predicate = (!icmp_ln70)> <Delay = 1.56>
+ST_1 : Operation 47 [1/1] (1.56ns)   --->   "%switch_ln72 = switch i2 %trunc_ln70, void %arrayidx15232_2.case.3, i2 0, void %arrayidx15232_2.case.0, i2 1, void %arrayidx15232_2.case.1, i2 2, void %arrayidx15232_2.case.2" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 47 'switch' 'switch_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 2)> <Delay = 1.56>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 48 'br' 'br_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 2)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (1.56ns)   --->   "%switch_ln72 = switch i2 %trunc_ln70, void %arrayidx15232_1.case.3, i2 0, void %arrayidx15232_1.case.0, i2 1, void %arrayidx15232_1.case.1, i2 2, void %arrayidx15232_1.case.2" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 49 'switch' 'switch_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 1)> <Delay = 1.56>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 50 'br' 'br_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 1)> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (1.56ns)   --->   "%switch_ln72 = switch i2 %trunc_ln70, void %arrayidx15232_0.case.3, i2 0, void %arrayidx15232_0.case.0, i2 1, void %arrayidx15232_0.case.1, i2 2, void %arrayidx15232_0.case.2" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 51 'switch' 'switch_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 0)> <Delay = 1.56>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 52 'br' 'br_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 0)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (1.56ns)   --->   "%switch_ln72 = switch i2 %trunc_ln70, void %arrayidx15232_3.case.3, i2 0, void %arrayidx15232_3.case.0, i2 1, void %arrayidx15232_3.case.1, i2 2, void %arrayidx15232_3.case.2" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 53 'switch' 'switch_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 3)> <Delay = 1.56>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 54 'br' 'br_ln72' <Predicate = (!icmp_ln70 & trunc_ln71 == 3)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (1.65ns)   --->   "%add_ln71 = add i3 %select_ln70, i3 1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 55 'add' 'add_ln71' <Predicate = (!icmp_ln70)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 56 [1/1] (1.58ns)   --->   "%store_ln70 = store i5 %add_ln70_1, i5 %indvar_flatten" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 56 'store' 'store_ln70' <Predicate = (!icmp_ln70)> <Delay = 1.58>
+ST_1 : Operation 57 [1/1] (1.58ns)   --->   "%store_ln70 = store i3 %select_ln70_1, i3 %r_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70]   --->   Operation 57 'store' 'store_ln70' <Predicate = (!icmp_ln70)> <Delay = 1.58>
+ST_1 : Operation 58 [1/1] (1.58ns)   --->   "%store_ln71 = store i3 %add_ln71, i3 %c" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 58 'store' 'store_ln71' <Predicate = (!icmp_ln70)> <Delay = 1.58>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln71 = br void %for.body142" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 59 'br' 'br_ln71' <Predicate = (!icmp_ln70)> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 96 'ret' 'ret_ln0' <Predicate = (icmp_ln70)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 0.80>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_70_8_VITIS_LOOP_71_9_str"   --->   Operation 60 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 61 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%specpipeline_ln71 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_24" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:71]   --->   Operation 62 'specpipeline' 'specpipeline_ln71' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.80ns)   --->   "%ref_tmp143_1 = select i1 %icmp_ln72, i16 0, i16 %tmp_180" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 63 'select' 'ref_tmp143_1' <Predicate = true> <Delay = 0.80> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_2_2, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 64 'write' 'write_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_2.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 65 'br' 'br_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_2_1, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 66 'write' 'write_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_2.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 67 'br' 'br_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_2_0, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 68 'write' 'write_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_2.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 69 'br' 'br_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_2_3, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 70 'write' 'write_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 3)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_2.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 71 'br' 'br_ln72' <Predicate = (trunc_ln71 == 2 & trunc_ln70 == 3)> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_1_2, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 72 'write' 'write_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_1.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 73 'br' 'br_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_1_1, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 74 'write' 'write_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_1.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 75 'br' 'br_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_1_0, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 76 'write' 'write_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_1.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 77 'br' 'br_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_1_3, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 78 'write' 'write_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 3)> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_1.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 79 'br' 'br_ln72' <Predicate = (trunc_ln71 == 1 & trunc_ln70 == 3)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_0_2, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 80 'write' 'write_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_0.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 81 'br' 'br_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_0_1, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 82 'write' 'write_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_0.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 83 'br' 'br_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_0_0, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 84 'write' 'write_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_0.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 85 'br' 'br_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_0_3, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 86 'write' 'write_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 3)> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_0.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 87 'br' 'br_ln72' <Predicate = (trunc_ln71 == 0 & trunc_ln70 == 3)> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_3_2, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 88 'write' 'write_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 89 'br' 'br_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 2)> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_3_1, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 90 'write' 'write_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 91 'br' 'br_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 1)> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_3_0, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 92 'write' 'write_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 93 'br' 'br_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 0)> <Delay = 0.00>
+ST_2 : Operation 94 [1/1] (0.00ns)   --->   "%write_ln72 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %R_out_3_3, i16 %ref_tmp143_1" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 94 'write' 'write_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 3)> <Delay = 0.00>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%br_ln72 = br void %arrayidx15232_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72]   --->   Operation 95 'br' 'br_ln72' <Predicate = (trunc_ln71 == 3 & trunc_ln70 == 3)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 7.871ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln70', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70) of constant 0 on local variable 'r', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70 [53]  (1.588 ns)
+	'load' operation 3 bit ('r_1_load', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70) on local variable 'r', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70 [63]  (0.000 ns)
+	'add' operation 3 bit ('add_ln70', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70) [64]  (1.650 ns)
+	'select' operation 3 bit ('select_ln70_1', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:70) [69]  (0.980 ns)
+	'sparsemux' operation 16 bit ('tmp_179', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72) [77]  (1.827 ns)
+	'sparsemux' operation 16 bit ('tmp_180', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72) [78]  (1.827 ns)
+
+ <State 2>: 0.805ns
+The critical path consists of the following:
+	'select' operation 16 bit ('ref_tmp143_1', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72) [79]  (0.805 ns)
+	wire write operation ('write_ln72', C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72) on port 'R_out_1_0' (C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp:72) [106]  (0.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

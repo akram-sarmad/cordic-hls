@@ -1,0 +1,240 @@
+
+
+================================================================
+== Vitis HLS Report for 'upper_backsub_Pipeline_VITIS_LOOP_20_1'
+================================================================
+* Date:           Tue Dec 16 20:06:19 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        solve_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.826 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        6|        6|  60.000 ns|  60.000 ns|    5|    5|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_20_1  |        4|        4|         1|          1|          1|     4|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.82>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 4 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%yloc = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 5 'alloca' 'yloc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%yloc_1 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 6 'alloca' 'yloc_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%yloc_2 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 7 'alloca' 'yloc_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%yloc_3 = alloca i32 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 8 'alloca' 'yloc_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read15"   --->   Operation 9 'read' 'p_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%p_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read14"   --->   Operation 10 'read' 'p_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_read_3 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read13"   --->   Operation 11 'read' 'p_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_read_4 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read12"   --->   Operation 12 'read' 'p_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_read_5 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read11"   --->   Operation 13 'read' 'p_read_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_read_6 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read10"   --->   Operation 14 'read' 'p_read_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_read_7 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read9"   --->   Operation 15 'read' 'p_read_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_read_8 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read8"   --->   Operation 16 'read' 'p_read_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_read_9 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read7"   --->   Operation 17 'read' 'p_read_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_read_10 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read6"   --->   Operation 18 'read' 'p_read_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_read_11 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read5"   --->   Operation 19 'read' 'p_read_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_read_12 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read4"   --->   Operation 20 'read' 'p_read_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_read_13 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read3"   --->   Operation 21 'read' 'p_read_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_read_14 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read2"   --->   Operation 22 'read' 'p_read_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_read_15 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read1"   --->   Operation 23 'read' 'p_read_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_read16 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read"   --->   Operation 24 'read' 'p_read16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%y_in_3_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %y_in_3_val"   --->   Operation 25 'read' 'y_in_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%y_in_2_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %y_in_2_val"   --->   Operation 26 'read' 'y_in_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%y_in_1_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %y_in_1_val"   --->   Operation 27 'read' 'y_in_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%y_in_0_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %y_in_0_val"   --->   Operation 28 'read' 'y_in_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%Rloc_15 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 29 'alloca' 'Rloc_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%Rloc_14 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 30 'alloca' 'Rloc_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%Rloc_13 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 31 'alloca' 'Rloc_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%Rloc_12 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 32 'alloca' 'Rloc_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%Rloc_11 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 33 'alloca' 'Rloc_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%Rloc_10 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 34 'alloca' 'Rloc_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%Rloc_9 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 35 'alloca' 'Rloc_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%Rloc_8 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 36 'alloca' 'Rloc_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%Rloc_7 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 37 'alloca' 'Rloc_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%Rloc_6 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 38 'alloca' 'Rloc_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%Rloc_5 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 39 'alloca' 'Rloc_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%Rloc_4 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 40 'alloca' 'Rloc_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%Rloc_3 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 41 'alloca' 'Rloc_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%Rloc_2 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 42 'alloca' 'Rloc_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%Rloc_1 = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 43 'alloca' 'Rloc_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%Rloc = alloca i64 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:11]   --->   Operation 44 'alloca' 'Rloc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (1.58ns)   --->   "%store_ln20 = store i3 0, i3 %i" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 45 'store' 'store_ln20' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln20 = br void %VITIS_LOOP_22_2" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 46 'br' 'br_ln20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%i_2 = load i3 %i" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 47 'load' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (1.65ns)   --->   "%icmp_ln20 = icmp_eq  i3 %i_2, i3 4" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 48 'icmp' 'icmp_ln20' <Predicate = true> <Delay = 1.65> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 49 [1/1] (1.65ns)   --->   "%add_ln20 = add i3 %i_2, i3 1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 49 'add' 'add_ln20' <Predicate = true> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln20 = br i1 %icmp_ln20, void %VITIS_LOOP_22_2.split, void %VITIS_LOOP_33_4" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 50 'br' 'br_ln20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln20 = trunc i3 %i_2" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 51 'trunc' 'trunc_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%specpipeline_ln12 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_24" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 52 'specpipeline' 'specpipeline_ln12' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%speclooptripcount_ln12 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 4, i64 4, i64 4" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 53 'speclooptripcount' 'speclooptripcount_ln12' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 54 'specloopname' 'specloopname_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (1.82ns)   --->   "%yloc_4 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %y_in_0_val_read, i2 1, i16 %y_in_1_val_read, i2 2, i16 %y_in_2_val_read, i2 3, i16 %y_in_3_val_read, i16 0, i2 %trunc_ln20" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:21]   --->   Operation 55 'sparsemux' 'yloc_4' <Predicate = (!icmp_ln20)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 56 [1/1] (1.82ns)   --->   "%Rloc_19 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %p_read16, i2 1, i16 %p_read_15, i2 2, i16 %p_read_14, i2 3, i16 %p_read_13, i16 0, i2 %trunc_ln20" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 56 'sparsemux' 'Rloc_19' <Predicate = (!icmp_ln20)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 57 [1/1] (1.82ns)   --->   "%Rloc_16 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %p_read_12, i2 1, i16 %p_read_11, i2 2, i16 %p_read_10, i2 3, i16 %p_read_9, i16 0, i2 %trunc_ln20" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 57 'sparsemux' 'Rloc_16' <Predicate = (!icmp_ln20)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 58 [1/1] (1.82ns)   --->   "%Rloc_17 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %p_read_8, i2 1, i16 %p_read_7, i2 2, i16 %p_read_6, i2 3, i16 %p_read_5, i16 0, i2 %trunc_ln20" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 58 'sparsemux' 'Rloc_17' <Predicate = (!icmp_ln20)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 59 [1/1] (1.82ns)   --->   "%Rloc_18 = sparsemux i16 @_ssdm_op_SparseMux.ap_auto.4i16.i16.i2, i2 0, i16 %p_read_4, i2 1, i16 %p_read_3, i2 2, i16 %p_read_2, i2 3, i16 %p_read_1, i16 0, i2 %trunc_ln20" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 59 'sparsemux' 'Rloc_18' <Predicate = (!icmp_ln20)> <Delay = 1.82> <CoreInst = "BinarySparseMux_DontCare">   --->   Core 137 'BinarySparseMux_DontCare' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 60 [1/1] (1.56ns)   --->   "%switch_ln21 = switch i2 %trunc_ln20, void %arrayidx144_3.case.3, i2 0, void %arrayidx144_3.case.0, i2 1, void %arrayidx144_3.case.1, i2 2, void %arrayidx144_3.case.2" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:21]   --->   Operation 60 'switch' 'switch_ln21' <Predicate = (!icmp_ln20)> <Delay = 1.56>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_19, i16 %Rloc_2" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 61 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 2)> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_16, i16 %Rloc_6" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 62 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 2)> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_17, i16 %Rloc_10" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 63 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 2)> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_18, i16 %Rloc_14" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 64 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 2)> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%store_ln12 = store i16 %yloc_4, i16 %yloc_2" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 65 'store' 'store_ln12' <Predicate = (!icmp_ln20 & trunc_ln20 == 2)> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln23 = br void %arrayidx144_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 66 'br' 'br_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 2)> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_19, i16 %Rloc_1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 67 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 1)> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_16, i16 %Rloc_5" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 68 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 1)> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_17, i16 %Rloc_9" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 69 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 1)> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_18, i16 %Rloc_13" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 70 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 1)> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%store_ln12 = store i16 %yloc_4, i16 %yloc_1" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 71 'store' 'store_ln12' <Predicate = (!icmp_ln20 & trunc_ln20 == 1)> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln23 = br void %arrayidx144_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 72 'br' 'br_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 1)> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_19, i16 %Rloc" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 73 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 0)> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_16, i16 %Rloc_4" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 74 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 0)> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_17, i16 %Rloc_8" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 75 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 0)> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_18, i16 %Rloc_12" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 76 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 0)> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%store_ln12 = store i16 %yloc_4, i16 %yloc" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 77 'store' 'store_ln12' <Predicate = (!icmp_ln20 & trunc_ln20 == 0)> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%br_ln23 = br void %arrayidx144_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 78 'br' 'br_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 0)> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_19, i16 %Rloc_3" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 79 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 3)> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_16, i16 %Rloc_7" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 80 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 3)> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_17, i16 %Rloc_11" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 81 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 3)> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%store_ln23 = store i16 %Rloc_18, i16 %Rloc_15" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 82 'store' 'store_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 3)> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%store_ln12 = store i16 %yloc_4, i16 %yloc_3" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:12]   --->   Operation 83 'store' 'store_ln12' <Predicate = (!icmp_ln20 & trunc_ln20 == 3)> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%br_ln23 = br void %arrayidx144_3.exit" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:23]   --->   Operation 84 'br' 'br_ln23' <Predicate = (!icmp_ln20 & trunc_ln20 == 3)> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (1.58ns)   --->   "%store_ln20 = store i3 %add_ln20, i3 %i" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 85 'store' 'store_ln20' <Predicate = (!icmp_ln20)> <Delay = 1.58>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%br_ln20 = br void %VITIS_LOOP_22_2" [C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20]   --->   Operation 86 'br' 'br_ln20' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%yloc_load = load i16 %yloc"   --->   Operation 87 'load' 'yloc_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%yloc_1_load = load i16 %yloc_1"   --->   Operation 88 'load' 'yloc_1_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%yloc_2_load = load i16 %yloc_2"   --->   Operation 89 'load' 'yloc_2_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%yloc_3_load = load i16 %yloc_3"   --->   Operation 90 'load' 'yloc_3_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%Rloc_load = load i16 %Rloc"   --->   Operation 91 'load' 'Rloc_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%Rloc_1_load = load i16 %Rloc_1"   --->   Operation 92 'load' 'Rloc_1_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%Rloc_2_load = load i16 %Rloc_2"   --->   Operation 93 'load' 'Rloc_2_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%Rloc_3_load = load i16 %Rloc_3"   --->   Operation 94 'load' 'Rloc_3_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%Rloc_4_load = load i16 %Rloc_4"   --->   Operation 95 'load' 'Rloc_4_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%Rloc_5_load = load i16 %Rloc_5"   --->   Operation 96 'load' 'Rloc_5_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%Rloc_6_load = load i16 %Rloc_6"   --->   Operation 97 'load' 'Rloc_6_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%Rloc_7_load = load i16 %Rloc_7"   --->   Operation 98 'load' 'Rloc_7_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%Rloc_8_load = load i16 %Rloc_8"   --->   Operation 99 'load' 'Rloc_8_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%Rloc_9_load = load i16 %Rloc_9"   --->   Operation 100 'load' 'Rloc_9_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%Rloc_10_load = load i16 %Rloc_10"   --->   Operation 101 'load' 'Rloc_10_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%Rloc_11_load = load i16 %Rloc_11"   --->   Operation 102 'load' 'Rloc_11_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%Rloc_12_load = load i16 %Rloc_12"   --->   Operation 103 'load' 'Rloc_12_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%Rloc_13_load = load i16 %Rloc_13"   --->   Operation 104 'load' 'Rloc_13_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%Rloc_14_load = load i16 %Rloc_14"   --->   Operation 105 'load' 'Rloc_14_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%Rloc_15_load = load i16 %Rloc_15"   --->   Operation 106 'load' 'Rloc_15_load' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %yloc_3_out, i16 %yloc_3_load"   --->   Operation 107 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %yloc_2_out, i16 %yloc_2_load"   --->   Operation 108 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %yloc_1_out, i16 %yloc_1_load"   --->   Operation 109 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %yloc_out, i16 %yloc_load"   --->   Operation 110 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_load_out, i16 %Rloc_load"   --->   Operation 111 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_1_load_out, i16 %Rloc_1_load"   --->   Operation 112 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_2_load_out, i16 %Rloc_2_load"   --->   Operation 113 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_3_load_out, i16 %Rloc_3_load"   --->   Operation 114 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_4_load_out, i16 %Rloc_4_load"   --->   Operation 115 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_5_load_out, i16 %Rloc_5_load"   --->   Operation 116 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_6_load_out, i16 %Rloc_6_load"   --->   Operation 117 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_7_load_out, i16 %Rloc_7_load"   --->   Operation 118 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_8_load_out, i16 %Rloc_8_load"   --->   Operation 119 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_9_load_out, i16 %Rloc_9_load"   --->   Operation 120 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_10_load_out, i16 %Rloc_10_load"   --->   Operation 121 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_11_load_out, i16 %Rloc_11_load"   --->   Operation 122 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_12_load_out, i16 %Rloc_12_load"   --->   Operation 123 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_13_load_out, i16 %Rloc_13_load"   --->   Operation 124 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_14_load_out, i16 %Rloc_14_load"   --->   Operation 125 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i16P0A, i16 %Rloc_15_load_out, i16 %Rloc_15_load"   --->   Operation 126 'write' 'write_ln0' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 127 'ret' 'ret_ln0' <Predicate = (icmp_ln20)> <Delay = 1.58>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 4.826ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln20', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20) of constant 0 on local variable 'i', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20 [82]  (1.588 ns)
+	'load' operation 3 bit ('i', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20) on local variable 'i', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20 [85]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln20', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20) [86]  (1.650 ns)
+	'store' operation 0 bit ('store_ln20', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20) of variable 'add_ln20', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20 on local variable 'i', C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp:20 [129]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

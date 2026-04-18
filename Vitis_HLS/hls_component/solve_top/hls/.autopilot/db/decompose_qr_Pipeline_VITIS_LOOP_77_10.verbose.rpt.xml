@@ -1,0 +1,167 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'decompose_qr_Pipeline_VITIS_LOOP_77_10'" level="0">
+<item name = "Date">Tue Dec 16 20:06:27 2025
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">solve_top</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 4.826 ns, 2.00 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6, 6, 60.000 ns, 60.000 ns, 5, 5, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_77_10">4, 4, 1, 1, 1, 4, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 24, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 80, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 27, -</column>
+<column name="Register">-, -, 5, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="sparsemux_9_2_16_1_1_U214">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_16_1_1_U215">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_16_1_1_U216">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_9_2_16_1_1_U217">sparsemux_9_2_16_1_1, 0, 0, 0, 20, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln77_fu_330_p2">+, 0, 0, 11, 3, 1</column>
+<column name="icmp_ln77_fu_324_p2">icmp, 0, 0, 13, 3, 4</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_r_1">9, 2, 3, 6</column>
+<column name="r_fu_104">9, 2, 3, 6</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="r_fu_104">3, 0, 3, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_77_10, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_77_10, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_77_10, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_77_10, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_77_10, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, decompose_qr_Pipeline_VITIS_LOOP_77_10, return value</column>
+<column name="QT_out_0_0">out, 16, ap_vld, QT_out_0_0, pointer</column>
+<column name="QT_out_0_0_ap_vld">out, 1, ap_vld, QT_out_0_0, pointer</column>
+<column name="QT_out_1_0">out, 16, ap_vld, QT_out_1_0, pointer</column>
+<column name="QT_out_1_0_ap_vld">out, 1, ap_vld, QT_out_1_0, pointer</column>
+<column name="QT_out_2_0">out, 16, ap_vld, QT_out_2_0, pointer</column>
+<column name="QT_out_2_0_ap_vld">out, 1, ap_vld, QT_out_2_0, pointer</column>
+<column name="QT_out_3_0">out, 16, ap_vld, QT_out_3_0, pointer</column>
+<column name="QT_out_3_0_ap_vld">out, 1, ap_vld, QT_out_3_0, pointer</column>
+<column name="QT_out_3_3">out, 16, ap_vld, QT_out_3_3, pointer</column>
+<column name="QT_out_3_3_ap_vld">out, 1, ap_vld, QT_out_3_3, pointer</column>
+<column name="QT_out_3_2">out, 16, ap_vld, QT_out_3_2, pointer</column>
+<column name="QT_out_3_2_ap_vld">out, 1, ap_vld, QT_out_3_2, pointer</column>
+<column name="QT_out_3_1">out, 16, ap_vld, QT_out_3_1, pointer</column>
+<column name="QT_out_3_1_ap_vld">out, 1, ap_vld, QT_out_3_1, pointer</column>
+<column name="QT_out_2_3">out, 16, ap_vld, QT_out_2_3, pointer</column>
+<column name="QT_out_2_3_ap_vld">out, 1, ap_vld, QT_out_2_3, pointer</column>
+<column name="QT_out_2_2">out, 16, ap_vld, QT_out_2_2, pointer</column>
+<column name="QT_out_2_2_ap_vld">out, 1, ap_vld, QT_out_2_2, pointer</column>
+<column name="QT_out_2_1">out, 16, ap_vld, QT_out_2_1, pointer</column>
+<column name="QT_out_2_1_ap_vld">out, 1, ap_vld, QT_out_2_1, pointer</column>
+<column name="QT_out_1_3">out, 16, ap_vld, QT_out_1_3, pointer</column>
+<column name="QT_out_1_3_ap_vld">out, 1, ap_vld, QT_out_1_3, pointer</column>
+<column name="QT_out_1_2">out, 16, ap_vld, QT_out_1_2, pointer</column>
+<column name="QT_out_1_2_ap_vld">out, 1, ap_vld, QT_out_1_2, pointer</column>
+<column name="QT_out_1_1">out, 16, ap_vld, QT_out_1_1, pointer</column>
+<column name="QT_out_1_1_ap_vld">out, 1, ap_vld, QT_out_1_1, pointer</column>
+<column name="QT_out_0_3">out, 16, ap_vld, QT_out_0_3, pointer</column>
+<column name="QT_out_0_3_ap_vld">out, 1, ap_vld, QT_out_0_3, pointer</column>
+<column name="QT_out_0_2">out, 16, ap_vld, QT_out_0_2, pointer</column>
+<column name="QT_out_0_2_ap_vld">out, 1, ap_vld, QT_out_0_2, pointer</column>
+<column name="QT_out_0_1">out, 16, ap_vld, QT_out_0_1, pointer</column>
+<column name="QT_out_0_1_ap_vld">out, 1, ap_vld, QT_out_0_1, pointer</column>
+<column name="local_aug_16_load">in, 16, ap_none, local_aug_16_load, scalar</column>
+<column name="local_aug_17_load">in, 16, ap_none, local_aug_17_load, scalar</column>
+<column name="local_aug_18_load">in, 16, ap_none, local_aug_18_load, scalar</column>
+<column name="local_aug_19_load">in, 16, ap_none, local_aug_19_load, scalar</column>
+<column name="local_aug_20_load">in, 16, ap_none, local_aug_20_load, scalar</column>
+<column name="local_aug_21_load">in, 16, ap_none, local_aug_21_load, scalar</column>
+<column name="local_aug_22_load">in, 16, ap_none, local_aug_22_load, scalar</column>
+<column name="local_aug_23_load">in, 16, ap_none, local_aug_23_load, scalar</column>
+<column name="local_aug_24_load">in, 16, ap_none, local_aug_24_load, scalar</column>
+<column name="local_aug_25_load">in, 16, ap_none, local_aug_25_load, scalar</column>
+<column name="local_aug_26_load">in, 16, ap_none, local_aug_26_load, scalar</column>
+<column name="local_aug_27_load">in, 16, ap_none, local_aug_27_load, scalar</column>
+<column name="local_aug_28_load">in, 16, ap_none, local_aug_28_load, scalar</column>
+<column name="local_aug_29_load">in, 16, ap_none, local_aug_29_load, scalar</column>
+<column name="local_aug_30_load">in, 16, ap_none, local_aug_30_load, scalar</column>
+<column name="local_aug_31_load">in, 16, ap_none, local_aug_31_load, scalar</column>
+</table>
+</item>
+</section>
+</profile>

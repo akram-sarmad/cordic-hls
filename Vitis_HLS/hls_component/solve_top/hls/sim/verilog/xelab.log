@@ -1,0 +1,211 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_solve_top_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj solve_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./solve_top_subsystem -s solve_top 
+Multi-threading is on. Using 14 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_solve_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_bitselect_1ns_54ns_6ns_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_bitselect_1ns_54ns_6ns_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_cordic_atan.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_cordic_atan
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_cordic_atan_atan_table_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_cordic_atan_atan_table_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_ctlz_16_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_ctlz_16_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_CTRL_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_CTRL_s_axi
+INFO: [VRFC 10-311] analyzing module solve_top_CTRL_s_axi_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module solve_top_mac_mulsub_16s_16s_27s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_mul_16s_16s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_mul_16s_16s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sdiv_28s_16s_28_32_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module solve_top_sdiv_28s_16s_28_32_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_11_4_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_11_4_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_11_4_16_1_1_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_11_4_16_1_1_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_13_3_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_13_3_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_17_3_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_17_3_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_16_1_1_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_16_1_1_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_16_1_1_x0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_16_1_1_x0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_7_2_1_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_7_2_1_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_9_2_12_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_9_2_12_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_9_2_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_9_2_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_sparsemux_9_3_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_sparsemux_9_3_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_upper_backsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_upper_backsub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/axivip/axi_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/axivip/axi_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/solve_top_subsystem/solve_top_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/sim/verilog/ip/xil_defaultlib/solve_top_fpext_32ns_64_2_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'solve_top_fpext_32ns_64_2_no_dsp_1_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_viv_comp
+Compiling package xbip_utils_v3_0_14.xbip_utils_v3_0_14_pkg
+Compiling package axi_utils_v2_0_10.axi_utils_v2_0_10_pkg
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_exp_table...
+Compiling package mult_gen_v12_0_23.mult_gen_v12_0_23_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_20.floating_point_v7_1_20_pkg
+Compiling package floating_point_v7_1_20.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv_comp
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.axi_pkg
+Compiling package xil_defaultlib.solve_top_subsystem_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.solve_top_sparsemux_9_2_16_1_1(d...
+Compiling module xil_defaultlib.solve_top_sparsemux_9_2_12_1_1(d...
+Compiling module xil_defaultlib.solve_top_flow_control_loop_pipe...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_sparsemux_17_3_16_1_1(...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_cordic_atan_atan_table...
+Compiling module xil_defaultlib.solve_top_cordic_atan
+Compiling module xil_defaultlib.solve_top_sparsemux_13_3_16_1_1(...
+Compiling module xil_defaultlib.solve_top_sparsemux_11_4_16_1_1(...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_sparsemux_9_3_16_1_1(d...
+Compiling module xil_defaultlib.solve_top_decompose_qr_Pipeline_...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_16_1_1(d...
+Compiling module xil_defaultlib.solve_top_sparsemux_11_4_16_1_1_...
+Compiling module xil_defaultlib.solve_top_decompose_qr
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mul_16s_16s_32_1_1(NUM...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul_Pipeline_V...
+Compiling module xil_defaultlib.solve_top_mat_vec_mul
+Compiling module xil_defaultlib.solve_top_upper_backsub_Pipeline...
+Compiling module xil_defaultlib.solve_top_upper_backsub_Pipeline...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_16_1_1_x...
+Compiling module xil_defaultlib.solve_top_sdiv_28s_16s_28_32_seq...
+Compiling module xil_defaultlib.solve_top_sdiv_28s_16s_28_32_seq...
+Compiling module xil_defaultlib.solve_top_mac_mulsub_16s_16s_27s...
+Compiling module xil_defaultlib.solve_top_mac_mulsub_16s_16s_27s...
+Compiling module xil_defaultlib.solve_top_upper_backsub
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi_ram(MEM_TYP...
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi_ram(DEPTH=4...
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi_ram(MEM_TYP...
+Compiling module xil_defaultlib.solve_top_CTRL_s_axi
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_20.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_20.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_20.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_20.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_20.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_20.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20_viv [\floating_point_v7_1_20_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_20.floating_point_v7_1_20 [\floating_point_v7_1_20(c_xdevic...]
+Compiling architecture solve_top_fpext_32ns_64_2_no_dsp_1_ip_arch of entity xil_defaultlib.solve_top_fpext_32ns_64_2_no_dsp_1_ip [solve_top_fpext_32ns_64_2_no_dsp...]
+Compiling module xil_defaultlib.solve_top_fpext_32ns_64_2_no_dsp...
+Compiling module xil_defaultlib.solve_top_bitselect_1ns_54ns_6ns...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_16_1_1_x...
+Compiling module xil_defaultlib.solve_top_sparsemux_7_2_1_1_1(se...
+Compiling module xil_defaultlib.solve_top_ctlz_16_16_1_1(din_WID...
+Compiling module xil_defaultlib.solve_top
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.axi_if(ADDR_WIDTH=7,STRB_WIDTH=4...
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=15)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=42)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_solve_top_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot solve_top

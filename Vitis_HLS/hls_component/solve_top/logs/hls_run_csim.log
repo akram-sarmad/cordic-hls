@@ -1,0 +1,113 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/backsub.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/linearsolver.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/ELEC522/sm512/asdf/fpga_hls/qrd.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file_cflags=C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp,-D HW_COSIM' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'syn.top=solve_top' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-1' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1465] Applying config ini 'clock=10ns' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(15)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=2ns' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(16)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/vitis-comp.json
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code C:/ELEC522/sm512/asdf/fpga_hls/tb_linersolver.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+
+=== HLS Testbench: solve_top (fixed-point HLS wrapper) ===
+========================
+Test case 1:
+
+A (columns):
+  Column 0: [0.100000, 0.200000, 0.900000, 0.300000]
+  Column 1: [0.100000, 0.800000, 0.100000, 0.100000]
+  Column 2: [0.400000, 0.600000, 0.300000, 0.400000]
+  Column 3: [0.300000, 0.500000, 0.200000, 0.600000]
+
+b (column vector): [0.200000, 0.100000, 0.800000, 0.400000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.802734, -0.378418, 0.296387, 0.126953]
+Reference (double) solution x_ref:
+  [0.803354, -0.379573, 0.295732, 0.131098]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 2:
+
+A (columns):
+  Column 0: [2.000000, 0.100000, 0.000000, 0.000000]
+  Column 1: [0.100000, 3.000000, 0.200000, 0.000000]
+  Column 2: [0.000000, 0.200000, 4.000000, 0.100000]
+  Column 3: [0.000000, 0.000000, 0.100000, 5.000000]
+
+b (column vector): [1.000000, 0.500000, 2.000000, 1.500000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.493652, 0.117676, 0.487305, 0.289551]
+Reference (double) solution x_ref:
+  [0.494113, 0.117739, 0.486856, 0.290263]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+========================
+Test case 3:
+
+A (columns):
+  Column 0: [0.500000, -0.100000, 0.000000, 0.100000]
+  Column 1: [-0.200000, 0.600000, 0.100000, 0.000000]
+  Column 2: [0.100000, 0.200000, 0.700000, -0.100000]
+  Column 3: [0.000000, 0.100000, -0.200000, 0.800000]
+
+b (column vector): [0.300000, -0.200000, 0.500000, 0.100000]
+
+Method: HLS Fixed (solve_top)
+  x: [0.178711, -0.623535, 0.865234, 0.212891]
+Reference (double) solution x_ref:
+  [0.176301, -0.627168, 0.864162, 0.210983]
+Status: PASS (residual acceptable)
+Done flag from solver: 1
+
+Testbench finished.
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\fpga_hls\linearsolver.cpp:31:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\fpga_hls\linearsolver.cpp:32:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\fpga_hls\linearsolver.cpp:33:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\fpga_hls\linearsolver.cpp:34:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\fpga_hls\linearsolver.cpp:35:5)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\ELEC522\sm512\asdf\Vitis_HLS\hls_component\fpga_hls\linearsolver.cpp:36:5)
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\ELEC522\sm512\asdf\fpga_hls\linearsolver.cpp:70:9)
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\ELEC522\sm512\asdf\fpga_hls\linearsolver.cpp:53:9)
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\ELEC522\sm512\asdf\fpga_hls\linearsolver.cpp:40:9)
+WARNING: [SIM 211-200] C:/ELEC522/sm512/asdf\fpga_hls/qrd.cpp:26:9: the dynamic loop had a trip count of min=0 max=3 during C simulation. (#pragma HLS loop_tripcount min=0 max=3)
+WARNING: [SIM 211-200] C:/ELEC522/sm512/asdf\fpga_hls/qrd.cpp:39:13: the dynamic loop had a trip count of min=2 max=4 during C simulation. (#pragma HLS loop_tripcount min=2 max=4)
+WARNING: [SIM 211-200] C:/ELEC522/sm512/asdf\fpga_hls/backsub.cpp:35:9: the dynamic loop had a trip count of min=0 max=3 during C simulation. (#pragma HLS loop_tripcount min=0 max=3)
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 15.242 seconds; peak allocated memory: 157.574 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 19s

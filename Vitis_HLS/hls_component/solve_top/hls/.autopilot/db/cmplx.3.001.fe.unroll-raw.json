@@ -1,0 +1,139 @@
+{
+  "0": {
+    "basicblocks": 914,
+    "calls": "4 6 1",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "linearsolver.cpp",
+    "fileloc": 12,
+    "instructions": 1728,
+    "loads": {
+      "L": 52,
+      "T": 36
+    },
+    "memory_accesses": 0,
+    "name": "solve_top",
+    "stores": {
+      "L": 70,
+      "T": 5
+    },
+    "total_instructions": 21692
+  },
+  "1": {
+    "basicblocks": 129,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 4,
+    "file": "backsub.cpp",
+    "fileloc": 4,
+    "instructions": 277,
+    "loads": {
+      "L": 7
+    },
+    "memory_accesses": 5,
+    "name": "upper_backsub",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 277
+  },
+  "2": {
+    "basicblocks": 474,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "linearsolver.h",
+    "fileloc": 64,
+    "instructions": 776,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "cordic_atan",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 776
+  },
+  "3": {
+    "basicblocks": 30,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "linearsolver.h",
+    "fileloc": 51,
+    "instructions": 56,
+    "memory_accesses": 0,
+    "name": "fabs_fixed",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 56
+  },
+  "4": {
+    "basicblocks": 159,
+    "calls": "7 2 5 5",
+    "control_depth": 6,
+    "def_use_depth": 5,
+    "file": "qrd.cpp",
+    "fileloc": 4,
+    "instructions": 423,
+    "loads": {
+      "L": 29
+    },
+    "memory_accesses": 25,
+    "name": "decompose_qr",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 10938
+  },
+  "5": {
+    "basicblocks": 2816,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "linearsolver.h",
+    "fileloc": 98,
+    "instructions": 4820,
+    "memory_accesses": 0,
+    "name": "cordic_rotate",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 4820
+  },
+  "6": {
+    "basicblocks": 230,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 28,
+    "file": "matrixmult.cpp",
+    "fileloc": 4,
+    "instructions": 469,
+    "loads": {
+      "L": 11
+    },
+    "memory_accesses": 16,
+    "name": "mat_vec_mul",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 469
+  },
+  "7": {
+    "basicblocks": 36,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "linearsolver.h",
+    "fileloc": 56,
+    "instructions": 43,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "near_zero",
+    "total_instructions": 99
+  }
+}

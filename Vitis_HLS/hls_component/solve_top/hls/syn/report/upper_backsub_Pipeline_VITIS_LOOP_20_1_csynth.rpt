@@ -1,0 +1,222 @@
+
+
+================================================================
+== Vitis HLS Report for 'upper_backsub_Pipeline_VITIS_LOOP_20_1'
+================================================================
+* Date:           Tue Dec 16 20:06:29 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        solve_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.826 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        6|        6|  60.000 ns|  60.000 ns|    5|    5|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_20_1  |        4|        4|         1|          1|          1|     4|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     24|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|    100|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|     325|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     325|    151|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |          Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |sparsemux_9_2_16_1_1_U432  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U433  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U434  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U435  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U436  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |Total                      |                      |        0|   0|  0| 100|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln20_fu_480_p2   |         +|   0|  0|  11|           3|           1|
+    |icmp_ln20_fu_474_p2  |      icmp|   0|  0|  13|           3|           4|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  24|           6|           5|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_2  |   9|          2|    3|          6|
+    |i_fu_122              |   9|          2|    3|          6|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|    7|         14|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+----+----+-----+-----------+
+    |      Name      | FF | LUT| Bits| Const Bits|
+    +----------------+----+----+-----+-----------+
+    |Rloc_10_fu_162  |  16|   0|   16|          0|
+    |Rloc_11_fu_158  |  16|   0|   16|          0|
+    |Rloc_12_fu_154  |  16|   0|   16|          0|
+    |Rloc_13_fu_150  |  16|   0|   16|          0|
+    |Rloc_14_fu_146  |  16|   0|   16|          0|
+    |Rloc_15_fu_142  |  16|   0|   16|          0|
+    |Rloc_1_fu_198   |  16|   0|   16|          0|
+    |Rloc_2_fu_194   |  16|   0|   16|          0|
+    |Rloc_3_fu_190   |  16|   0|   16|          0|
+    |Rloc_4_fu_186   |  16|   0|   16|          0|
+    |Rloc_5_fu_182   |  16|   0|   16|          0|
+    |Rloc_6_fu_178   |  16|   0|   16|          0|
+    |Rloc_7_fu_174   |  16|   0|   16|          0|
+    |Rloc_8_fu_170   |  16|   0|   16|          0|
+    |Rloc_9_fu_166   |  16|   0|   16|          0|
+    |Rloc_fu_202     |  16|   0|   16|          0|
+    |ap_CS_fsm       |   1|   0|    1|          0|
+    |ap_done_reg     |   1|   0|    1|          0|
+    |i_fu_122        |   3|   0|    3|          0|
+    |yloc_1_fu_130   |  16|   0|   16|          0|
+    |yloc_2_fu_134   |  16|   0|   16|          0|
+    |yloc_3_fu_138   |  16|   0|   16|          0|
+    |yloc_fu_126     |  16|   0|   16|          0|
+    +----------------+----+----+-----+-----------+
+    |Total           | 325|   0|  325|          0|
+    +----------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+----------------------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++-------------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|  upper_backsub_Pipeline_VITIS_LOOP_20_1|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|  upper_backsub_Pipeline_VITIS_LOOP_20_1|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|  upper_backsub_Pipeline_VITIS_LOOP_20_1|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|  upper_backsub_Pipeline_VITIS_LOOP_20_1|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|  upper_backsub_Pipeline_VITIS_LOOP_20_1|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|  upper_backsub_Pipeline_VITIS_LOOP_20_1|  return value|
+|y_in_0_val               |   in|   16|     ap_none|                              y_in_0_val|        scalar|
+|y_in_1_val               |   in|   16|     ap_none|                              y_in_1_val|        scalar|
+|y_in_2_val               |   in|   16|     ap_none|                              y_in_2_val|        scalar|
+|y_in_3_val               |   in|   16|     ap_none|                              y_in_3_val|        scalar|
+|p_read                   |   in|   16|     ap_none|                                  p_read|        scalar|
+|p_read1                  |   in|   16|     ap_none|                                 p_read1|        scalar|
+|p_read2                  |   in|   16|     ap_none|                                 p_read2|        scalar|
+|p_read3                  |   in|   16|     ap_none|                                 p_read3|        scalar|
+|p_read4                  |   in|   16|     ap_none|                                 p_read4|        scalar|
+|p_read5                  |   in|   16|     ap_none|                                 p_read5|        scalar|
+|p_read6                  |   in|   16|     ap_none|                                 p_read6|        scalar|
+|p_read7                  |   in|   16|     ap_none|                                 p_read7|        scalar|
+|p_read8                  |   in|   16|     ap_none|                                 p_read8|        scalar|
+|p_read9                  |   in|   16|     ap_none|                                 p_read9|        scalar|
+|p_read10                 |   in|   16|     ap_none|                                p_read10|        scalar|
+|p_read11                 |   in|   16|     ap_none|                                p_read11|        scalar|
+|p_read12                 |   in|   16|     ap_none|                                p_read12|        scalar|
+|p_read13                 |   in|   16|     ap_none|                                p_read13|        scalar|
+|p_read14                 |   in|   16|     ap_none|                                p_read14|        scalar|
+|p_read15                 |   in|   16|     ap_none|                                p_read15|        scalar|
+|yloc_3_out               |  out|   16|      ap_vld|                              yloc_3_out|       pointer|
+|yloc_3_out_ap_vld        |  out|    1|      ap_vld|                              yloc_3_out|       pointer|
+|yloc_2_out               |  out|   16|      ap_vld|                              yloc_2_out|       pointer|
+|yloc_2_out_ap_vld        |  out|    1|      ap_vld|                              yloc_2_out|       pointer|
+|yloc_1_out               |  out|   16|      ap_vld|                              yloc_1_out|       pointer|
+|yloc_1_out_ap_vld        |  out|    1|      ap_vld|                              yloc_1_out|       pointer|
+|yloc_out                 |  out|   16|      ap_vld|                                yloc_out|       pointer|
+|yloc_out_ap_vld          |  out|    1|      ap_vld|                                yloc_out|       pointer|
+|Rloc_load_out            |  out|   16|      ap_vld|                           Rloc_load_out|       pointer|
+|Rloc_load_out_ap_vld     |  out|    1|      ap_vld|                           Rloc_load_out|       pointer|
+|Rloc_1_load_out          |  out|   16|      ap_vld|                         Rloc_1_load_out|       pointer|
+|Rloc_1_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_1_load_out|       pointer|
+|Rloc_2_load_out          |  out|   16|      ap_vld|                         Rloc_2_load_out|       pointer|
+|Rloc_2_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_2_load_out|       pointer|
+|Rloc_3_load_out          |  out|   16|      ap_vld|                         Rloc_3_load_out|       pointer|
+|Rloc_3_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_3_load_out|       pointer|
+|Rloc_4_load_out          |  out|   16|      ap_vld|                         Rloc_4_load_out|       pointer|
+|Rloc_4_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_4_load_out|       pointer|
+|Rloc_5_load_out          |  out|   16|      ap_vld|                         Rloc_5_load_out|       pointer|
+|Rloc_5_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_5_load_out|       pointer|
+|Rloc_6_load_out          |  out|   16|      ap_vld|                         Rloc_6_load_out|       pointer|
+|Rloc_6_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_6_load_out|       pointer|
+|Rloc_7_load_out          |  out|   16|      ap_vld|                         Rloc_7_load_out|       pointer|
+|Rloc_7_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_7_load_out|       pointer|
+|Rloc_8_load_out          |  out|   16|      ap_vld|                         Rloc_8_load_out|       pointer|
+|Rloc_8_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_8_load_out|       pointer|
+|Rloc_9_load_out          |  out|   16|      ap_vld|                         Rloc_9_load_out|       pointer|
+|Rloc_9_load_out_ap_vld   |  out|    1|      ap_vld|                         Rloc_9_load_out|       pointer|
+|Rloc_10_load_out         |  out|   16|      ap_vld|                        Rloc_10_load_out|       pointer|
+|Rloc_10_load_out_ap_vld  |  out|    1|      ap_vld|                        Rloc_10_load_out|       pointer|
+|Rloc_11_load_out         |  out|   16|      ap_vld|                        Rloc_11_load_out|       pointer|
+|Rloc_11_load_out_ap_vld  |  out|    1|      ap_vld|                        Rloc_11_load_out|       pointer|
+|Rloc_12_load_out         |  out|   16|      ap_vld|                        Rloc_12_load_out|       pointer|
+|Rloc_12_load_out_ap_vld  |  out|    1|      ap_vld|                        Rloc_12_load_out|       pointer|
+|Rloc_13_load_out         |  out|   16|      ap_vld|                        Rloc_13_load_out|       pointer|
+|Rloc_13_load_out_ap_vld  |  out|    1|      ap_vld|                        Rloc_13_load_out|       pointer|
+|Rloc_14_load_out         |  out|   16|      ap_vld|                        Rloc_14_load_out|       pointer|
+|Rloc_14_load_out_ap_vld  |  out|    1|      ap_vld|                        Rloc_14_load_out|       pointer|
+|Rloc_15_load_out         |  out|   16|      ap_vld|                        Rloc_15_load_out|       pointer|
+|Rloc_15_load_out_ap_vld  |  out|    1|      ap_vld|                        Rloc_15_load_out|       pointer|
++-------------------------+-----+-----+------------+----------------------------------------+--------------+
+

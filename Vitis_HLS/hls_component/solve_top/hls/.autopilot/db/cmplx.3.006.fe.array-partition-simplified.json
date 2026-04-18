@@ -1,0 +1,109 @@
+{
+  "0": {
+    "basicblocks": 597,
+    "calls": "4 3 1",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "linearsolver.cpp",
+    "fileloc": 12,
+    "instructions": 3161,
+    "loads": {
+      "L": 4,
+      "T": 20
+    },
+    "memory_accesses": 0,
+    "name": "solve_top",
+    "stores": {
+      "L": 38,
+      "T": 5
+    },
+    "total_instructions": 8032
+  },
+  "1": {
+    "basicblocks": 40,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 16,
+    "file": "backsub.cpp",
+    "fileloc": 4,
+    "instructions": 248,
+    "loads": {
+      "L": 24
+    },
+    "memory_accesses": 23,
+    "name": "upper_backsub",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 248
+  },
+  "2": {
+    "basicblocks": 8,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 16,
+    "file": "linearsolver.h",
+    "fileloc": 64,
+    "instructions": 267,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "cordic_atan",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 267
+  },
+  "3": {
+    "basicblocks": 35,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 57,
+    "file": "matrixmult.cpp",
+    "fileloc": 4,
+    "instructions": 307,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 25,
+    "name": "mat_vec_mul",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 307
+  },
+  "4": {
+    "basicblocks": 94,
+    "calls": "2 5 5",
+    "control_depth": 4,
+    "def_use_depth": 11,
+    "file": "qrd.cpp",
+    "fileloc": 4,
+    "instructions": 521,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 104,
+    "name": "decompose_qr",
+    "stores": {
+      "L": 55
+    },
+    "total_instructions": 4316
+  },
+  "5": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 221,
+    "file": "linearsolver.h",
+    "fileloc": 98,
+    "instructions": 1764,
+    "memory_accesses": 0,
+    "name": "cordic_rotate",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1764
+  }
+}

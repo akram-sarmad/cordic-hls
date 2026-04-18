@@ -1,0 +1,160 @@
+<ENTRY>
+{
+ "thisFile": "C:/ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component\\solve_top\\solve_top.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "12/16/25 22:31:36",
+ "timestampMillis": "1765945896792",
+ "buildStep": {
+  "cmdId": "d07b38d6-b6d0-41f0-b6db-b5c779dba660",
+  "name": "vitis-run",
+  "logFile": "C:/ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component\\solve_top\\logs\\solve_top.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component\\hls_config.cfg --work_dir solve_top ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "solve_top"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/16/25 22:31:36",
+ "timestampMillis": "1765945896793",
+ "status": {
+  "cmdId": "d07b38d6-b6d0-41f0-b6db-b5c779dba660",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "12/16/25 22:31:40",
+ "timestampMillis": "1765945900120",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "solve_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/ELEC522\\sm512\\asdf\\fpga_hls\\backsub.cpp",
+     "C:/ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.cpp",
+     "C:/ELEC522\\sm512\\asdf\\fpga_hls\\linearsolver.h",
+     "C:/ELEC522\\sm512\\asdf\\fpga_hls\\matrixmult.cpp",
+     "C:/ELEC522\\sm512\\asdf\\fpga_hls\\qrd.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "12/16/25 22:31:40",
+ "timestampMillis": "1765945900122",
+ "buildStep": {
+  "cmdId": "145d72c2-3648-4328-970e-6fbd442eb80d",
+  "name": "",
+  "logFile": "C:/ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component\\solve_top\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\ELEC522\\sm512\\asdf\\Vitis_HLS\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/16/25 22:31:40",
+ "timestampMillis": "1765945900122",
+ "status": {
+  "cmdId": "145d72c2-3648-4328-970e-6fbd442eb80d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/16/25 22:31:53",
+ "timestampMillis": "1765945913562",
+ "status": {
+  "cmdId": "145d72c2-3648-4328-970e-6fbd442eb80d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/16/25 22:31:53",
+ "timestampMillis": "1765945913635",
+ "status": {
+  "cmdId": "d07b38d6-b6d0-41f0-b6db-b5c779dba660",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/16/25 22:31:53",
+ "timestampMillis": "1765945913636",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/16/25 22:31:53",
+ "timestampMillis": "1765945913636",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,787 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Dec 16 20:10:43 2025
+# Process ID         : 13584
+# Current directory  : C:/ELEC522/sm512/asdf/Vivado/project_1/project_1.runs/design_1_solve_top_0_0_synth_1
+# Command line       : vivado.exe -log design_1_solve_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_solve_top_0_0.tcl
+# Log file           : C:/ELEC522/sm512/asdf/Vivado/project_1/project_1.runs/design_1_solve_top_0_0_synth_1/design_1_solve_top_0_0.vds
+# Journal file       : C:/ELEC522/sm512/asdf/Vivado/project_1/project_1.runs/design_1_solve_top_0_0_synth_1\vivado.jou
+# Running On         : RYN-B10-PC-11
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 68426 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 78627 MB
+# Available Virtual  : 49424 MB
+#-----------------------------------------------------------
+source design_1_solve_top_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 510.398 ; gain = 215.996
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ELEC522/sm512/asdf/Vitis_HLS/hls_component'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_solve_top_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6860
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1246.305 ; gain = 491.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_solve_top_0_0' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/synth/design_1_solve_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'solve_top' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_decompose_qr' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_9_2_16_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_2_16_1_1.v:8]
+INFO: [Synth 8-226] default block is never used [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_2_16_1_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_9_2_16_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_2_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_9_2_12_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_2_12_1_1.v:8]
+INFO: [Synth 8-226] default block is never used [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_2_12_1_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_9_2_12_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_2_12_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_flow_control_loop_pipe_sequential_init' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_flow_control_loop_pipe_sequential_init' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_18_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_77_10.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_17_3_16_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_17_3_16_1_1.v:8]
+INFO: [Synth 8-226] default block is never used [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_17_3_16_1_1.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_17_3_16_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_17_3_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_63_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_cordic_atan' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_cordic_atan.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_cordic_atan_atan_table_ROM_AUTO_1R' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_cordic_atan_atan_table_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './solve_top_cordic_atan_atan_table_ROM_AUTO_1R.dat' is read successfully [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_cordic_atan_atan_table_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_cordic_atan_atan_table_ROM_AUTO_1R' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_cordic_atan_atan_table_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_cordic_atan' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_cordic_atan.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_13_3_16_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_13_3_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_13_3_16_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_13_3_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_11_4_16_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_11_4_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_11_4_16_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_11_4_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_9_3_16_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_3_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_9_3_16_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_9_3_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_7_2_16_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_7_2_16_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_16_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_11_4_16_1_1_x' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_11_4_16_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_11_4_16_1_1_x' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_11_4_16_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_decompose_qr' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mat_vec_mul' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_24_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mul_16s_16s_32_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mul_16s_16s_32_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mat_vec_mul' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_upper_backsub' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_upper_backsub.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_20_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_upper_backsub_Pipeline_VITIS_LOOP_48_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_7_2_16_1_1_x' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_16_1_1_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_7_2_16_1_1_x' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_16_1_1_x.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sdiv_28s_16s_28_32_seq_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sdiv_28s_16s_28_32_seq_1_divseq' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sdiv_28s_16s_28_32_seq_1_divseq' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sdiv_28s_16s_28_32_seq_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mac_mulsub_16s_16s_27s_32_4_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_mac_mulsub_16s_16s_27s_32_4_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_upper_backsub' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_upper_backsub.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_CTRL_s_axi' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_CTRL_s_axi_ram' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:634]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_CTRL_s_axi_ram' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:634]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_CTRL_s_axi_ram__parameterized0' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:634]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_CTRL_s_axi_ram__parameterized0' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:634]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_CTRL_s_axi_ram__parameterized1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:634]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_CTRL_s_axi_ram__parameterized1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:634]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:332]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_CTRL_s_axi' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_fpext_32ns_64_2_no_dsp_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'solve_top_fpext_32ns_64_2_no_dsp_1_ip' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/hdl/ip/solve_top_fpext_32ns_64_2_no_dsp_1_ip/synth/solve_top_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_20' declared at 'c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/hdl/ip/solve_top_fpext_32ns_64_2_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_20' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/hdl/ip/solve_top_fpext_32ns_64_2_no_dsp_1_ip/synth/solve_top_fpext_32ns_64_2_no_dsp_1_ip.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'solve_top_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/hdl/ip/solve_top_fpext_32ns_64_2_no_dsp_1_ip/synth/solve_top_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_fpext_32ns_64_2_no_dsp_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_bitselect_1ns_54ns_6ns_1_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_bitselect_1ns_54ns_6ns_1_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_7_2_16_1_1_x0' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_16_1_1_x0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_7_2_16_1_1_x0' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_16_1_1_x0.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_sparsemux_7_2_1_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_sparsemux_7_2_1_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'solve_top_ctlz_16_16_1_1' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_ctlz_16_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top_ctlz_16_16_1_1' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_ctlz_16_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'solve_top' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_solve_top_0_0' (0#1) [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/synth/design_1_solve_top_0_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln44_116_reg_1662_reg' and it is trimmed from '32' to '28' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:636]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln44_114_reg_1611_reg' and it is trimmed from '32' to '28' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:635]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln44_reg_1560_reg' and it is trimmed from '32' to '28' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:637]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element remd_reg was removed.  [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v:172]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3848] Net q0 in module/entity solve_top_CTRL_s_axi_ram__parameterized0 does not have driver. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:649]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_CTRL_s_axi.v:404]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module flt_dec_op is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module special_detect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tuser[0] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tlast in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclken in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tvalid in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[31] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[30] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[29] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[28] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[27] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[26] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[25] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[24] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[23] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[22] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[21] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[20] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[19] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[18] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[17] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[16] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[15] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[14] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[13] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[12] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[11] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[10] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[9] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[8] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[7] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[6] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[5] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[4] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[3] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[2] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[1] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tdata[0] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_20_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_20_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1576.477 ; gain = 822.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1576.477 ; gain = 822.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1576.477 ; gain = 822.086
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.274 . Memory (MB): peak = 1576.477 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/constraints/solve_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_solve_top_0_0/constraints/solve_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/ELEC522/sm512/asdf/Vivado/project_1/project_1.runs/design_1_solve_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ELEC522/sm512/asdf/Vivado/project_1/project_1.runs/design_1_solve_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1662.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.220 . Memory (MB): peak = 1663.781 ; gain = 1.574
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1663.781 ; gain = 909.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1663.781 ; gain = 909.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1663.781 ; gain = 909.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln44_reg_1509_reg' and it is trimmed from '32' to '28' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:684]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'solve_top_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'solve_top_CTRL_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'solve_top_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'solve_top_CTRL_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1663.781 ; gain = 909.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'solve_top_fpext_32ns_64_2_no_dsp_1_ip:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'solve_top_fpext_32ns_64_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'solve_top_fpext_32ns_64_2_no_dsp_1_ip:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'solve_top_fpext_32ns_64_2_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'solve_top_fpext_32ns_64_2_no_dsp_1_ip:/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'solve_top_fpext_32ns_64_2_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "dout_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (8)
+INFO: [Synth 8-5544] ROM "dout_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (8)
+INFO: [Synth 8-5544] ROM "dout_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (8)
+INFO: [Synth 8-5544] ROM "dout_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (8)
+INFO: [Synth 8-4471] merging register 'tmp_349_reg_9018_reg[0:0]' into 'tmp_334_reg_8981_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v:2303]
+INFO: [Synth 8-4471] merging register 'tmp_364_reg_9123_reg[0:0]' into 'tmp_334_reg_8981_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v:2312]
+INFO: [Synth 8-4471] merging register 'tmp_379_reg_9184_reg[0:0]' into 'tmp_334_reg_8981_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v:2320]
+INFO: [Synth 8-4471] merging register 'tmp_423_reg_9344_reg[0:0]' into 'tmp_334_reg_8981_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_50_6.v:2347]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_cordic_atan_fu_670/\tmp_649_reg_1113_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_50_6_fu_722/\tmp_418_reg_9328_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_63_7_fu_650/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_63_7_fu_650/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_18_1_fu_478/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_18_1_fu_478/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_50_6_fu_722/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_77_10_fu_598/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9_fu_546/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_50_6_fu_722/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_77_10_fu_598/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_70_8_VITIS_LOOP_71_9_fu_546/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-4471] merging register 'tmp_545_reg_9316_reg[0:0]' into 'tmp_530_reg_9279_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v:2562]
+INFO: [Synth 8-4471] merging register 'tmp_560_reg_9421_reg[0:0]' into 'tmp_530_reg_9279_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v:2571]
+INFO: [Synth 8-4471] merging register 'tmp_575_reg_9482_reg[0:0]' into 'tmp_530_reg_9279_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v:2579]
+INFO: [Synth 8-4471] merging register 'tmp_619_reg_9642_reg[0:0]' into 'tmp_530_reg_9279_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_decompose_qr_Pipeline_VITIS_LOOP_39_5.v:2606]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_39_5_fu_678/\tmp_614_reg_9626_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_39_5_fu_678/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_decompose_qr_Pipeline_VITIS_LOOP_39_5_fu_678/ap_done_reg_reg)
+INFO: [Synth 8-4471] merging register 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/ap_CS_fsm_reg[0:0]' into 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_24_1_fu_276/ap_CS_fsm_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_29_3.v:142]
+INFO: [Synth 8-4471] merging register 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/ap_CS_fsm_reg[0:0]' into 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_24_1_fu_276/ap_CS_fsm_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:513]
+INFO: [Synth 8-4471] merging register 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_50_7_fu_372/ap_CS_fsm_reg[0:0]' into 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_24_1_fu_276/ap_CS_fsm_reg[0:0]' [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_50_7.v:134]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_3_cast_reg_1473_reg' and it is trimmed from '32' to '16' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:676]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_2_cast_reg_1478_reg' and it is trimmed from '32' to '16' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:675]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_1_cast_reg_1483_reg' and it is trimmed from '32' to '16' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:674]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_cast_reg_1488_reg' and it is trimmed from '32' to '16' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mat_vec_mul_Pipeline_VITIS_LOOP_40_5.v:677]
+DSP Report: Generating DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U367/tmp_product, operation Mode is: A2*B''.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/empty_fu_60_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U367/tmp_product.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_cast_reg_1488_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U367/tmp_product.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/tmp_reg_1504_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U367/tmp_product.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U367/tmp_product is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U367/tmp_product.
+DSP Report: Generating DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2, operation Mode is: C+(A*B'')'.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/empty_53_fu_64_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_1_cast_reg_1483_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_ln44_1_reg_1550_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2 is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U369/tmp_product is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2.
+DSP Report: Generating DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U369/tmp_product, operation Mode is: A*B''.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/empty_53_fu_64_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U369/tmp_product.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_1_cast_reg_1483_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U369/tmp_product.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U369/tmp_product is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U369/tmp_product.
+DSP Report: Generating DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2, operation Mode is: C+(A*B'')'.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/empty_54_fu_68_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_2_cast_reg_1478_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_ln44_2_reg_1601_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2 is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U371/tmp_product is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2.
+DSP Report: Generating DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U371/tmp_product, operation Mode is: A*B''.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/empty_54_fu_68_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U371/tmp_product.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_2_cast_reg_1478_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U371/tmp_product.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U371/tmp_product is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U371/tmp_product.
+DSP Report: Generating DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2, operation Mode is: C+(A*B'')'.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/empty_55_fu_72_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_3_cast_reg_1473_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_ln44_3_reg_1652_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2 is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U373/tmp_product is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2.
+DSP Report: Generating DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U373/tmp_product, operation Mode is: A*B''.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/empty_55_fu_72_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U373/tmp_product.
+DSP Report: register grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/conv7_i_3_cast_reg_1473_reg is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U373/tmp_product.
+DSP Report: operator grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U373/tmp_product is absorbed into DSP grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U373/tmp_product.
+INFO: [Synth 8-3886] merging instance 'grp_mat_vec_mul_fu_659/grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/sum_1_reg_1521_reg[15]' (FDE) to 'grp_mat_vec_mul_fu_659/grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/tmp_212_reg_1526_reg[0]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[15]' (FDE) to 'trunc_ln54_14_reg_18766_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[7]' (FDE) to 'trunc_ln54_14_reg_18766_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[11]' (FDE) to 'trunc_ln54_14_reg_18766_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[3]' (FDE) to 'trunc_ln54_14_reg_18766_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[13]' (FDE) to 'trunc_ln54_14_reg_18766_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[5]' (FDE) to 'trunc_ln54_14_reg_18766_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[9]' (FDE) to 'trunc_ln54_14_reg_18766_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[1]' (FDE) to 'trunc_ln54_14_reg_18766_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[14]' (FDE) to 'trunc_ln54_14_reg_18766_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[6]' (FDE) to 'trunc_ln54_14_reg_18766_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[10]' (FDE) to 'trunc_ln54_14_reg_18766_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[2]' (FDE) to 'trunc_ln54_14_reg_18766_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[12]' (FDE) to 'trunc_ln54_14_reg_18766_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[4]' (FDE) to 'trunc_ln54_14_reg_18766_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[8]' (FDE) to 'trunc_ln54_14_reg_18766_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln54_6_reg_18740_reg[0]' (FDE) to 'trunc_ln54_14_reg_18766_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_ln54_13_reg_18787_reg[1]' (FDE) to 'zext_ln54_6_reg_18735_reg[1]'
+INFO: [Synth 8-3886] merging instance 'grp_mat_vec_mul_fu_659/grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/sum_3_reg_1572_reg[15]' (FD) to 'grp_mat_vec_mul_fu_659/grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/tmp_217_reg_1577_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[0]' (FDE) to 'sub_ln44_46_reg_18690_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[1]' (FDE) to 'sub_ln44_46_reg_18690_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[9]' (FDE) to 'sub_ln44_46_reg_18690_reg[9]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[8]' (FDE) to 'sub_ln44_46_reg_18690_reg[8]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[7]' (FDE) to 'sub_ln44_46_reg_18690_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[6]' (FDE) to 'sub_ln44_46_reg_18690_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[5]' (FDE) to 'sub_ln44_46_reg_18690_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[4]' (FDE) to 'sub_ln44_46_reg_18690_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[2]' (FDE) to 'trunc_ln44_137_reg_18699_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[3]' (FDE) to 'sub_ln44_46_reg_18690_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_138_reg_18704_reg[10]' (FDE) to 'sub_ln44_46_reg_18690_reg[10]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln44_45_reg_18679_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln44_91_reg_18674_reg[53] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\zext_ln44_91_reg_18674_reg[52] )
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_137_reg_18699_reg[0]' (FDE) to 'sub_ln44_46_reg_18690_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_137_reg_18699_reg[1]' (FDE) to 'sub_ln44_46_reg_18690_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_137_reg_18699_reg[3]' (FDE) to 'sub_ln44_46_reg_18690_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_137_reg_18699_reg[2]' (FDE) to 'sub_ln44_46_reg_18690_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_137_reg_18699_reg[4]' (FDE) to 'sub_ln44_46_reg_18690_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln44_137_reg_18699_reg[5]' (FDE) to 'sub_ln44_46_reg_18690_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[15]' (FDE) to 'trunc_ln44_122_reg_18325_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[7]' (FDE) to 'trunc_ln44_122_reg_18325_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[11]' (FDE) to 'trunc_ln44_122_reg_18325_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[3]' (FDE) to 'trunc_ln44_122_reg_18325_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[13]' (FDE) to 'trunc_ln44_122_reg_18325_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[5]' (FDE) to 'trunc_ln44_122_reg_18325_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[9]' (FDE) to 'trunc_ln44_122_reg_18325_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[1]' (FDE) to 'trunc_ln44_122_reg_18325_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[14]' (FDE) to 'trunc_ln44_122_reg_18325_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[6]' (FDE) to 'trunc_ln44_122_reg_18325_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[10]' (FDE) to 'trunc_ln44_122_reg_18325_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[2]' (FDE) to 'trunc_ln44_122_reg_18325_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[12]' (FDE) to 'trunc_ln44_122_reg_18325_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[4]' (FDE) to 'trunc_ln44_122_reg_18325_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[8]' (FDE) to 'trunc_ln44_122_reg_18325_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_78_reg_18299_reg[0]' (FDE) to 'trunc_ln44_122_reg_18325_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_ln44_97_reg_18346_reg[1]' (FDE) to 'zext_ln44_78_reg_18294_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[15]' (FDE) to 'trunc_ln44_14_reg_16232_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[7]' (FDE) to 'trunc_ln44_14_reg_16232_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[11]' (FDE) to 'trunc_ln44_14_reg_16232_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[3]' (FDE) to 'trunc_ln44_14_reg_16232_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[13]' (FDE) to 'trunc_ln44_14_reg_16232_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[5]' (FDE) to 'trunc_ln44_14_reg_16232_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[9]' (FDE) to 'trunc_ln44_14_reg_16232_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[1]' (FDE) to 'trunc_ln44_14_reg_16232_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[14]' (FDE) to 'trunc_ln44_14_reg_16232_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[6]' (FDE) to 'trunc_ln44_14_reg_16232_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[10]' (FDE) to 'trunc_ln44_14_reg_16232_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[2]' (FDE) to 'trunc_ln44_14_reg_16232_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[12]' (FDE) to 'trunc_ln44_14_reg_16232_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[4]' (FDE) to 'trunc_ln44_14_reg_16232_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[8]' (FDE) to 'trunc_ln44_14_reg_16232_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_6_reg_16206_reg[0]' (FDE) to 'trunc_ln44_14_reg_16232_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_ln44_13_reg_16253_reg[1]' (FDE) to 'zext_ln44_6_reg_16201_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[15]' (FDE) to 'trunc_ln44_32_reg_16567_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[7]' (FDE) to 'trunc_ln44_32_reg_16567_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[11]' (FDE) to 'trunc_ln44_32_reg_16567_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[3]' (FDE) to 'trunc_ln44_32_reg_16567_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[13]' (FDE) to 'trunc_ln44_32_reg_16567_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[5]' (FDE) to 'trunc_ln44_32_reg_16567_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[9]' (FDE) to 'trunc_ln44_32_reg_16567_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[1]' (FDE) to 'trunc_ln44_32_reg_16567_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[14]' (FDE) to 'trunc_ln44_32_reg_16567_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[6]' (FDE) to 'trunc_ln44_32_reg_16567_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[10]' (FDE) to 'trunc_ln44_32_reg_16567_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[2]' (FDE) to 'trunc_ln44_32_reg_16567_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[12]' (FDE) to 'trunc_ln44_32_reg_16567_reg[12]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[4]' (FDE) to 'trunc_ln44_32_reg_16567_reg[4]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[8]' (FDE) to 'trunc_ln44_32_reg_16567_reg[8]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_18_reg_16541_reg[0]' (FDE) to 'trunc_ln44_32_reg_16567_reg[0]'
+INFO: [Synth 8-3886] merging instance 'add_ln44_27_reg_16588_reg[1]' (FDE) to 'zext_ln44_18_reg_16536_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[15]' (FDE) to 'trunc_ln44_95_reg_17757_reg[15]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[7]' (FDE) to 'trunc_ln44_95_reg_17757_reg[7]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[11]' (FDE) to 'trunc_ln44_95_reg_17757_reg[11]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[3]' (FDE) to 'trunc_ln44_95_reg_17757_reg[3]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[13]' (FDE) to 'trunc_ln44_95_reg_17757_reg[13]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[5]' (FDE) to 'trunc_ln44_95_reg_17757_reg[5]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[9]' (FDE) to 'trunc_ln44_95_reg_17757_reg[9]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[1]' (FDE) to 'trunc_ln44_95_reg_17757_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[14]' (FDE) to 'trunc_ln44_95_reg_17757_reg[14]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[6]' (FDE) to 'trunc_ln44_95_reg_17757_reg[6]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[10]' (FDE) to 'trunc_ln44_95_reg_17757_reg[10]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[2]' (FDE) to 'trunc_ln44_95_reg_17757_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln44_60_reg_17731_reg[12]' (FDE) to 'trunc_ln44_95_reg_17757_reg[12]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_mat_vec_mul_fu_659/\grp_mat_vec_mul_Pipeline_VITIS_LOOP_24_1_fu_276/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_mat_vec_mul_fu_659/\grp_mat_vec_mul_Pipeline_VITIS_LOOP_29_3_fu_328/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_mat_vec_mul_fu_659/\grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_mat_vec_mul_fu_659/\grp_mat_vec_mul_Pipeline_VITIS_LOOP_24_1_fu_276/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_mat_vec_mul_fu_659/\grp_mat_vec_mul_Pipeline_VITIS_LOOP_50_7_fu_372/ap_done_reg_reg )
+WARNING: [Synth 8-3936] Found unconnected internal register 'solve_top_sdiv_28s_16s_28_32_seq_1_divseq_u/remd_tmp_reg' and it is trimmed from '28' to '27' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_sdiv_28s_16s_28_32_seq_1.v:44]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [c:/ELEC522/sm512/asdf/Vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/3686/hdl/verilog/solve_top_mac_mulsub_16s_16s_27s_32_4_1.v:31]
+DSP Report: Generating DSP mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C-(A2*B2)')'.
+DSP Report: register mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_upper_backsub_fu_687/\sdiv_28s_16s_28_32_seq_1_U494/dividend0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_upper_backsub_fu_687/\grp_upper_backsub_Pipeline_VITIS_LOOP_20_1_fu_412/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_upper_backsub_fu_687/\grp_upper_backsub_Pipeline_VITIS_LOOP_48_6_fu_476/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_upper_backsub_fu_687/\grp_upper_backsub_Pipeline_VITIS_LOOP_48_6_fu_476/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (CTRL_s_axi_U/\waddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (CTRL_s_axi_U/\int_done_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fpext_32ns_64_2_no_dsp_1_U523/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fpext_32ns_64_2_no_dsp_1_U524/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_upper_backsub_fu_687/\sdiv_28s_16s_28_32_seq_1_U494/solve_top_sdiv_28s_16s_28_32_seq_1_divseq_u/dividend0_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module solve_top_CTRL_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module solve_top_CTRL_s_axi.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln44_reg_16057_reg[11] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1663.781 ; gain = 909.391
+---------------------------------------------------------------------------------
+ Sort Area is solve_top__GCB1 mac_mulsub_16s_16s_27s_32_4_1_U495/solve_top_mac_mulsub_16s_16s_27s_32_4_1_DSP48_0_U/p_reg_reg_0 : 0 0 : 3559 3559 : Used 1 time 0
+ Sort Area is solve_top__GCB0 grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_114_fu_897_p2_6 : 0 0 : 2103 2103 : Used 1 time 0
+ Sort Area is solve_top__GCB0 grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_116_fu_1142_p2_8 : 0 0 : 2103 2103 : Used 1 time 0
+ Sort Area is solve_top__GCB0 grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/add_ln44_fu_652_p2_2 : 0 0 : 2103 2103 : Used 1 time 0
+ Sort Area is solve_top__GCB0 grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U367/tmp_product_0 : 0 0 : 1985 1985 : Used 1 time 0
+ Sort Area is solve_top__GCB0 grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U369/tmp_product_4 : 0 0 : 1969 1969 : Used 1 time 0
+ Sort Area is solve_top__GCB0 grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U371/tmp_product_7 : 0 0 : 1969 1969 : Used 1 time 0
+ Sort Area is solve_top__GCB0 grp_mat_vec_mul_Pipeline_VITIS_LOOP_40_5_fu_344/mul_16s_16s_32_1_1_U373/tmp_product_9 : 0 0 : 1969 1969 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:39 . Memory (MB): peak = 1750.172 ; gain = 995.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:09 . Memory (MB): peak = 1959.938 ; gain = 1205.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:40 ; elapsed = 00:02:23 . Memory (MB): peak = 1959.938 ; gain = 1205.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:02:29 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:02:29 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:02:31 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:02:31 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:02:32 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:02:32 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|solve_top_mat_vec_mul   | C+(A*B'')'      | 30     | 18     | 48     | -      | 32     | 0    | 2    | 0    | -    | -     | 1    | 0    | 
+|solve_top_mat_vec_mul   | C+(A*B'')'      | 30     | 18     | 48     | -      | 32     | 0    | 2    | 0    | -    | -     | 1    | 0    | 
+|solve_top_mat_vec_mul   | C+(A*B'')'      | 30     | 18     | 48     | -      | 32     | 0    | 2    | 0    | -    | -     | 1    | 0    | 
+|solve_top_mat_vec_mul   | A'*B''          | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|solve_top_mat_vec_mul   | (A*B'')'        | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|solve_top_mat_vec_mul   | (A*B'')'        | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|solve_top_mat_vec_mul   | (A*B'')'        | 30     | 18     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|solve_top_upper_backsub | (C-((A'*B')'))' | 30     | 18     | 48     | -      | 32     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
++------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  1407|
+|2     |DSP48E1  |     8|
+|6     |LUT1     |  1583|
+|7     |LUT2     |  1839|
+|8     |LUT3     |  4450|
+|9     |LUT4     |  3112|
+|10    |LUT5     |  3876|
+|11    |LUT6     |  9490|
+|12    |MUXCY    |     8|
+|13    |MUXF7    |   558|
+|14    |MUXF8    |   124|
+|15    |RAM16X1D |    95|
+|16    |SRL16E   |    14|
+|17    |SRLC32E  |     9|
+|18    |FDRE     | 10148|
+|19    |FDSE     |  1042|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:02:32 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 210 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:02:27 . Memory (MB): peak = 2080.457 ; gain = 1238.762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:50 ; elapsed = 00:02:32 . Memory (MB): peak = 2080.457 ; gain = 1326.066
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.357 . Memory (MB): peak = 2094.320 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2105.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 97 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 95 instances
+
+Synth Design complete | Checksum: bb8085f0
+INFO: [Common 17-83] Releasing license: Synthesis
+294 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:02:53 . Memory (MB): peak = 2105.984 ; gain = 1579.066
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2105.984 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ELEC522/sm512/asdf/Vivado/project_1/project_1.runs/design_1_solve_top_0_0_synth_1/design_1_solve_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_solve_top_0_0, cache-ID = 070f17c8a84fbb52
+INFO: [Coretcl 2-1174] Renamed 106 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2105.984 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ELEC522/sm512/asdf/Vivado/project_1/project_1.runs/design_1_solve_top_0_0_synth_1/design_1_solve_top_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_solve_top_0_0_utilization_synth.rpt -pb design_1_solve_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 16 20:13:59 2025...

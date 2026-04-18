@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vitis HLS Report for 'decompose_qr_Pipeline_VITIS_LOOP_77_10'
+================================================================
+* Date:           Tue Dec 16 20:06:27 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        solve_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.826 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        6|        6|  60.000 ns|  60.000 ns|    5|    5|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_77_10  |        4|        4|         1|          1|          1|     4|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     24|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|     80|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|       5|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       5|    131|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |          Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |sparsemux_9_2_16_1_1_U214  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U215  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U216  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U217  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |Total                      |                      |        0|   0|  0|  80|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln77_fu_330_p2   |         +|   0|  0|  11|           3|           1|
+    |icmp_ln77_fu_324_p2  |      icmp|   0|  0|  13|           3|           4|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  24|           6|           5|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_r_1  |   9|          2|    3|          6|
+    |r_fu_104              |   9|          2|    3|          6|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|    7|         14|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |r_fu_104     |  3|   0|    3|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  5|   0|    5|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+----------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |              Source Object             |    C Type    |
++-------------------+-----+-----+------------+----------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_77_10|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_77_10|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_77_10|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_77_10|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_77_10|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_77_10|  return value|
+|QT_out_0_0         |  out|   16|      ap_vld|                              QT_out_0_0|       pointer|
+|QT_out_0_0_ap_vld  |  out|    1|      ap_vld|                              QT_out_0_0|       pointer|
+|QT_out_1_0         |  out|   16|      ap_vld|                              QT_out_1_0|       pointer|
+|QT_out_1_0_ap_vld  |  out|    1|      ap_vld|                              QT_out_1_0|       pointer|
+|QT_out_2_0         |  out|   16|      ap_vld|                              QT_out_2_0|       pointer|
+|QT_out_2_0_ap_vld  |  out|    1|      ap_vld|                              QT_out_2_0|       pointer|
+|QT_out_3_0         |  out|   16|      ap_vld|                              QT_out_3_0|       pointer|
+|QT_out_3_0_ap_vld  |  out|    1|      ap_vld|                              QT_out_3_0|       pointer|
+|QT_out_3_3         |  out|   16|      ap_vld|                              QT_out_3_3|       pointer|
+|QT_out_3_3_ap_vld  |  out|    1|      ap_vld|                              QT_out_3_3|       pointer|
+|QT_out_3_2         |  out|   16|      ap_vld|                              QT_out_3_2|       pointer|
+|QT_out_3_2_ap_vld  |  out|    1|      ap_vld|                              QT_out_3_2|       pointer|
+|QT_out_3_1         |  out|   16|      ap_vld|                              QT_out_3_1|       pointer|
+|QT_out_3_1_ap_vld  |  out|    1|      ap_vld|                              QT_out_3_1|       pointer|
+|QT_out_2_3         |  out|   16|      ap_vld|                              QT_out_2_3|       pointer|
+|QT_out_2_3_ap_vld  |  out|    1|      ap_vld|                              QT_out_2_3|       pointer|
+|QT_out_2_2         |  out|   16|      ap_vld|                              QT_out_2_2|       pointer|
+|QT_out_2_2_ap_vld  |  out|    1|      ap_vld|                              QT_out_2_2|       pointer|
+|QT_out_2_1         |  out|   16|      ap_vld|                              QT_out_2_1|       pointer|
+|QT_out_2_1_ap_vld  |  out|    1|      ap_vld|                              QT_out_2_1|       pointer|
+|QT_out_1_3         |  out|   16|      ap_vld|                              QT_out_1_3|       pointer|
+|QT_out_1_3_ap_vld  |  out|    1|      ap_vld|                              QT_out_1_3|       pointer|
+|QT_out_1_2         |  out|   16|      ap_vld|                              QT_out_1_2|       pointer|
+|QT_out_1_2_ap_vld  |  out|    1|      ap_vld|                              QT_out_1_2|       pointer|
+|QT_out_1_1         |  out|   16|      ap_vld|                              QT_out_1_1|       pointer|
+|QT_out_1_1_ap_vld  |  out|    1|      ap_vld|                              QT_out_1_1|       pointer|
+|QT_out_0_3         |  out|   16|      ap_vld|                              QT_out_0_3|       pointer|
+|QT_out_0_3_ap_vld  |  out|    1|      ap_vld|                              QT_out_0_3|       pointer|
+|QT_out_0_2         |  out|   16|      ap_vld|                              QT_out_0_2|       pointer|
+|QT_out_0_2_ap_vld  |  out|    1|      ap_vld|                              QT_out_0_2|       pointer|
+|QT_out_0_1         |  out|   16|      ap_vld|                              QT_out_0_1|       pointer|
+|QT_out_0_1_ap_vld  |  out|    1|      ap_vld|                              QT_out_0_1|       pointer|
+|local_aug_16_load  |   in|   16|     ap_none|                       local_aug_16_load|        scalar|
+|local_aug_17_load  |   in|   16|     ap_none|                       local_aug_17_load|        scalar|
+|local_aug_18_load  |   in|   16|     ap_none|                       local_aug_18_load|        scalar|
+|local_aug_19_load  |   in|   16|     ap_none|                       local_aug_19_load|        scalar|
+|local_aug_20_load  |   in|   16|     ap_none|                       local_aug_20_load|        scalar|
+|local_aug_21_load  |   in|   16|     ap_none|                       local_aug_21_load|        scalar|
+|local_aug_22_load  |   in|   16|     ap_none|                       local_aug_22_load|        scalar|
+|local_aug_23_load  |   in|   16|     ap_none|                       local_aug_23_load|        scalar|
+|local_aug_24_load  |   in|   16|     ap_none|                       local_aug_24_load|        scalar|
+|local_aug_25_load  |   in|   16|     ap_none|                       local_aug_25_load|        scalar|
+|local_aug_26_load  |   in|   16|     ap_none|                       local_aug_26_load|        scalar|
+|local_aug_27_load  |   in|   16|     ap_none|                       local_aug_27_load|        scalar|
+|local_aug_28_load  |   in|   16|     ap_none|                       local_aug_28_load|        scalar|
+|local_aug_29_load  |   in|   16|     ap_none|                       local_aug_29_load|        scalar|
+|local_aug_30_load  |   in|   16|     ap_none|                       local_aug_30_load|        scalar|
+|local_aug_31_load  |   in|   16|     ap_none|                       local_aug_31_load|        scalar|
++-------------------+-----+-----+------------+----------------------------------------+--------------+
+

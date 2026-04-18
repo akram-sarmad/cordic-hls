@@ -1,0 +1,223 @@
+
+
+================================================================
+== Vitis HLS Report for 'mat_vec_mul'
+================================================================
+* Date:           Tue Dec 16 20:06:19 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        solve_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.657 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       27|       27|  0.270 us|  0.270 us|   27|   27|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.82>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%vec_3_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %vec_3_val"   --->   Operation 7 'read' 'vec_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%vec_2_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %vec_2_val"   --->   Operation 8 'read' 'vec_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%vec_1_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %vec_1_val"   --->   Operation 9 'read' 'vec_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%vec_0_val_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %vec_0_val"   --->   Operation 10 'read' 'vec_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_read_29 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read15"   --->   Operation 11 'read' 'p_read_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_read_30 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read14"   --->   Operation 12 'read' 'p_read_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_read_31 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read13"   --->   Operation 13 'read' 'p_read_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_read_32 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read12"   --->   Operation 14 'read' 'p_read_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_read_33 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read11"   --->   Operation 15 'read' 'p_read_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_read1026 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read10"   --->   Operation 16 'read' 'p_read1026' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_read925 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read9"   --->   Operation 17 'read' 'p_read925' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_read824 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read8"   --->   Operation 18 'read' 'p_read824' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%p_read723 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read7"   --->   Operation 19 'read' 'p_read723' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_read622 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read6"   --->   Operation 20 'read' 'p_read622' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%p_read521 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read5"   --->   Operation 21 'read' 'p_read521' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_read420 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read4"   --->   Operation 22 'read' 'p_read420' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_read319 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read3"   --->   Operation 23 'read' 'p_read319' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%p_read218 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read2"   --->   Operation 24 'read' 'p_read218' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%p_read117 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read1"   --->   Operation 25 'read' 'p_read117' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%p_read16 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read"   --->   Operation 26 'read' 'p_read16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%res_local_loc = alloca i64 1"   --->   Operation 27 'alloca' 'res_local_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%res_local_1_loc = alloca i64 1"   --->   Operation 28 'alloca' 'res_local_1_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%res_local_2_loc = alloca i64 1"   --->   Operation 29 'alloca' 'res_local_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%res_local_3_loc = alloca i64 1"   --->   Operation 30 'alloca' 'res_local_3_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%p_loc7 = alloca i64 1"   --->   Operation 31 'alloca' 'p_loc7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%p_loc6 = alloca i64 1"   --->   Operation 32 'alloca' 'p_loc6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%p_loc5 = alloca i64 1"   --->   Operation 33 'alloca' 'p_loc5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%p_loc = alloca i64 1"   --->   Operation 34 'alloca' 'p_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%mat_local_15_load_loc = alloca i64 1"   --->   Operation 35 'alloca' 'mat_local_15_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%mat_local_14_load_loc = alloca i64 1"   --->   Operation 36 'alloca' 'mat_local_14_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%mat_local_13_load_loc = alloca i64 1"   --->   Operation 37 'alloca' 'mat_local_13_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%mat_local_12_load_loc = alloca i64 1"   --->   Operation 38 'alloca' 'mat_local_12_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%mat_local_11_load_loc = alloca i64 1"   --->   Operation 39 'alloca' 'mat_local_11_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%mat_local_10_load_loc = alloca i64 1"   --->   Operation 40 'alloca' 'mat_local_10_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%mat_local_9_load_loc = alloca i64 1"   --->   Operation 41 'alloca' 'mat_local_9_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%mat_local_8_load_loc = alloca i64 1"   --->   Operation 42 'alloca' 'mat_local_8_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%mat_local_7_load_loc = alloca i64 1"   --->   Operation 43 'alloca' 'mat_local_7_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%mat_local_6_load_loc = alloca i64 1"   --->   Operation 44 'alloca' 'mat_local_6_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%mat_local_5_load_loc = alloca i64 1"   --->   Operation 45 'alloca' 'mat_local_5_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%mat_local_4_load_loc = alloca i64 1"   --->   Operation 46 'alloca' 'mat_local_4_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%mat_local_3_load_loc = alloca i64 1"   --->   Operation 47 'alloca' 'mat_local_3_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%mat_local_2_load_loc = alloca i64 1"   --->   Operation 48 'alloca' 'mat_local_2_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%mat_local_1_load_loc = alloca i64 1"   --->   Operation 49 'alloca' 'mat_local_1_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%mat_local_load_loc = alloca i64 1"   --->   Operation 50 'alloca' 'mat_local_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [2/2] (1.82ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_24_1, i16 %p_read16, i16 %p_read117, i16 %p_read218, i16 %p_read319, i16 %p_read420, i16 %p_read521, i16 %p_read622, i16 %p_read723, i16 %p_read824, i16 %p_read925, i16 %p_read1026, i16 %p_read_33, i16 %p_read_32, i16 %p_read_31, i16 %p_read_30, i16 %p_read_29, i16 %mat_local_load_loc, i16 %mat_local_1_load_loc, i16 %mat_local_2_load_loc, i16 %mat_local_3_load_loc, i16 %mat_local_4_load_loc, i16 %mat_local_5_load_loc, i16 %mat_local_6_load_loc, i16 %mat_local_7_load_loc, i16 %mat_local_8_load_loc, i16 %mat_local_9_load_loc, i16 %mat_local_10_load_loc, i16 %mat_local_11_load_loc, i16 %mat_local_12_load_loc, i16 %mat_local_13_load_loc, i16 %mat_local_14_load_loc, i16 %mat_local_15_load_loc"   --->   Operation 51 'call' 'call_ln0' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 52 [2/2] (1.82ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_29_3, i16 %vec_0_val_read, i16 %vec_1_val_read, i16 %vec_2_val_read, i16 %vec_3_val_read, i16 %p_loc, i16 %p_loc5, i16 %p_loc6, i16 %p_loc7"   --->   Operation 52 'call' 'call_ln0' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 4.82>
+ST_2 : Operation 53 [1/2] (4.82ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_24_1, i16 %p_read16, i16 %p_read117, i16 %p_read218, i16 %p_read319, i16 %p_read420, i16 %p_read521, i16 %p_read622, i16 %p_read723, i16 %p_read824, i16 %p_read925, i16 %p_read1026, i16 %p_read_33, i16 %p_read_32, i16 %p_read_31, i16 %p_read_30, i16 %p_read_29, i16 %mat_local_load_loc, i16 %mat_local_1_load_loc, i16 %mat_local_2_load_loc, i16 %mat_local_3_load_loc, i16 %mat_local_4_load_loc, i16 %mat_local_5_load_loc, i16 %mat_local_6_load_loc, i16 %mat_local_7_load_loc, i16 %mat_local_8_load_loc, i16 %mat_local_9_load_loc, i16 %mat_local_10_load_loc, i16 %mat_local_11_load_loc, i16 %mat_local_12_load_loc, i16 %mat_local_13_load_loc, i16 %mat_local_14_load_loc, i16 %mat_local_15_load_loc"   --->   Operation 53 'call' 'call_ln0' <Predicate = true> <Delay = 4.82> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 54 [1/2] (4.82ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_29_3, i16 %vec_0_val_read, i16 %vec_1_val_read, i16 %vec_2_val_read, i16 %vec_3_val_read, i16 %p_loc, i16 %p_loc5, i16 %p_loc6, i16 %p_loc7"   --->   Operation 54 'call' 'call_ln0' <Predicate = true> <Delay = 4.82> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 1.82>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%mat_local_load = load i16 %mat_local_load_loc"   --->   Operation 55 'load' 'mat_local_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%mat_local_1_load = load i16 %mat_local_1_load_loc"   --->   Operation 56 'load' 'mat_local_1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%mat_local_2_load = load i16 %mat_local_2_load_loc"   --->   Operation 57 'load' 'mat_local_2_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%mat_local_3_load = load i16 %mat_local_3_load_loc"   --->   Operation 58 'load' 'mat_local_3_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%mat_local_4_load = load i16 %mat_local_4_load_loc"   --->   Operation 59 'load' 'mat_local_4_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%mat_local_5_load = load i16 %mat_local_5_load_loc"   --->   Operation 60 'load' 'mat_local_5_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%mat_local_6_load = load i16 %mat_local_6_load_loc"   --->   Operation 61 'load' 'mat_local_6_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.00ns)   --->   "%mat_local_7_load = load i16 %mat_local_7_load_loc"   --->   Operation 62 'load' 'mat_local_7_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 63 [1/1] (0.00ns)   --->   "%mat_local_8_load = load i16 %mat_local_8_load_loc"   --->   Operation 63 'load' 'mat_local_8_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%mat_local_9_load = load i16 %mat_local_9_load_loc"   --->   Operation 64 'load' 'mat_local_9_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%mat_local_10_load = load i16 %mat_local_10_load_loc"   --->   Operation 65 'load' 'mat_local_10_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%mat_local_11_load = load i16 %mat_local_11_load_loc"   --->   Operation 66 'load' 'mat_local_11_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%mat_local_12_load = load i16 %mat_local_12_load_loc"   --->   Operation 67 'load' 'mat_local_12_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%mat_local_13_load = load i16 %mat_local_13_load_loc"   --->   Operation 68 'load' 'mat_local_13_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%mat_local_14_load = load i16 %mat_local_14_load_loc"   --->   Operation 69 'load' 'mat_local_14_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%mat_local_15_load = load i16 %mat_local_15_load_loc"   --->   Operation 70 'load' 'mat_local_15_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%p_loc_load = load i16 %p_loc"   --->   Operation 71 'load' 'p_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%p_loc5_load = load i16 %p_loc5"   --->   Operation 72 'load' 'p_loc5_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%p_loc6_load = load i16 %p_loc6"   --->   Operation 73 'load' 'p_loc6_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%p_loc7_load = load i16 %p_loc7"   --->   Operation 74 'load' 'p_loc7_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 75 [2/2] (1.82ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_40_5, i16 %mat_local_load, i16 %mat_local_1_load, i16 %mat_local_2_load, i16 %mat_local_3_load, i16 %p_loc7_load, i16 %mat_local_4_load, i16 %mat_local_5_load, i16 %mat_local_6_load, i16 %mat_local_7_load, i16 %p_loc6_load, i16 %mat_local_8_load, i16 %mat_local_9_load, i16 %mat_local_10_load, i16 %mat_local_11_load, i16 %p_loc5_load, i16 %mat_local_12_load, i16 %mat_local_13_load, i16 %mat_local_14_load, i16 %mat_local_15_load, i16 %p_loc_load, i16 %res_local_3_loc, i16 %res_local_2_loc, i16 %res_local_1_loc, i16 %res_local_loc"   --->   Operation 75 'call' 'call_ln0' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 76 [1/2] (0.00ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_40_5, i16 %mat_local_load, i16 %mat_local_1_load, i16 %mat_local_2_load, i16 %mat_local_3_load, i16 %p_loc7_load, i16 %mat_local_4_load, i16 %mat_local_5_load, i16 %mat_local_6_load, i16 %mat_local_7_load, i16 %p_loc6_load, i16 %mat_local_8_load, i16 %mat_local_9_load, i16 %mat_local_10_load, i16 %mat_local_11_load, i16 %p_loc5_load, i16 %mat_local_12_load, i16 %mat_local_13_load, i16 %mat_local_14_load, i16 %mat_local_15_load, i16 %p_loc_load, i16 %res_local_3_loc, i16 %res_local_2_loc, i16 %res_local_1_loc, i16 %res_local_loc"   --->   Operation 76 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 1.82>
+ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%res_local_3_loc_load = load i16 %res_local_3_loc"   --->   Operation 77 'load' 'res_local_3_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (0.00ns)   --->   "%res_local_2_loc_load = load i16 %res_local_2_loc"   --->   Operation 78 'load' 'res_local_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%res_local_1_loc_load = load i16 %res_local_1_loc"   --->   Operation 79 'load' 'res_local_1_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%res_local_loc_load = load i16 %res_local_loc"   --->   Operation 80 'load' 'res_local_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 81 [2/2] (1.82ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_50_7, i16 %res_0, i16 %res_3, i16 %res_2, i16 %res_1, i16 %res_local_loc_load, i16 %res_local_1_loc_load, i16 %res_local_2_loc_load, i16 %res_local_3_loc_load"   --->   Operation 81 'call' 'call_ln0' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 4.82>
+ST_6 : Operation 82 [1/2] (4.82ns)   --->   "%call_ln0 = call void @mat_vec_mul_Pipeline_VITIS_LOOP_50_7, i16 %res_0, i16 %res_3, i16 %res_2, i16 %res_1, i16 %res_local_loc_load, i16 %res_local_1_loc_load, i16 %res_local_2_loc_load, i16 %res_local_3_loc_load"   --->   Operation 82 'call' 'call_ln0' <Predicate = true> <Delay = 4.82> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "%ret_ln54 = ret" [C:/ELEC522/sm512/asdf/fpga_hls/matrixmult.cpp:54]   --->   Operation 83 'ret' 'ret_ln54' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.000ns.
+
+ <State 1>: 1.827ns
+The critical path consists of the following:
+	wire read operation ('p_read_29') on port 'p_read15' [29]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'mat_vec_mul_Pipeline_VITIS_LOOP_24_1' [69]  (1.827 ns)
+
+ <State 2>: 4.826ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'mat_vec_mul_Pipeline_VITIS_LOOP_24_1' [69]  (4.826 ns)
+
+ <State 3>: 1.827ns
+The critical path consists of the following:
+	'load' operation 16 bit ('mat_local_load') on local variable 'mat_local_load_loc' [70]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'mat_vec_mul_Pipeline_VITIS_LOOP_40_5' [91]  (1.827 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 1.827ns
+The critical path consists of the following:
+	'load' operation 16 bit ('res_local_3_loc_load') on local variable 'res_local_3_loc' [92]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'mat_vec_mul_Pipeline_VITIS_LOOP_50_7' [96]  (1.827 ns)
+
+ <State 6>: 4.826ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'mat_vec_mul_Pipeline_VITIS_LOOP_50_7' [96]  (4.826 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

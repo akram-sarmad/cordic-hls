@@ -1,0 +1,225 @@
+
+
+================================================================
+== Vitis HLS Report for 'decompose_qr_Pipeline_VITIS_LOOP_18_1'
+================================================================
+* Date:           Tue Dec 16 20:06:23 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        solve_top
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.826 ns|     2.00 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max    | min | max |                      Type                      |
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+    |        6|        6|  60.000 ns|  60.000 ns|    5|    5|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+-----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_18_1  |        4|        4|         1|          1|          1|     4|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     24|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|    160|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|       5|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       5|    211|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |sparsemux_9_2_12_1_1_U5  |sparsemux_9_2_12_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_12_1_1_U6  |sparsemux_9_2_12_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_12_1_1_U7  |sparsemux_9_2_12_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_12_1_1_U8  |sparsemux_9_2_12_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U1  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U2  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U3  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    |sparsemux_9_2_16_1_1_U4  |sparsemux_9_2_16_1_1  |        0|   0|  0|  20|    0|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |Total                    |                      |        0|   0|  0| 160|    0|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+----+------------+------------+
+    |add_ln18_fu_482_p2   |         +|   0|  0|  11|           3|           1|
+    |icmp_ln18_fu_476_p2  |      icmp|   0|  0|  13|           3|           4|
+    +---------------------+----------+----+---+----+------------+------------+
+    |Total                |          |   0|  0|  24|           6|           5|
+    +---------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_r_2  |   9|          2|    3|          6|
+    |r_fu_144              |   9|          2|    3|          6|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|    7|         14|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |r_fu_144     |  3|   0|    3|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  5|   0|    5|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+---------------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++---------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_18_1|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_18_1|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_18_1|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_18_1|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_18_1|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  decompose_qr_Pipeline_VITIS_LOOP_18_1|  return value|
+|local_aug            |  out|   16|      ap_vld|                              local_aug|       pointer|
+|local_aug_ap_vld     |  out|    1|      ap_vld|                              local_aug|       pointer|
+|local_aug_4          |  out|   16|      ap_vld|                            local_aug_4|       pointer|
+|local_aug_4_ap_vld   |  out|    1|      ap_vld|                            local_aug_4|       pointer|
+|local_aug_8          |  out|   16|      ap_vld|                            local_aug_8|       pointer|
+|local_aug_8_ap_vld   |  out|    1|      ap_vld|                            local_aug_8|       pointer|
+|local_aug_12         |  out|   16|      ap_vld|                           local_aug_12|       pointer|
+|local_aug_12_ap_vld  |  out|    1|      ap_vld|                           local_aug_12|       pointer|
+|local_aug_16         |  out|   16|      ap_vld|                           local_aug_16|       pointer|
+|local_aug_16_ap_vld  |  out|    1|      ap_vld|                           local_aug_16|       pointer|
+|local_aug_20         |  out|   16|      ap_vld|                           local_aug_20|       pointer|
+|local_aug_20_ap_vld  |  out|    1|      ap_vld|                           local_aug_20|       pointer|
+|local_aug_24         |  out|   16|      ap_vld|                           local_aug_24|       pointer|
+|local_aug_24_ap_vld  |  out|    1|      ap_vld|                           local_aug_24|       pointer|
+|local_aug_28         |  out|   16|      ap_vld|                           local_aug_28|       pointer|
+|local_aug_28_ap_vld  |  out|    1|      ap_vld|                           local_aug_28|       pointer|
+|local_aug_31         |  out|   16|      ap_vld|                           local_aug_31|       pointer|
+|local_aug_31_ap_vld  |  out|    1|      ap_vld|                           local_aug_31|       pointer|
+|local_aug_30         |  out|   16|      ap_vld|                           local_aug_30|       pointer|
+|local_aug_30_ap_vld  |  out|    1|      ap_vld|                           local_aug_30|       pointer|
+|local_aug_29         |  out|   16|      ap_vld|                           local_aug_29|       pointer|
+|local_aug_29_ap_vld  |  out|    1|      ap_vld|                           local_aug_29|       pointer|
+|local_aug_27         |  out|   16|      ap_vld|                           local_aug_27|       pointer|
+|local_aug_27_ap_vld  |  out|    1|      ap_vld|                           local_aug_27|       pointer|
+|local_aug_26         |  out|   16|      ap_vld|                           local_aug_26|       pointer|
+|local_aug_26_ap_vld  |  out|    1|      ap_vld|                           local_aug_26|       pointer|
+|local_aug_25         |  out|   16|      ap_vld|                           local_aug_25|       pointer|
+|local_aug_25_ap_vld  |  out|    1|      ap_vld|                           local_aug_25|       pointer|
+|local_aug_23         |  out|   16|      ap_vld|                           local_aug_23|       pointer|
+|local_aug_23_ap_vld  |  out|    1|      ap_vld|                           local_aug_23|       pointer|
+|local_aug_22         |  out|   16|      ap_vld|                           local_aug_22|       pointer|
+|local_aug_22_ap_vld  |  out|    1|      ap_vld|                           local_aug_22|       pointer|
+|local_aug_21         |  out|   16|      ap_vld|                           local_aug_21|       pointer|
+|local_aug_21_ap_vld  |  out|    1|      ap_vld|                           local_aug_21|       pointer|
+|local_aug_19         |  out|   16|      ap_vld|                           local_aug_19|       pointer|
+|local_aug_19_ap_vld  |  out|    1|      ap_vld|                           local_aug_19|       pointer|
+|local_aug_18         |  out|   16|      ap_vld|                           local_aug_18|       pointer|
+|local_aug_18_ap_vld  |  out|    1|      ap_vld|                           local_aug_18|       pointer|
+|local_aug_17         |  out|   16|      ap_vld|                           local_aug_17|       pointer|
+|local_aug_17_ap_vld  |  out|    1|      ap_vld|                           local_aug_17|       pointer|
+|local_aug_15         |  out|   16|      ap_vld|                           local_aug_15|       pointer|
+|local_aug_15_ap_vld  |  out|    1|      ap_vld|                           local_aug_15|       pointer|
+|local_aug_14         |  out|   16|      ap_vld|                           local_aug_14|       pointer|
+|local_aug_14_ap_vld  |  out|    1|      ap_vld|                           local_aug_14|       pointer|
+|local_aug_13         |  out|   16|      ap_vld|                           local_aug_13|       pointer|
+|local_aug_13_ap_vld  |  out|    1|      ap_vld|                           local_aug_13|       pointer|
+|local_aug_11         |  out|   16|      ap_vld|                           local_aug_11|       pointer|
+|local_aug_11_ap_vld  |  out|    1|      ap_vld|                           local_aug_11|       pointer|
+|local_aug_10         |  out|   16|      ap_vld|                           local_aug_10|       pointer|
+|local_aug_10_ap_vld  |  out|    1|      ap_vld|                           local_aug_10|       pointer|
+|local_aug_9          |  out|   16|      ap_vld|                            local_aug_9|       pointer|
+|local_aug_9_ap_vld   |  out|    1|      ap_vld|                            local_aug_9|       pointer|
+|local_aug_7          |  out|   16|      ap_vld|                            local_aug_7|       pointer|
+|local_aug_7_ap_vld   |  out|    1|      ap_vld|                            local_aug_7|       pointer|
+|local_aug_6          |  out|   16|      ap_vld|                            local_aug_6|       pointer|
+|local_aug_6_ap_vld   |  out|    1|      ap_vld|                            local_aug_6|       pointer|
+|local_aug_5          |  out|   16|      ap_vld|                            local_aug_5|       pointer|
+|local_aug_5_ap_vld   |  out|    1|      ap_vld|                            local_aug_5|       pointer|
+|local_aug_3          |  out|   16|      ap_vld|                            local_aug_3|       pointer|
+|local_aug_3_ap_vld   |  out|    1|      ap_vld|                            local_aug_3|       pointer|
+|local_aug_2          |  out|   16|      ap_vld|                            local_aug_2|       pointer|
+|local_aug_2_ap_vld   |  out|    1|      ap_vld|                            local_aug_2|       pointer|
+|local_aug_1          |  out|   16|      ap_vld|                            local_aug_1|       pointer|
+|local_aug_1_ap_vld   |  out|    1|      ap_vld|                            local_aug_1|       pointer|
+|p_read               |   in|   16|     ap_none|                                 p_read|        scalar|
+|p_read1              |   in|   16|     ap_none|                                p_read1|        scalar|
+|p_read2              |   in|   16|     ap_none|                                p_read2|        scalar|
+|p_read3              |   in|   16|     ap_none|                                p_read3|        scalar|
+|p_read4              |   in|   16|     ap_none|                                p_read4|        scalar|
+|p_read5              |   in|   16|     ap_none|                                p_read5|        scalar|
+|p_read6              |   in|   16|     ap_none|                                p_read6|        scalar|
+|p_read7              |   in|   16|     ap_none|                                p_read7|        scalar|
+|p_read8              |   in|   16|     ap_none|                                p_read8|        scalar|
+|p_read9              |   in|   16|     ap_none|                                p_read9|        scalar|
+|p_read10             |   in|   16|     ap_none|                               p_read10|        scalar|
+|p_read11             |   in|   16|     ap_none|                               p_read11|        scalar|
+|p_read12             |   in|   16|     ap_none|                               p_read12|        scalar|
+|p_read13             |   in|   16|     ap_none|                               p_read13|        scalar|
+|p_read14             |   in|   16|     ap_none|                               p_read14|        scalar|
+|p_read15             |   in|   16|     ap_none|                               p_read15|        scalar|
++---------------------+-----+-----+------------+---------------------------------------+--------------+
+

@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Dec 16 20:06:59 2025
+# Process ID         : 21508
+# Current directory  : C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/vivado.log
+# Journal file       : C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip\vivado.jou
+# Running On         : RYN-B10-PC-11
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 68426 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 78627 MB
+# Available Virtual  : 51458 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/hls_data.json outdir=C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip srcdir=C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/misc
+INFO: Copied 38 verilog file(s) to C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/hdl/verilog
+INFO: Copied 37 vhdl file(s) to C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/drivers
+Generating 1 subcores in C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/subcore_prj:
+impl/misc/solve_top_fpext_32ns_64_2_no_dsp_1_ip.tcl
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 512.723 ; gain = 219.719
+INFO: Using COE_DIR=C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/hdl/verilog
+INFO: Generating solve_top_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/solve_top_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'solve_top_fpext_32ns_64_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'solve_top_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'solve_top_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: Done generating solve_top_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/solve_top_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+INFO: Copied 1 subcore files: C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/hdl/ip/solve_top_fpext_32ns_64_2_no_dsp_1_ip/solve_top_fpext_32ns_64_2_no_dsp_1_ip.xci
+INFO: Import ports from HDL: C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/hdl/vhdl/solve_top.vhd (solve_top)
+INFO: Add axi4lite interface s_axi_CTRL
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/component.xml
+INFO: Created IP archive C:/ELEC522/sm512/asdf/Vitis_HLS/hls_component/solve_top/hls/impl/ip/xilinx_com_hls_solve_top_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 16 20:07:14 2025...
